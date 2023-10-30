@@ -68,5 +68,38 @@ header ul > li{
 } 
 
 main{
-    background-color: #56A5EA;
+    background-color: #D7E9FB;
+    margin: 0;
+    padding-top: 4em;
+    height: 100vh;
+}
+
+#main{
+    width: 60%;
+    margin: auto;
+    background-color: white;
+    display: grid;
+    grid-template-rows: auto auto;
+    padding: 1em;
+}
+
+
+#images{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.image{
+    width: 5em;
+    height: 5em;
+    background-color: #a9a9a9c9;
+    margin: 0.3em;
+}
+
+
+#vragen{
+    padding: 0 5em 5em 5em;
+}
+.knoppen{
+    margin: 2em;
 }
