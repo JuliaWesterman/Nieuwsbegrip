@@ -3,78 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nieuwsbegrip | Driemtiem</title>
-    <link rel="stylesheet" href="Foundation/css/app.css">
-    <link rel="stylesheet" href="https://kit.fontawesome.com/e1baee5c3f.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="Foundation/css/foundation.css">
-    <link rel="stylesheet" href="Foundation/css/foundation.min.css">
-    <link rel=" stylesheet" href="CSS/skel.css">
-    <link rel=" stylesheet" href="CSS/main.css">
+    <title>Boo</title>
+    <!--lettertype-->
+    <link rel="stylesheet" href="https://use.typekit.net/ezq3eak.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ezq3eak.css">  
+    <link rel="stylesheet" href="https://kit.fontawesome.com/e1baee5c3f.css" crossorigin="anonymous">  
+
+    <!--Framework-->
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+<!------------------------ HEADER ------------------------------>
 <header>
-    <div class="grid-container"> 
-        <div class="grid-x grid-padding-x">
-
-            <div class="large-4 cell">
-                <ul id="nav">
-                    <li><b>Homepage</b></li>
-                    <li>Basislessen</li>
-                    <li>Actief lezen</li>
-                </ul>
-            </div>
-
-            <div class="large-6 cell" id="opdrachtenProgress">
-                <p>Opdracht 1 van de 16</p>
-                <div id="progressBalk"></div> <!--Progress balk-->
-            </div>
-
-            <div class="large-2 cell" id="stoppenKruisje">
-                <p>Stoppen</p>
-                <p id="kruisje">X</p>
-            </div>
-
+    <div class="grid-x">
+        <div class="cell large-1 nav">
+            <h3><b>Homepage</b></h3>
+        </div>
+        <div class="cell large-1 nav">
+            <h3>Basislessen</h3>
+        </div>
+        <div class="cell large-1 nav">
+            <h3>Actief lezen</h3>
+        </div>
+        <div class="cell large-8" id="progress">
+            <h3><b>Opdracht 1 van 16</b></h3>
+            <div id="progressBalk"></div>
+        </div>
+        <div class="cell large-1" id="stop">
+            <h3><b>Stoppen <span>X</span></b></h3>
         </div>
     </div>
 </header>
 
+<!------------------------ MAIN ------------------------------>
 <main>
-    <div class="grid-container"> 
-        <div class="grid-x grid-padding-x">
-            <div class="row column large-10 cell" id="white">
-                <!--top iconen regel-->
-                <div class="row">
-                <div class="large-offset-5 cell" id="iconen">
-                </div>
-                </div>
+    <div class="grid-x"> <!--main-->
 
-                <!--opdracht-->
-                <div class="row">
-                <div class="large-offset-1 cell">
-                    <h2>Opdracht 2</h2>
-                    <p>Dit is een sleutelvraag bla bla</p>
-                    <h3>Inleiding</h3>
-                    <p>Waarover gaat de inleiding?</p>
+        <div class="cell large-8 large-offset-2" id="main"> <!--witte vlak-->
+            <div class="grid-y">
+                <div class="cell large-1" id="iconen"><!--iconen rij-->
+                    <div class="cell large-1 large-offset-8 blue"></div>
+                    <div class="cell large-1 blue"></div>
+                    <div class="cell large-1 blue"></div>
+                </div>
+                <div class="cell large-1"><!--vragen rij-->
+                    <div class="grid-y">
+                        <div class="cell large-1 large-offset-1">
+                            <h3><b>Opdracht 2</b></h3>
+                        </div>
+                        <div class="cell large-1 large-offset-1">
+                            <p>sleutelopdracht</p>
+                        </div>
+                        <div class="cell large-1 large-offset-1">
+                            <h4><b>Inleiding</b></h4>
+                        </div>
+                        <div class="cell large-1 large-offset-1">
+                            <p>Ik wil deze vraag wat langer maken, zodat dit er kwa ontwerp duidelijker uit ziet, dat was het doei?</p>
+                        </div>
+                        <div class="cell large-4 large-offset-1" id="antwoorden">
+                            <div>
+                                <input type="radio" name="één" value="false" id="antwoord1" required>
+                                <label for="antwoord1" id="antwoord">Dit is de eerste antwoord optie</label>
+                            </div>                    
+                            <div>
+                                <input type="radio" name="twee" value="true" id="antwoord2" required>
+                                <label for="antwoord2" id="antwoord">Dit is de tweede antwoord optie, deze is goed</label>
+                            </div>                    
+                            <div>
+                                <input type="radio" name="drie" value="false" id="antwoord3" required>
+                                <label for="antwoord3" id="antwoord">Dit is de derde antwoord optie</label>
+                            </div>                        </div>
+                        <div class="cell large-2 large-offset-1">
+                            <a href="#">Vorige</a>
+                            <button type="button">Controleren</button>
+                        </div>
 
-                    <div>
-                        <input type="radio" name="antwoord 1" value="false" id="antwoord1" required>
-                        <label for="antwoord1">Dit is de eerste antwoord optie</label>
                     </div>
-                    <div>
-                        <input type="radio" name="antwoord 2" value="true" id="antwoord2" required>
-                        <label for="antwoord2">Dit is de tweede antwoord optie</label>
-                    </div>
-                    <div>
-                        <input type="radio" name="antwoord 3" value="false" id="antwoord3" required>
-                        <label for="antwoord3">Dit is de derde antwoord optie</label>
-                    </div>
-</div>
+                
                 </div>
             </div>
-</div></div>
-</main>
-<footer>
 
-</footer>
+
+        </div>
+
+
+
+
+
+
+    </div>
+</main> 
 </body>
 </html>

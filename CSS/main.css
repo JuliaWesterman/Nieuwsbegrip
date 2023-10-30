@@ -1,105 +1,105 @@
-/* html{
-    display: grid;
-    grid-template-columns: 'grid-y1 grid-y2 grid-y3 grid-y4 grid-y5 grid-y6 grid-y7 grid-y8 grid-y9 grid-y10 grid-y11 grid-y12';
-    grid-template-rows: 'grid-x1 grid-x2 grid-x3 grid-x4 grid-x5 grid-x6 grid-x7 grid-x8 grid-x9 grid-x10 grid-x11 grid-x12';
-    grid-area: grid;
-} */
-
-
-/*typografie*/
-h1, h2, h3{
-    font-family: 'asap';
+h1, h2, h3, h4{
+    font-family: 'Asap';
+    font-size: 20px;
 }
-p, li, a{
-    font-family: 'open-sans';
+h4{
+    font-size: 18px;
+}
+p, li, ul, a{
+    font-family: 'Open Sans';
+    font-size: 18px;
 }
 
 
-
-
-
-.row{
-    display: flex;
-    flex-direction: row;
+header h3{
+    font-size: 16px;
+    margin: 0;
 }
-
-
 header{
     width: 95%;
     margin: auto;
-    display: grid;
-    grid-template-columns: max-content auto max-content;
-    gap: 1em;
 }
 
-#nav{
-    list-style: none;
-}
-header ul > li{
-    border-right: 0.05rem solid purple;
+
+.nav{
+    text-align: center;
+    padding: 1rem 0.6rem;
     color: purple;
-    padding: 0 0.7rem;
+    border-right: solid purple 2px; /*--------FIX DIT---------*/
 }
 
-
-#opdrachtenProgress > p{
-    padding: 0 0.7rem 0 0.3rem;
-    font-weight: bold;
+#progress{
+    display: flex;
+    flex-direction: row;
+    gap: 0.7rem;
+}
+#progress > h3{
     color: #77B72A;
-}
-
-#progressBalk{
     align-self: center;
+    padding-left: 1rem;
+}
+#progressBalk{
+align-self: center;
     height: 1.2rem;
     width: 60%;
     background: linear-gradient(to right, #77B72A 10%, rgb(225, 225, 225) 11%);
 }
 
-#stoppenKruisje{
-    justify-content: center;
-    align-items: center;
+#stop{
     color: #56A5EA;
-    font-weight: bold;
-    justify-content: right;
+    padding: 1rem 0.6rem;
 }
-#kruisje{
-    padding: 0 0.5rem;
+#stop  span{
     color: red;
-} 
+}
 
+
+
+/*-------------- MAIN ----------*/
 main{
     background-color: #D7E9FB;
-    margin: 0;
-    padding-top: 4em;
+    padding-top: 2em;
     height: 100vh;
 }
-
 #main{
-    width: 60%;
-    margin: auto;
     background-color: white;
-    display: grid;
-    grid-template-rows: auto auto;
-    padding: 1em;
+    padding-bottom: 5em;
 }
 
 
-#images{
+/*--iconen--*/
+#iconen{
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
+    gap: 0.5rem;
 }
-.image{
+.blue{
     width: 5em;
     height: 5em;
-    background-color: #a9a9a9c9;
-    margin: 0.3em;
+    background-color: rgb(31, 31, 64);
 }
 
 
-#vragen{
-    padding: 0 5em 5em 5em;
+/*--vragen--*/
+#antwoorden{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    margin-bottom: 3rem;
 }
-.knoppen{
-    margin: 2em;
+
+
+/*----controleren---*/
+#main a{
+    background-color: rgb(192, 192, 192);
+    border: solid 2px grey;
+    border-radius: 8px;
+    color: white;
+    padding: 0.2rem 0.6rem;
+}
+#main button{
+    color: white;
+    background-color: orange;
+    border: solid 2px orangered;
+    border-radius: 8px;
+    padding: 0.2rem 0.6rem;
 }
