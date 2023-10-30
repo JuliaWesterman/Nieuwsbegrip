@@ -1,0 +1,72 @@
+/* html{
+    display: grid;
+    grid-template-columns: 'grid-y1 grid-y2 grid-y3 grid-y4 grid-y5 grid-y6 grid-y7 grid-y8 grid-y9 grid-y10 grid-y11 grid-y12';
+    grid-template-rows: 'grid-x1 grid-x2 grid-x3 grid-x4 grid-x5 grid-x6 grid-x7 grid-x8 grid-x9 grid-x10 grid-x11 grid-x12';
+    grid-area: grid;
+} */
+
+
+/*typografie*/
+h1, h2, h3{
+    font-family: 'asap';
+}
+p, li, a{
+    font-family: 'open-sans';
+}
+
+
+
+
+
+.row{
+    display: flex;
+    flex-direction: row;
+}
+
+
+header{
+    width: 95%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: max-content auto max-content;
+    gap: 1em;
+}
+
+#nav{
+    list-style: none;
+}
+header ul > li{
+    border-right: 0.05rem solid purple;
+    color: purple;
+    padding: 0 0.7rem;
+}
+
+
+#opdrachtenProgress > p{
+    padding: 0 0.7rem 0 0.3rem;
+    font-weight: bold;
+    color: #77B72A;
+}
+
+#progressBalk{
+    align-self: center;
+    height: 1.2rem;
+    width: 60%;
+    background: linear-gradient(to right, #77B72A 10%, rgb(225, 225, 225) 11%);
+}
+
+#stoppenKruisje{
+    justify-content: center;
+    align-items: center;
+    color: #56A5EA;
+    font-weight: bold;
+    justify-content: right;
+}
+#kruisje{
+    padding: 0 0.5rem;
+    color: red;
+} 
+
+main{
+    background-color: #56A5EA;
+}
