@@ -5,8 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nieuwsbegrip | geen framework</title>
     <link rel="stylesheet" href="https://use.typekit.net/ezq3eak.css">
-    <link rel="stylesheet" href="https://use.typekit.net/ezq3eak.css">    
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://use.typekit.net/ezq3eak.css">  
+    <link rel="stylesheet" href="https://kit.fontawesome.com/e1baee5c3f.css" crossorigin="anonymous">  
+    <link rel="stylesheet" href="CSS/global.css">
+    <link rel="stylesheet" href="CSS/main.css">
+    <script src="JavaScript/trueFalse.js"></script>
 </head>
 <body>
 <header>
@@ -24,13 +27,47 @@
     </div>
 
     <div class="row" id="stoppenKruisje">
-        <p>Stoppen</p>
-        <p id="kruisje">X</p>
+        <p><b>Stoppen</b></p>
+        <p id="kruisje"><b>X</b></p>
     </div>
 </header>
+
+
 <main>
+
+
     <div id="main">
-        
+        <div id="navigeren">
+            <div id="images">
+                <div class="image"></div>
+                <div class="image"></div>
+                <div class="image"></div>
+            </div>
+        </div>
+        <div id="vragen">
+            <h2>Opdracht 2</h2>
+            <p>Sleutelvraag</p>
+            <h3>Dit is een onderwerp</h3>
+            <p>Dit is een vraag</p>
+            <div>
+                <input type="radio" name="één" value="false" id="antwoord1" required>
+                <label for="antwoord1" id="antwoord">Dit is de eerste antwoord optie</label>
+            </div>                    
+            <div>
+                <input type="radio" name="twee" value="true" id="antwoord2" required>
+                <label for="antwoord2" id="antwoord">Dit is de tweede antwoord optie, deze is goed</label>
+            </div>                    
+            <div>
+                <input type="radio" name="drie" value="false" id="antwoord3" required>
+                <label for="antwoord3" id="antwoord">Dit is de derde antwoord optie</label>
+            </div>
+
+            <div class="knoppen">
+                <a>Vorige</a>
+                <button type="button" onclick="controleren()">Controleren</button>
+            </div>
+            
+        </div>
 
 
     </div>
