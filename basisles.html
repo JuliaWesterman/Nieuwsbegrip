@@ -15,14 +15,70 @@
     
         <!--CSS + javascript-->
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/opdrachten.css">
         <script src="js/main.js"></script>
 </head>
 <body>
+<!------------------------ HEADER ------------------------------>
 <header>
-
+    <div class="grid-x">
+        <div class="cell large-1 nav">
+            <a href="index.html"><h3><b>Homepage</b></h3></a>
+        </div>
+        <div class="cell large-1 nav">
+            <a href="basisles.html"><h3>Basislessen</h3></a>
+        </div>
+        <div class="cell large-1 large-offset-9" id="stop">
+            <h3><b>Stoppen <span>X</span></b></h3>
+        </div>
+    </div>
 </header>
+
+<!------------------------ MAIN ------------------------------>
 <main>
-    
+    <div class="grid-x"> <!--main-->
+    <div class="cell large-8 large-offset-2" id="main"> <!--witte vlak-->
+        <div class="grid-y">
+            <div class="cell large-1" id="titel">
+                <h2>Basislessen</h2>
+            </div>
+            <div class="cell large-1"> <!--3 opties-->
+                <div class="grid-x">
+                    <a href="opdracht.html" class="cell large-3 verwijzing" id="actiefLezen"> <!--Actief lezen-->
+                        <img src="content/Boek uitleg.svg" alt="actief lezen verwijzing en icoon">
+                        <h3>Actief lezen</h3>
+                    </a>
+                    <a href="#" class="cell large-3 large-offset-1 verwijzing"><!--Schema-->
+                        <img src="content/Boek uitleg.svg" alt="Schema icoon">
+                        <h3>Schema</h3>                      
+                    </a>
+                    <a href="opdracht.html" class="cell large-3 large-offset-1 verwijzing"><!--Opdrachten-->
+                        <img src="content/Boek uitleg.svg" alt="Opdrachten verwijzing en icoon">
+                        <h3>Opdrachten</h3>                        
+                    </a>
+                </div>
+            </div>
+            <div class="cell large-1" id="onderNavigatie"> <!--leestekst icoon + verder-->
+                <div class="grid-x">
+                    <div class="cell large-1 large-offset-5" id="leestekstVerwijzing">
+                        <img src="content/Boek leesteks.svg" alt="leestekst verwijzing">
+                        <h4>Leestekst</h4>
+                    </div>
+                    <div class="cell large-1 large-offset-4">
+                        <a href="opdracht.html">Verder</a>
+                    </div>
+                </div>
+
+            </div> 
+
+        
+        
+        
+        
+        
+        </div> <!--grid y-->
+    </div><!--witte vlak afsluiten-->    
+    </div>
 </main>  
 </body>
 </html>

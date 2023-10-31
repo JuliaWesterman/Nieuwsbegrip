@@ -24,31 +24,15 @@ header{
     background-color: white;
 }
 
-
 .nav{
     text-align: center;
     padding: 1rem 0.6rem;
     color: #951B81;
     border-right: solid #951B81 2px; /*--------FIX DIT---------*/
 }
-
-#progress{
-    display: flex;
-    flex-direction: row;
-    gap: 0.7rem;
+.nav a{
+    color: #951B81;
 }
-#progress > h3{
-    color: #77B72A;
-    align-self: center;
-    padding-left: 1rem;
-}
-#progressBalk{
-align-self: center;
-    height: 1.2rem;
-    width: 60%;
-    background: linear-gradient(to right, #77B72A 15%, rgb(225, 225, 225) 16%);
-}
-
 #stop{
     color: #56A5EA;
     padding: 1rem 0.6rem;
@@ -56,7 +40,6 @@ align-self: center;
 #stop  span{
     color: red;
 }
-
 
 
 /*-------------- MAIN ----------*/
@@ -68,101 +51,4 @@ main{
 #main{
     background-color: white;
     padding-bottom: 5em;
-}
-
-
-/*--iconen--*/
-#iconen{
-    display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
-    margin-left: 2rem;
-}
-#iconen img{
-    width: 5em;
-    height: 5em;
-    margin-top: 2rem;
-}
-
-/*--vragen--*/
-#antwoorden{
-    display: grid;
-    grid-template-rows: auto auto auto;
-    margin-bottom: 3rem;
-}
-
-/*opdracht navigatie + controleren*/
-#opdrachtNavigatie a{
-    background-color: rgb(192, 192, 192);
-    border: solid 2px grey;
-    border-radius: 8px;
-    color: white;
-    padding: 0.2rem 0.6rem;
-}
-#controleren{
-    color: white;
-    background-color: #F8BD66;
-    border: solid 2px orangered;
-    border-radius: 8px;
-    padding: 0.2rem 0.6rem;
-}
-
-#hiddena1{
-    visibility: hidden;
-}
-#hiddena2{
-    visibility: hidden;
-}
-
-
-
-
-
-/*popup*/
-#uitlegPopup{
-    visibility: hidden;
-    position: absolute;
-    top: 9rem;
-    left: 0;
-    right: 0;
-    margin: auto;
-}
-#uitleg{
-    text-align: center;
-    align-items: center;
-    background-color: #9C4794;
-    color: white;
-    padding: 3rem 0 1rem 0;
-    border-radius: 20px;
-    position: relative;
-}
-#uitleg h2{
-    text-decoration: underline;
-    font-size: 3rem;
-}
-#uitleg p{
-    width: 50%;
-    margin-top: 1rem;
-}
-#uitleg button{
-    background-color: #F8BD66;
-    color: black;
-    padding: 0.5rem 1rem;
-    border-radius: 10px;
-    margin-top: 4rem;
-    font-size: larger;
-}
-
-/*mascotte*/
-#uitleg div{
-    background-color: white;
-    border-radius: 150px;
-    width: max-content;
-    position: absolute;
-    top: 8rem;
-    right: 3rem;
-}
-#uitleg img{
-    height: 15rem;
-    width: 15rem;
 }

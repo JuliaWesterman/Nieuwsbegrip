@@ -15,6 +15,7 @@
 
     <!--CSS + javascript-->
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/opdrachten.css">
     <script src="js/main.js"></script>
 </head>
 <body>
@@ -25,10 +26,10 @@
             <a href="index.html"><h3><b>Homepage</b></h3></a>
         </div>
         <div class="cell large-1 nav">
-            <a><h3>Basislessen</h3></a>
+            <a href="basisles.html"><h3>Basislessen</h3></a>
         </div>
         <div class="cell large-1 nav">
-            <h3>Actief lezen</h3>
+            <a href="basisles.html"><h3>Actief lezen</h3></a>
         </div>
         <div class="cell large-8" id="progress">
             <h3><b>Opdracht 2 van 16</b></h3>
@@ -66,7 +67,7 @@
                             <p>Ik wil deze vraag wat langer maken, zodat dit er kwa ontwerp duidelijker uit ziet, dat was het doei?</p>
                         </div>
 
-                        <form class="cell large-4 large-offset-1" id="antwoorden">
+                        <form class="cell large-4 large-offset-1" id="antwoorden"> <!--antwoorden-->
                             <div>
                                 <input type="radio" name="antwoord" value="false1" id="antwoord1">
                                 <label for="antwoord1" id="a1">Dit is de eerste antwoord optie <span class="hidden" id="hiddena1">X</span></label>
@@ -81,7 +82,7 @@
                             </div>    
                         </form>
 
-                            <div class="cell large-2 large-offset-1" id="opdrachtNavigatie">
+                            <div class="cell large-2 large-offset-1" id="opdrachtNavigatie"> <!--controleren-->
                                 <a href="#">Vorige</a>
                                 <button type="button" onclick="controleren()" id="controleren">Controleren</button>
                             </div>
@@ -94,7 +95,7 @@
             </div>
         </div>
 
-        <div class="grid-x" id="uitlegPopup">
+        <div class="grid-x" id="uitlegPopup"> <!--uitleg popup-->
             <div class="cell large-10 large-offset-1" id="uitleg">
                     <h2>Wat moet je doen?</h2>
                     <p class="large-offset-3"><span>Sleutelvraag = </span>deze helpt je de tekst beter te begrijpen</p>
