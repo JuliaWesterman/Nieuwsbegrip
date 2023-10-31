@@ -1,6 +1,14 @@
 h1, h2, h3, h4{
     font-family: 'Asap';
-    font-size: 20px;
+}
+h1{
+    font-size: 25px;
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 25px;
 }
 h4{
     font-size: 18px;
@@ -10,6 +18,9 @@ p, li, ul, a{
     font-size: 18px;
 }
 
+button{
+    cursor: pointer;
+}
 
 header h3{
     font-size: 16px;
@@ -50,5 +61,6 @@ main{
 }
 #main{
     background-color: white;
-    padding-bottom: 5em;
+    padding-bottom: 5rem;
+    position: relative;
 }

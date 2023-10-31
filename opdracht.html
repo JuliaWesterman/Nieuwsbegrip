@@ -58,27 +58,27 @@
                             <h3><b>Opdracht 2</b></h3>
                         </div>
                         <div class="cell large-1 large-offset-1">
-                            <p>sleutelopdracht</p>
+                            <p>Deze sleutelopdracht hoort bij de inleiding</p>
                         </div>
                         <div class="cell large-1 large-offset-1">
                             <h4><b>Inleiding</b></h4>
                         </div>
                         <div class="cell large-1 large-offset-1">
-                            <p>Ik wil deze vraag wat langer maken, zodat dit er kwa ontwerp duidelijker uit ziet, dat was het doei?</p>
+                            <p>Sleutelvraag 2: Over welke reis gaat het over in de inleiding?</p>
                         </div>
 
                         <form class="cell large-4 large-offset-1" id="antwoorden"> <!--antwoorden-->
                             <div>
                                 <input type="radio" name="antwoord" value="false1" id="antwoord1">
-                                <label for="antwoord1" id="a1">Dit is de eerste antwoord optie <span class="hidden" id="hiddena1">X</span></label>
+                                <label for="antwoord1" id="a1">De reis van de ouders van panda Fan Xing naar Ouwehands Dierenpark. <span class="hidden" id="hiddena1">X</span></label>
                             </div>                    
                             <div>
                                 <input type="radio" name="antwoord" value="true" id="antwoord2">
-                                <label for="antwoord2" id="a2">Dit is de tweede antwoord optie, deze is goed</label>
+                                <label for="antwoord2" id="a2">De reis van de panda Fan Xing van Nederland naar China.</label>
                             </div>                    
                             <div>
                                 <input type="radio" name="antwoord" value="false2" id="antwoord3">
-                                <label for="antwoord3" id="a3">Dit is de derde antwoord optie <span class="hidden" id="hiddena2">X</span></label>
+                                <label for="antwoord3" id="a3">De reis van panda Fan Xing naar haar ouders in Rhenen. <span class="hidden" id="hiddena2">X</span></label>
                             </div>    
                         </form>
 
@@ -86,14 +86,25 @@
                                 <a href="#">Vorige</a>
                                 <button type="button" onclick="controleren()" id="controleren">Controleren</button>
                             </div>
+                    </div><!--grid y-->
+                </div><!--vragen-->
+
+                <div class="cell large-1">
+                    <div class="cell large-1 large-offset-7" id="hulpfunctie"><!--hulpfunctie-->
+                        <button type="button" onclick="openHulpfunctie()" id="hulpfunctieShow"><img src="content/hulpfunctie.png"></button>
                     </div>
-                
+                </div>
+
+                <div class="cell large-1">
+                    <div class="large-offset-7" id="gefeliciteerd">
+                        <a href="index.html"><img src="content/gefeliciteerd.png"></a>
+                    </div>
                 </div>
 
 
 
-            </div>
-        </div>
+            </div><!--grid y-->
+        </div><!--wit vlak-->
 
         <div class="grid-x" id="uitlegPopup"> <!--uitleg popup-->
             <div class="cell large-10 large-offset-1" id="uitleg">
@@ -102,11 +113,116 @@
                     <p class="large-offset-3">Weet je het antwoord op de vraag echt niet?<br>
                     Klik op het icoon van “leestekst” en lees de tekst nog eens rustig na, op zoek naar het antwoord!</p>
                     <button type="button" onclick="closeUitleg()">Ik snap het!</button>
-                    <div><img src="content/Boek Uitleg 2.1.svg" alt="Uitleg mascotte"></div><!-- succes met deze positioneren :/-->
+                    <div><img src="content/Boek Uitleg 2.1.svg" alt="Uitleg mascotte"></div>
             </div>
         </div>
 
-    </div>
+        <!-------------------------- HULPFUNCTIE -------------------------->
+
+        <div class="grid-x" id="hulpfunctiePopup"><!--Hulpfunctie popup-->
+            <div class="cell large-12 large-offset-1">
+
+
+                <!---tekst gelezen?-->
+                <div class="grid-y" id="tekstGelezen"> <!--wit vlak-->
+                    <div class="cell large-1">
+                        <button type="button" onclick="closeHulpfunctie()">X</button>
+                    </div> 
+                    <div class="grid-x"> <!--content-->
+                        <div class="cell large-3"> <!--afbeelding-->
+                            <img src="content/Pen met microfoon.svg" alt="mascotte">
+                        </div>
+                        <div class="cell large-5 large-offset-1 bord">
+                            <h2>Heb je de tekst al gelezen?</h2>
+                            <div id="keuze">
+                                <button type="button" onclick="ja()">Ja</button>
+                                <button type="button" onclick="nee()">Nee</button>
+                            </div>
+                        </div>
+                    </div> 
+                </div>  
+
+                <!---moeite met-->
+                <div class="grid-y" id="moeiteMet"> <!--wit vlak-->
+                    <div class="cell large-1">
+                        <button type="button" onclick="closeHulpfunctie()">X</button>
+                    </div> 
+                    <div class="grid-x"> <!--content-->
+                        <div class="cell large-3"> <!--afbeelding-->
+                            <img src="content/Pen met microfoon.svg" alt="mascotte">
+                        </div>
+                        <div class="cell large-5 large-offset-1 bord">
+                            <h2>Waar heb je hulp bij nodig?</h2>
+                            <div id="keuze">
+                                <button type="button" onclick="tekst()">De tekst</button>
+                                <button type="button" onclick="vraag()">De vraag</button>
+                            </div>
+                        </div>
+                    </div> 
+                </div> 
+
+                <!---Tekst niet gelezen-->
+                <div class="grid-y" id="naarTekst"> <!--wit vlak-->
+                    <div class="cell large-1">
+                        <button type="button" onclick="closeHulpfunctie()">X</button>
+                    </div> 
+                    <div class="grid-x"> <!--content-->
+                        <div class="cell large-3"> <!--afbeelding-->
+                            <img src="content/Pen met microfoon.svg" alt="mascotte">
+                        </div>
+                        <div class="cell large-5 large-offset-1 bord">
+                            <h2>Het is handig om eerst de tekst te lezen voordat je de vragen beantwoord.</h2>
+                            <div id="keuze">
+                                <button type="button" onclick="tekstOke()">Oke</button>
+                            </div>
+                        </div>
+                    </div> 
+                </div> 
+
+                <!---hulp bij de tekst-->
+                <div class="grid-y" id="hulpTekst"> <!--wit vlak-->
+                    <div class="cell large-1">
+                        <button type="button" onclick="closeHulpfunctie()">X</button>
+                    </div> 
+                    <div class="grid-x"> <!--content-->
+                        <div class="cell large-3"> <!--afbeelding-->
+                            <img src="content/Pen met microfoon.svg" alt="mascotte">
+                        </div>
+                        <div class="cell large-5 large-offset-1 bord">
+                            <h2>Kijk naar de titel en lees regel 1. 
+                                Lees ook regel 4 en 5.</h2>
+                            <div id="keuze">
+                                <button type="button" onclick="oke()">Oke</button>
+                            </div>
+                        </div>
+                    </div> 
+                </div> 
+
+                <!---hulp bij de vraag-->
+                <div class="grid-y" id="hulpVraag"> <!--wit vlak-->
+                    <div class="cell large-1">
+                        <button type="button" onclick="closeHulpfunctie()">X</button>
+                    </div> 
+                    <div class="grid-x"> <!--content-->
+                        <div class="cell large-3"> <!--afbeelding-->
+                            <img src="content/Pen met microfoon.svg" alt="mascotte">
+                        </div>
+                        <div class="cell large-5 large-offset-1 bord"><!--hulp vraag-->
+                            <h2>Over welke panda gaat het? 
+                                Wie heeft er pas een reis gemaakt?</h2>
+                            <div id="keuze">
+                                <button type="button" onclick="oke()">Oke</button>
+                            </div>
+                        </div>                    
+                    </div> 
+                </div> 
+
+
+            </div><!--vak eromheen-->        
+        </div> <!--vak eromheen deel 2--> 
+
+
+    </div><!--#main-->
 </main> 
 
 

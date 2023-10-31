@@ -1,6 +1,6 @@
 
 
-/*header hoeveelste opdracht*/
+/*----header hoeveelste opdracht----*/
 #progress{
     display: flex;
     flex-direction: row;
@@ -18,7 +18,7 @@ align-self: center;
     background: linear-gradient(to right, #77B72A 15%, rgb(225, 225, 225) 16%);
 }
 
-/*--iconen--*/
+/*-----iconen----*/
 #iconen{
     display: flex;
     flex-direction: row;
@@ -31,17 +31,16 @@ align-self: center;
     margin-top: 2rem;
 }
 
-/*--vragen--*/
+/*----vragen-----*/
 #antwoorden{
     display: grid;
     grid-template-rows: auto auto auto;
     margin-bottom: 3rem;
 }
 
-/*opdracht navigatie + controleren*/
+/*----opdracht navigatie + controleren----*/
 #opdrachtNavigatie a{
     background-color: rgb(192, 192, 192);
-    border: solid 2px grey;
     border-radius: 8px;
     color: white;
     padding: 0.2rem 0.6rem;
@@ -49,9 +48,9 @@ align-self: center;
 #controleren{
     color: white;
     background-color: #F8BD66;
-    border: solid 2px orangered;
     border-radius: 8px;
     padding: 0.2rem 0.6rem;
+    margin-bottom: 2rem;
 }
 
 #hiddena1{
@@ -63,7 +62,7 @@ align-self: center;
 
 
 
-/*popup uitleg*/
+/*---------popup uitleg-------------*/
 #uitlegPopup{
     visibility: hidden;
     position: absolute;
@@ -113,7 +112,56 @@ align-self: center;
 }
 
 /*---------- HULPFUNCTIE ------*/
+#hulpfunctie button, #gefeliciteerd{
+    width: 20%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+}
 
+
+/*---popup----*/
+#hulpfunctiePopup .grid-y{
+    background-color: white;
+    width: 66.667%;
+    height: 66.667%;
+    position: absolute;
+    top: 9rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 1rem 3rem;
+    visibility: hidden;
+}
+
+#hulpfunctiePopup .grid-y .grid-x{
+    justify-content: center;
+}
+
+#hulpfunctiePopup h2{
+    text-align: center;
+    margin-top: 6rem;
+}
+#keuze{ /*knoppen*/
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+#keuze button{
+    background-color: #F8BD66;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    font-size: larger;
+}
+
+
+ #moeiteMet, #naarTekst, #hulpVraag, #hulpTekst{
+    visibility: hidden;
+}
 
 
 
