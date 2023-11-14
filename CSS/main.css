@@ -1,3 +1,5 @@
+
+/*--- TYPOGRAFIE ---*/
 h1, h2, h3, h4{
     font-family: 'Asap';
 }
@@ -18,14 +20,42 @@ p, li, ul, a{
     font-size: 18px;
 }
 
+
+
+/*--- DEFAULT ---*/
 button{
     cursor: pointer;
 }
-
-header h3{
-    font-size: 16px;
-    margin: 0;
+a{
+    text-decoration: none;
+    color: black;
 }
+
+
+
+/*--- MAIN ---*/
+/*blauwe achtergrond*/
+main{
+    background-color: #D7E9FB;
+    padding-top: 7rem;
+}
+/*Wit vlak*/
+.main{
+    background-color: white;
+    padding-bottom: 1rem;
+    position: relative;
+}
+/*schermhoogte 100%*/
+.main100{
+    height: 100vh;
+}
+
+
+
+
+
+
+/*--- NAVIGATIE moet dit bij opdrachten? ---*/
 header{
     width: 100%;
     left: 0;
@@ -44,31 +74,23 @@ header{
 .nav a{
     color: #951B81;
 }
+nav h3{
+    font-size: 16px;
+    margin: 0;
+}
+
 #stop{
     color: #56A5EA;
     padding: 1rem 0.6rem;
 }
-#stop  span{
+#stop span{
     color: red;
 }
 
 
-/*-------------- MAIN ----------*/
-main{
-    background-color: #D7E9FB;
-    padding-top: 7rem;
-    height: 100vh;
-}
-#main{
-    background-color: white;
-    padding-bottom: 1rem;
-    position: relative;
-}
 
 
 
 
 
 
-
-/*------------- LEESTEKST --------------*/

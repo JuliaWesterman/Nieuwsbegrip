@@ -12,15 +12,17 @@
     <!--Framework-->
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
+    <script src="JavaScript/app.js"></script>
 
     <!--CSS + javascript-->
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/opdrachten.css">
-    <script src="js/main.js"></script>
+    <script src="JavaScript/main.js"></script>
 </head>
 <body>
 <!------------------------ HEADER ------------------------------>
 <header>
+    <nav>
     <div class="grid-x">
         <div class="cell large-1 nav">
             <a href="index.html"><h3><b>Homepage</b></h3></a>
@@ -39,20 +41,21 @@
             <h3><b>Stoppen <span>X</span></b></h3>
         </div>
     </div>
+    </nav>
 </header>
 
 <!------------------------ MAIN ------------------------------>
-<main>
+<main class="main100">
     <div class="grid-x"> <!--main-->
 
-        <div class="cell large-8 large-offset-2" id="main"> <!--witte vlak-->
+        <div class="cell large-8 large-offset-2 main"> <!--witte vlak-->
             <div class="grid-y">
                 <div class="cell large-1" id="iconen"><!--iconen rij-->
                     <img src="/content/Pen met microfoon.svg" alt="voorlezen" class="cell large-1 large-offset-8">
                     <button type="button" onclick="openUitleg()"><img src="/content/Boek Uitleg 2.1.svg" alt="Uitleg" class="large-1"></button>
                     <img src="/content/Boek leesteks.svg" alt="leestekst" class="large-1">
                 </div>
-                <div class="cell large-1"><!--vragen rij-->
+                <section class="cell large-1"><!--vragen rij-->
                     <div class="grid-y">
                         <div class="cell large-1 large-offset-1">
                             <h3><b>Opdracht 2</b></h3>
@@ -87,7 +90,7 @@
                                 <button type="button" onclick="controleren()" id="controleren">Controleren</button>
                             </div>
                     </div><!--grid y-->
-                </div><!--vragen-->
+                </section><!--vragen-->
 
                 <div class="cell large-1">
                     <div class="cell large-1 large-offset-7" id="hulpfunctie"><!--hulpfunctie-->
@@ -106,25 +109,25 @@
             </div><!--grid y-->
         </div><!--wit vlak-->
 
-        <div class="grid-x" id="uitlegPopup"> <!--uitleg popup-->
+        <section class="grid-x" id="uitlegPopup"> <!--uitleg popup-->
             <div class="cell large-10 large-offset-1" id="uitleg">
-                    <h2>Wat moet je doen?</h2>
-                    <p class="large-offset-3"><span>Sleutelvraag = </span>deze helpt je de tekst beter te begrijpen</p>
-                    <p class="large-offset-3">Weet je het antwoord op de vraag echt niet?<br>
-                    Klik op het icoon van “leestekst” en lees de tekst nog eens rustig na, op zoek naar het antwoord!</p>
-                    <button type="button" onclick="closeUitleg()">Ik snap het!</button>
-                    <div><img src="content/Boek Uitleg 2.1.svg" alt="Uitleg mascotte"></div>
+                <h2>Wat moet je doen?</h2>
+                <p class="large-offset-3"><span>Sleutelvraag = </span>deze helpt je de tekst beter te begrijpen</p>
+                <p class="large-offset-3">Weet je het antwoord op de vraag echt niet?<br>
+                Klik op het icoon van “leestekst” en lees de tekst nog eens rustig na, op zoek naar het antwoord!</p>
+                <button type="button" onclick="closeUitleg()">Ik snap het!</button>
+                <div><img src="content/Boek Uitleg 2.1.svg" alt="Uitleg mascotte"></div>
             </div>
-        </div>
+        </section>
 
         <!-------------------------- HULPFUNCTIE -------------------------->
 
-        <div class="grid-x" id="hulpfunctiePopup"><!--Hulpfunctie popup-->
+        <section class="grid-x" id="hulpfunctiePopup"><!--Hulpfunctie popup-->
             <div class="cell large-12 large-offset-1">
 
 
                 <!---tekst gelezen?-->
-                <div class="grid-y" id="tekstGelezen"> <!--wit vlak-->
+                <section class="grid-y" id="tekstGelezen"> <!--wit vlak-->
                     <div class="cell large-1">
                         <button type="button" onclick="closeHulpfunctie()">X</button>
                     </div> 
@@ -140,10 +143,10 @@
                             </div>
                         </div>
                     </div> 
-                </div>  
+                </section>  
 
                 <!---moeite met-->
-                <div class="grid-y" id="moeiteMet"> <!--wit vlak-->
+                <section class="grid-y" id="moeiteMet"> <!--wit vlak-->
                     <div class="cell large-1">
                         <button type="button" onclick="closeHulpfunctie()">X</button>
                     </div> 
@@ -159,10 +162,10 @@
                             </div>
                         </div>
                     </div> 
-                </div> 
+                </section> 
 
                 <!---Tekst niet gelezen-->
-                <div class="grid-y" id="naarTekst"> <!--wit vlak-->
+                <section class="grid-y" id="naarTekst"> <!--wit vlak-->
                     <div class="cell large-1">
                         <button type="button" onclick="closeHulpfunctie()">X</button>
                     </div> 
@@ -177,10 +180,10 @@
                             </div>
                         </div>
                     </div> 
-                </div> 
+                </section> 
 
                 <!---hulp bij de tekst-->
-                <div class="grid-y" id="hulpTekst"> <!--wit vlak-->
+                <section class="grid-y" id="hulpTekst"> <!--wit vlak-->
                     <div class="cell large-1">
                         <button type="button" onclick="closeHulpfunctie()">X</button>
                     </div> 
@@ -196,10 +199,10 @@
                             </div>
                         </div>
                     </div> 
-                </div> 
+                </section> 
 
                 <!---hulp bij de vraag-->
-                <div class="grid-y" id="hulpVraag"> <!--wit vlak-->
+                <section class="grid-y" id="hulpVraag"> <!--wit vlak-->
                     <div class="cell large-1">
                         <button type="button" onclick="closeHulpfunctie()">X</button>
                     </div> 
@@ -215,14 +218,14 @@
                             </div>
                         </div>                    
                     </div> 
-                </div> 
+                </section> 
 
 
             </div><!--vak eromheen-->        
-        </div> <!--vak eromheen deel 2--> 
+        </section> <!--vak eromheen deel 2--> 
 
 
-    </div><!--#main-->
+    </div><!--.main-->
 </main> 
 
 

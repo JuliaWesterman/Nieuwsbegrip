@@ -1,6 +1,6 @@
 
 
-/*----header hoeveelste opdracht----*/
+/*----header nav hoeveelste opdracht----*/
 #progress{
     display: flex;
     flex-direction: row;
@@ -18,6 +18,8 @@ align-self: center;
     background: linear-gradient(to right, #77B72A 15%, rgb(225, 225, 225) 16%);
 }
 
+
+
 /*-----iconen----*/
 #iconen{
     display: flex;
@@ -30,6 +32,7 @@ align-self: center;
     height: 5em;
     margin-top: 2rem;
 }
+
 
 /*----vragen-----*/
 #antwoorden{
@@ -208,10 +211,5 @@ align-self: center;
     border-radius: 5px;
     padding: 0.2rem 0.6rem;
     margin-top: 0.9rem;
-}
-
-
-.main{
-    padding-bottom: 1rem;
 }
 
