@@ -21,6 +21,10 @@ Framework opzet desktop(large), tablet(medium) en mobile(small)
 - /div
 - /div
 
+https://get.foundation/sites/docs/xy-grid.html
+
+https://get.foundation/building-blocks/
+
 Bij mergen van branches: 
 - Wanneer safety de nieuwste beste versie is zorg je dat je in de main branch staat en merged from safety
 - Alles pushen op safety --> naar main branch gaan -->  source control --> ... --> branches --> merge branch --> (merge from) safety --> synch :)
