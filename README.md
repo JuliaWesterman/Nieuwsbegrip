@@ -9,9 +9,6 @@ Fftjes wat dingetjes om te onthouden:
     - Om dat slopen te voorkomen werken we in een safety! Gaat het fout, is het goed te fiksen!
 - Lekker veel communiceren, beter te veel dan te weinig :)
     - Denk hierbij ook aan comments plaatsen in je code, zodat we makkelijk terug vinden wat de code betekent
-- Overleggen wat de werkflow wordt: aparte css pagina's doen met een main? Makkelijker individueel aan te tonen en makkelijker te werken
-- Moeten we iets van een systeem verzinnen waarmee we kunnen onthouden wie wat heeft gedaan? Zorgt iedereen individueel ervoor dat ze dit weten? of dmv comments?
-- Overleggen: beginnen we met het maken van desktop en maken we later mobile of tegelijk? 
 
 Framework opzet desktop(large), tablet(medium) en mobile(small)
 - (grid-x is van links naar rechts, grid-y is van boven naar beneden)
