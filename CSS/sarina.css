@@ -1,0 +1,7 @@
+#tegels img{
+    width: 50%;
+}
+#tegels .cell{
+    background-color: white;
+    margin: 0em 2em 2em 2em;
+}
