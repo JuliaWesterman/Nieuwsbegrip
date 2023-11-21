@@ -1,0 +1,41 @@
+h3{
+    font-size: 16px;
+}
+a{
+    color: black;
+}
+.nav h3{
+    color: blueviolet;
+    text-align: center;
+    padding: 0.5rem;
+    border-right: solid 2px blueviolet;
+    margin: 0;
+}
+nav{
+    background-color: white;
+}
+#voortgangdiv{
+    display: flex;
+    flex-direction: row;
+}
+#voortgangdiv h3{
+    color:  rgb(15, 232, 15);
+    font-weight: bold;
+    padding: 0.5rem;
+}
+#voortgang{
+    height: 1rem;
+    width: 70%;
+    margin: 0.7rem;
+    background: linear-gradient(to right, rgb(15, 232, 15) 16%, rgb(209, 209, 209) 17%);
+}
+
+#stoppen h3{
+    color: rgb(0, 98, 255);
+    font-weight: bold;
+    padding: 0.5rem;
+}
+#stoppen span{
+    color: red;
+}
+
