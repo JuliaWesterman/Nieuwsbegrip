@@ -1,4 +1,4 @@
-#basislestegels {
+#tegelsbasisles {
     display: flex;
     flex-direction: row;
     margin: auto;
@@ -6,7 +6,45 @@
 }
 
 .tegel {
+    text-align: center;
+    height: 18em;
+    width: 18em;
     margin: 2rem;
-    background-color: red;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 4px 6px 23px gray; /*10px bepaald de 'blur'*/
 }
 
+#tegelsbasisles img {
+    width: 10em;
+    height: 10em;
+}
+
+#tegelsbasisles .cell h2 {
+    color: #C7067F;
+    font-style: bold;
+}
+
+#tegelsbasisles .cell p {
+    color: #808080;
+}
+
+
+#leestekstlink img {
+    width: 5em;
+    height: 5em;
+}
+
+#leestekstlink {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem
+}
+
+#leestekstlink h2 {
+    color: #C7067F;
+    font-style: bold;
+}
