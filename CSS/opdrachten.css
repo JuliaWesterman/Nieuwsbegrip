@@ -83,7 +83,7 @@ align-self: center;
     background-color: #949494;
     border-radius: 8px;
     color: white;
-    padding: 0.5rem 0.8rem;
+    padding: 0.65rem 1rem;
     font-weight: bold;
 }
 #controleren{
@@ -91,8 +91,9 @@ align-self: center;
     font-weight: bold;
     background-color: #EC671B;
     border-radius: 8px;
-    padding: 0.7rem 0.8rem;
-    margin-bottom: 2rem;
+    width: 7rem;
+    height: 2.5rem;
+    margin-bottom: 1rem;
 }
 
 
@@ -128,13 +129,14 @@ align-self: center;
     margin-top: 1rem;
 }
 #uitleg button{
-    background-color: #EC671B;
     color: white;
-    padding: 0.5rem 1rem;
-    border-radius: 10px;
-    margin-top: 4rem;
-    font-size: larger;
     font-weight: bold;
+    background-color: #EC671B;
+    border-radius: 8px;
+    padding: 0.7rem 0.8rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    font-size: larger;
 }
 
 /*mascotte*/
@@ -182,7 +184,8 @@ align-self: center;
 /*---popup----*/
 #hulpfunctiePopup .grid-y{
     background-color: white;
-    border: solid 0.3rem #D7E9FB;
+    border: solid 0.3rem #EC671B;
+    border-radius: 20px;
     width: 50.667%;
     height: 50.667%;
     position: absolute;
@@ -196,12 +199,14 @@ align-self: center;
 
 #hulpfunctiePopup .grid-y .grid-x{
     justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
 }
 
 
 #hulpfunctiePopup h2{
     text-align: center;
-    margin-top: 6rem;
+    width: 100%;
 }
 #keuze{ /*knoppen*/
     display: flex;
@@ -213,7 +218,8 @@ align-self: center;
 #keuze button{
     background-color: #EC671B;
     color: white;
-    padding: 0.5rem 1rem;
+    width: 5rem;
+    height: 2.5rem;
     border-radius: 10px;
     font-size: larger;
 }
@@ -221,7 +227,9 @@ align-self: center;
 .sluitHulp{
     color: red;
     font-weight: bold;
-    font-size: 25px;
+    font-size: 2rem;
+    margin-top: 1rem;
+
 
 }
 
