@@ -1,4 +1,17 @@
-#basislestegels {
+header .grid-x {
+    justify-content: left;
+}
+
+#basisles h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+#bovenkantgrid {
+    padding-top: 7rem;
+}
+
+#tegelsbasisles {
     display: flex;
     flex-direction: row;
     margin: auto;
@@ -6,7 +19,48 @@
 }
 
 .tegel {
+    text-align: center;
+    height: 18em;
+    width: 18em;
     margin: 2rem;
-    background-color: red;
+    border-radius: 25px;
+    padding: 1.5rem;
+    box-shadow: 4px 6px 23px #ADADAE; /*10px bepaald de 'blur'*/
 }
 
+#tegelsbasisles img {
+    width: 10em;
+    height: 10em;
+}
+
+#tegelsbasisles .cell h2 {
+    color: #C7067F;
+    font-style: bold;
+}
+
+#tegelsbasisles .cell p {
+    color: #808080;
+    margin-top: -0.8rem;
+}
+
+
+#leestekstlink img {
+    width: 4em;
+    height: 4em;
+}
+
+#leestekstlink {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    padding-bottom: 3rem;
+}
+
+#leestekstlink h2 {
+    color: #C7067F;
+    font-weight: bold;
+    padding-left: 0.7rem;
+}

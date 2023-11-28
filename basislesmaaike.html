@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nieuwsbegrip | Basislessen</title>
+    <title>Nieuwsbegrip | Basisles</title>
         <!--lettertype-->
         <link rel="stylesheet" href="https://use.typekit.net/ezq3eak.css">
         <link rel="stylesheet" href="https://use.typekit.net/ezq3eak.css">  
@@ -22,56 +22,69 @@
 
 
 <body>
-    <header>
-        <nav> <!--Navigatie bovenaan-->
-            <div class="grid-x">
-                <!--Deze week-->
-                <div class="cell large-1 nav"> <!--nav gelinkt aan main css, zorgt voor paarse kleur en strepen ertussen-->
-                    <h3><b>Deze week</b></h3>
-                </div>
-                <!--Basisles-->
-                <div class="cell large-1 nav"> <!--nav gelinkt aan main css, zorgt voor paarse kleur en strepen ertussen-->
-                    <h3>Basisles</h3>
-                </div>
-                <!--Stoppen X-->
-                <div class="cell large-1 large-offset-8" id="stoppen">
-                    <h3>Stoppen<span>X</span></h3> <!--met span kan je een specifiek onderdeel van de tekst vormgeven-->
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main>
+<!--Basisles (Maaike)-->
+<!--Navigatiebalk-->
+<header>
+    <nav>
         <div class="grid-x">
-            <div class="cell large-8 large-offset-2 main"> <!--wit vlak-->
-                <div class="grid-x">
-                    <div class="cell large-1 large-offset-1"> <!--pijltje terug-->
-                        <h3>pijltje</h3>
-                    </div>
-                    <div class="cell large-4 large-offset-2"> <!--Basisles titel bovenaan witte vlak-->
-                        <h1>Basisles</h1>
-                    </div>
-                </div>
-                <div class="grid-x" id="gridtegels">
-                    <div class="cell large-12" id="tegelsbasisles">
-                        <div class="tegel">
-                            <img>
-                            <h2>Actief lezen</h2>
-                        </div>
-                        <div class="tegel">
-                            <img>
-                            <h2>Actief lezen</h2>
-                        </div>
-                        <div class="tegel">
-                            <img>
-                            <h2>Actief lezen</h2>
-                        </div>
-                    </div>
-                </div>
+            <div class="cell large-1 medium-1 small-1 nav" id="homeLink">
+                <a href="index.html">
+                    <img src="content/home.svg">
+                    <h3 class="hide-for-small-only"><b>Homepage</b></h3>
+                </a>
+            </div>
+            <div class="cell large-1 medium-2 hide-for-small-only nav">
+                <a href="basisles.html"><h3>Basisles</h3></a>
+            </div>
+            <div class="cell large-1 medium-2 small-1 large-offset-8" id="stop">
+                <a href="basisles.html"><h3><span class="hide-for-small-only">Stoppen</span>  X</h3></a>
             </div>
         </div>
+        </nav>
+ </header>
 
+<main class="main100"> <!--main100 zorgt voor lichtblauwe achtergrond over gehele pagina-->
+    <div class="grid-x">
+        <!--wit vlak-->
+        <div class="cell large-8 large-offset-2 main" id="bovenkantgrid"> 
+             <div class="grid-x">
+                <!--pijltje terug-->
+                <div class="cell large-1 large-offset-1"> 
+                    <img src="content/Pijltje terug.svg" alt="Pijltje terug">
+                </div>
+                <!--Basisles titel bovenaan witte vlak-->
+                 <div class="cell large-4 large-offset-2" id="basisles"> 
+                    <h1>Basisles</h1>
+                 </div>
+            </div>
 
-
-    </main>
+            <!--Rij Tegels-->
+            <div class="grid-x" id="tegelsbasisles">
+                <!--Tegel Actief Lezen-->
+                <div class="cell tegel"> 
+                    <img src="content/Pen met laptop.svg" alt="Pen met een laptop">
+                    <h2>Actief lezen</h2>
+                    <p>Je bent bezig</p>
+                </div>
+                <!--Tegel Tussenopdracht-->
+                <div class="cell tegel"> 
+                    <img src="content/Pen met schilderij.svg" alt="Pen met een schilderij">
+                     <h2>Tussenopdracht</h2>
+                     <p>Je bent nog niet begonnen</p>
+                </div>
+                <!--Tegel Opdrachten-->
+                <div class="cell tegel"> 
+                     <img>
+                    <h2>Opdrachten</h2>
+                    <p>Je bent klaar</p>
+                </div>
+            </div>
+            <div id="leestekstlink">
+                <img src="content/Boek leestekst.svg" alt="Leestekst met vergrootglas icoon">
+                <h2>Leestekst</h2>
+            </div>
+        </div>
+    </div>
+ </main>
 </body>
 </html>

@@ -1,26 +1,48 @@
-#antwoorden{
-    display: grid;
-    grid-template-rows: auto auto auto;
-    margin-bottom: 3rem;
+#instellingenTitel{
+    color: #951B81;
+    margin:auto;
+    font-family: 'Asap', sans-serif;
+    text-align: center;
 }
 
-#progress{
+.lettergrootte{
     display: flex;
     flex-direction: row;
-    gap: 0.7rem;
-}
-#progress > h3{
-    color: #77B72A;
-    align-self: center;
-    padding-left: 1rem;
-}
-#progressBalk{
-align-self: center;
-    height: 1.2rem;
-    width: 60%;
-    background: linear-gradient(to right, #77B72A 15%, rgb(225, 225, 225) 16%);
+    max-width: 150px;
 }
 
-.huisje-homepage{
- 
+#achtergrondVlakA{
+    background-color: #951B81;
+    color: white;
+    margin-right: 60px;
+    margin-left: 80px;
+    text-align: center;
 }
+
+#achtergrondVlakA2{
+    background-color: #951B81;
+    color: white;
+    margin-right: 80px;
+    text-align: center;
+    vertical-align: baseline;
+}
+
+#achtergrondVlakA3{
+    background-color: #951B81;
+    color: white;
+    margin-right: 80px;
+    text-align: center;
+}
+
+#achtergrondVlakA h3{
+    font-size: 2rem;
+}
+
+#achtergrondVlakA2 h3{
+    font-size: 2.5rem;
+}
+
+#achtergrondVlakA3 h3{
+    font-size: 3rem;
+}
+
