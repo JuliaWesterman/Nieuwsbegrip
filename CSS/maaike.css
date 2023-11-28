@@ -1,3 +1,11 @@
+#basisles h1 {
+    text-align: center;
+}
+
+#bovenkantgrid {
+    padding-top: 7rem;
+}
+
 #tegelsbasisles {
     display: flex;
     flex-direction: row;
@@ -41,7 +49,8 @@
     margin-top: 4rem;
     flex-direction: row;
     align-items: center;
-    gap: 0.5rem
+    gap: 0.5rem;
+    padding-bottom: 3rem;
 }
 
 #leestekstlink h2 {
