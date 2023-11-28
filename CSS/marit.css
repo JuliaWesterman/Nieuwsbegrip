@@ -1,4 +1,48 @@
 #instellingenTitel{
     color: #951B81;
     margin:auto;
+    font-family: 'Asap', sans-serif;
+    text-align: center;
 }
+
+.lettergrootte{
+    display: flex;
+    flex-direction: row;
+    max-width: 150px;
+}
+
+#achtergrondVlakA{
+    background-color: #951B81;
+    color: white;
+    margin-right: 60px;
+    margin-left: 80px;
+    text-align: center;
+}
+
+#achtergrondVlakA2{
+    background-color: #951B81;
+    color: white;
+    margin-right: 80px;
+    text-align: center;
+    vertical-align: baseline;
+}
+
+#achtergrondVlakA3{
+    background-color: #951B81;
+    color: white;
+    margin-right: 80px;
+    text-align: center;
+}
+
+#achtergrondVlakA h3{
+    font-size: 2rem;
+}
+
+#achtergrondVlakA2 h3{
+    font-size: 2.5rem;
+}
+
+#achtergrondVlakA3 h3{
+    font-size: 3rem;
+}
+
