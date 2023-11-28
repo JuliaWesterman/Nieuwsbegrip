@@ -74,7 +74,7 @@
 
 .dropdown a{
     display: block;
-    color: black;
+    color: white;
     text-decoration: none;
     padding: 10px 15px;
 }
@@ -92,10 +92,51 @@
 }
 
 .dropdown:hover .button{
-    background-color: aquamarine;
+    background-color:#951B81; 
 }
 
 .dropdown a:hover{
-    background-color: aquamarine;
+    background-color: #951B81; 
 }
     
+/* Slider */
+.slidecontainer {
+    width: 40rem;
+  }
+  
+  .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5rem;
+    background:#951B81;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border-style: black;
+    background: #1ebc16;
+    cursor: pointer;    
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
+
