@@ -1,18 +1,32 @@
+/*ID MOET CLASS WEZEN MAAR CSS IS VERVLOEKT!!!!!!!*/
 
-
+#titel {
+    background-image: url("../content/Pandaimg.svg");
+    padding-top: 5em;
+}
 
 #tegels{
 	grid-gap: 1rem;
-    margin:3rem;
+    margin: 1rem 8rem;
+    
 }
 
 #tegels img{
     width: 10em;
+    height: 10em;
 }
 #tegels .cell{
     background-color: white;
     padding: 1.5rem;
+    width: 18em;
+    height: 18em;
+    box-shadow: gray 4px 6px 23px;
     text-align: center;
     border-radius: 10px;
+    color: #C7067F;
+    font-style: bold;
 }
 
+#tegels .cell p{
+    color: #808080;
+}
