@@ -1,0 +1,71 @@
+/*----header nav hoeveelste opdracht----*/
+#progress{
+    display: flex;
+    flex-direction: row;
+    gap: 0.7rem;
+}
+#progress > h3{
+    color: #77B72A;
+    align-self: center;
+    padding-left: 1rem;
+}
+#progressBalk{
+align-self: center;
+    height: 1.2rem;
+    width: 60%;
+    background: linear-gradient(to right, #77B72A 15%, rgb(225, 225, 225) 16%);
+}
+
+
+
+/*lichtblauwe achtergrond*/
+.voorleesonderdeel { 
+    background-color: #D7E8FB;
+    margin: 0.2rem;
+    height: 10rem; 
+}
+
+#leesmaskervlak {
+    border-radius: 0.7rem 0rem 0rem 0.7rem;
+}
+
+#afspelenvlak {
+    border-radius: 0rem 0.7rem 0.7rem 0rem;
+}
+
+#afspelenvlak img {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+/*titels van de functies in voorleesfunctie*/
+.voorleesonderdeel h3 { 
+    font-weight: bold;
+    padding-left: 0.5rem;
+}
+
+/*extra uitleg functies tekst*/
+.voorleesonderdeel p { 
+    color: #808080;
+    padding-left: 0.5rem;
+    margin-top: -0.8rem;
+    font-size: 0.8rem;
+}
+
+/*iconen van de verschillende functies*/
+.voorleesonderdeel img { 
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+ }
+
+/*'voorlezen' tekst onder icoon pen*/
+#voorlezenicoon p { 
+    font-weight: bold;
+}
+
+/*witruimte om voorleesfunctie*/
+.main .grid-x {
+    margin: 3rem;
+}
