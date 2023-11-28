@@ -1,5 +1,10 @@
+header .grid-x {
+    justify-content: left;
+}
+
 #basisles h1 {
     text-align: center;
+    font-weight: bold;
 }
 
 #bovenkantgrid {
@@ -18,9 +23,9 @@
     height: 18em;
     width: 18em;
     margin: 2rem;
-    border-radius: 10px;
+    border-radius: 25px;
     padding: 1.5rem;
-    box-shadow: 4px 6px 23px gray; /*10px bepaald de 'blur'*/
+    box-shadow: 4px 6px 23px #ADADAE; /*10px bepaald de 'blur'*/
 }
 
 #tegelsbasisles img {
@@ -35,12 +40,13 @@
 
 #tegelsbasisles .cell p {
     color: #808080;
+    margin-top: -0.8rem;
 }
 
 
 #leestekstlink img {
-    width: 5em;
-    height: 5em;
+    width: 4em;
+    height: 4em;
 }
 
 #leestekstlink {
@@ -55,5 +61,6 @@
 
 #leestekstlink h2 {
     color: #C7067F;
-    font-style: bold;
+    font-weight: bold;
+    padding-left: 0.7rem;
 }
