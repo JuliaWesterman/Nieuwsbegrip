@@ -42,10 +42,6 @@ function openHulpfunctie(){
     document.getElementById("tekstGelezen").style.visibility = "visible";
 };
 
-function closeHulpfunctie(){
-    document.getElementById("hulpfunctiePopup").style.visibility = "hidden";
-};
-
 
 
 /*-----door de hulpfunctie heen----*/
@@ -83,3 +79,14 @@ function oke(){
     document.getElementById("hulpTekst").style.visibility = "hidden";
     document.getElementById("hulpfunctiePopup").style.visibility = "hidden";
 }
+
+
+
+function closeHulpfunctie(){ /*alles moet sluiten*/
+    // document.getElementById("hulpfunctiePopup").style.visibility = "hidden";
+    document.getElementById("tekstGelezen").style.visibility = "hidden";
+    document.getElementById("moeiteMet").style.visibility = "hidden";
+    document.getElementById("naarTekst").style.visibility = "hidden";
+    document.getElementById("hulpVraag").style.visibility = "hidden";
+    document.getElementById("hulpTekst").style.visibility = "hidden";
+};
