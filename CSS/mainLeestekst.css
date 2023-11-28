@@ -12,7 +12,7 @@ h3{
     font-size: 25px;
 }
 h4{
-    font-size: 18px;
+    font-size: 12px;
 }
 p, li, ul, a{
     font-family: 'Open Sans';
@@ -78,9 +78,16 @@ nav{
     color: red;
 }
 
-main{
-    
-}
+
 #grid-x{
     color: white;
 }
+
+#pijltje span{
+    color:blueviolet
+}
+
+h4{
+    text-align: center;
+}
+
