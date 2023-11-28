@@ -1,31 +1,6 @@
 
 /*---------- JULIAAAAAA --------*/
 
-/*navigatie werkend maken*/
-
-@media screen and (max-width: 640px){
-    header .grid-x{
-        justify-content: space-between;
-    }
-    #homeLink{
-    text-align: left;
-    }
-    .nav{
-        border: none;
-    }
-    .main100 > .grid-x{
-        width: 95%;
-        margin: auto;
-    }
-    #iconen{
-        align-items: center;
-    }
-}
-
-
-
-
-
 /*----header nav hoeveelste opdracht----*/
 #progress{
     display: flex;
@@ -166,11 +141,14 @@ align-self: center;
     width: 100%;
 }
 
-
 #hulpfunctieHover{
     position: absolute;
     right: 0;
     bottom: 0;
+    visibility: hidden;
+}
+
+#hulpfunctieHover{
     visibility: hidden;
 }
 #hulpfunctieShow:hover > #hulpfunctieHover{
@@ -238,6 +216,92 @@ align-self: center;
 
 
 
+/*navigatie werkend maken*/
+
+@media screen and (max-width: 640px){
+    header .grid-x{
+        justify-content: space-between;
+    }
+    #homeLink{
+    text-align: left;
+    }
+    .nav{
+        border: none;
+    }
+    .main100{
+        height: 100%;
+    }
+    .main100 > .grid-x{
+        width: 95%;
+        margin: auto;
+    }
+    #iconen{
+        margin: auto;
+        scale: 80%;
+    }
+
+    #hulpfunctiePopup .grid-y{
+        width: 90%;
+        padding: 1rem;
+    }
+    #andereMargin{
+        margin-top: -2rem;
+    }
+
+    #hulpfunctiePopup .grid-y h2{
+        scale: 80%;
+        width: 100%;
+    }
+
+    #hulpfunctiePopup img{
+        margin: 0;
+    }
+
+    #hulpfunctieKlein{
+        position: relative;
+        width: max-content;
+        visibility: hidden;
+    }
+}
+
+
+
+@media screen and (max-width: 1024px){
+    #uitleg{
+        padding: 1rem;
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+
+    #uitleg p{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 1245px){
+    #uitleg div{
+        visibility: hidden;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*---------------------------------------------- BASISLESSEN PAGINA --------------------------------------------*/
 #titel h2{
     margin: 3rem 0 1.5rem 0;
@@ -282,3 +346,26 @@ align-self: center;
     margin-top: 0.9rem;
 }
 
+
+
+
+
+/*shhhhh*/
+    /* #hulpfunctie button, #gefeliciteerd{
+        width: 25%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        visibility: hidden;
+    }
+    
+    #hulpfunctie img{
+        width: 100%;
+    }
+    
+    #hulpfunctieHover{
+        position: absolute;
+        left: 0;
+        top: 0;
+        visibility: hidden;
+    } */
