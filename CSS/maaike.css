@@ -1,0 +1,12 @@
+#basislestegels {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: max-content;
+}
+
+.tegel {
+    margin: 2rem;
+    background-color: red;
+}
+

@@ -24,21 +24,24 @@
 <header>
     <nav>
     <div class="grid-x">
-        <div class="cell large-1 nav">
-            <a href="index.html"><h3><b>Homepage</b></h3></a>
+        <div class="cell large-1 medium-1 small-1 nav" id="homeLink">
+            <a href="index.html">
+                <img src="content/home.svg">
+                <h3 class="hide-for-small-only"><b>Homepage</b></h3>
+            </a>
         </div>
-        <div class="cell large-1 nav">
-            <a href="basisles.html"><h3>Basislessen</h3></a>
+        <div class="cell large-1 medium-2 hide-for-small-only nav">
+            <a href="basisles.html"><h3>Basisles</h3></a>
         </div>
-        <div class="cell large-1 nav">
-            <a href="basisles.html"><h3>Actief lezen</h3></a>
+        <div class="cell large-1 medium-2 hide-for-small-only nav">
+            <a href="basisles.html"><h3>Opdrachten</h3></a>
         </div>
-        <div class="cell large-8" id="progress">
+        <div class="cell large-7 medium-3 small-7" id="progress">
             <h3><b>Opdracht 2 van 16</b></h3>
-            <div id="progressBalk"></div>
+            <div id="progressBalk" class="hide-for-small-only hide-for-medium-only"></div>
         </div>
-        <div class="cell large-1" id="stop">
-            <h3><b>Stoppen <span>X</span></b></h3>
+        <div class="cell large-1 medium-2 small-1" id="stop">
+            <a href="basisles.html"><h3><span class="hide-for-small-only">Stoppen</span>  X</h3></a>
         </div>
     </div>
     </nav>
@@ -48,15 +51,31 @@
 <main class="main100">
     <div class="grid-x"> <!--main-->
 
-        <div class="cell large-8 large-offset-2 main"> <!--witte vlak-->
+        <div class="cell large-8 large-offset-2 medium-12 small-12 main"> <!--witte vlak-->
             <div class="grid-y">
-                <div class="cell large-1" id="iconen"><!--iconen rij-->
-                    <img src="/content/Pen met microfoon.svg" alt="voorlezen" class="cell large-1 large-offset-8">
-                    <button type="button" onclick="openUitleg()"><img src="/content/Boek Uitleg 2.1.svg" alt="Uitleg" class="large-1"></button>
-                    <img src="/content/Boek leesteks.svg" alt="leestekst" class="large-1">
+
+
+                <!-- ICONEN / MASCOTTES -->
+                <div class="cell large-1 align-right" id="iconen"><!--iconen rij-->
+                    <div class="icoonMetTekst">
+                        <img src="/content/Pen met microfoon.svg" alt="voorlezen">
+                        <p>Voorlezen</p>
+                    </div>
+                    
+                    <div class="icoonMetTekst">
+                        <button type="button" onclick="openUitleg()"><img src="/content/Boek Uitleg 2.1.svg" alt="Uitleg"></button>
+                        <p>Uitleg</p>
+                    </div>
+                    
+                    <div class="icoonMetTekst">
+                      <img src="/content/Boek leestekst.svg" alt="leestekst">
+                      <p>Leestekst</p>
+                    </div>                
                 </div>
+                
+                <!-- OPDRACHT -->
                 <section class="cell large-1"><!--vragen rij-->
-                    <div class="grid-y">
+                    <div class="grid-y" id="opdrachtGrid">
                         <div class="cell large-1 large-offset-1">
                             <h3><b>Opdracht 2</b></h3>
                         </div>
@@ -73,7 +92,7 @@
                         <form class="cell large-4 large-offset-1" id="antwoorden"> <!--antwoorden-->
                             <div>
                                 <input type="radio" name="antwoord" value="false1" id="antwoord1">
-                                <label for="antwoord1" id="a1">De reis van de ouders van panda Fan Xing naar Ouwehands Dierenpark. <span class="hidden" id="hiddena1">X</span></label>
+                                <label for="antwoord1" id="a1">De reis van de ouders van panda Fan Xing naar Ouwehands Dierenpark.</label>
                             </div>                    
                             <div>
                                 <input type="radio" name="antwoord" value="true" id="antwoord2">
@@ -81,20 +100,24 @@
                             </div>                    
                             <div>
                                 <input type="radio" name="antwoord" value="false2" id="antwoord3">
-                                <label for="antwoord3" id="a3">De reis van panda Fan Xing naar haar ouders in Rhenen. <span class="hidden" id="hiddena2">X</span></label>
+                                <label for="antwoord3" id="a3">De reis van panda Fan Xing naar haar ouders in Rhenen.</label>
                             </div>    
                         </form>
 
                             <div class="cell large-2 large-offset-1" id="opdrachtNavigatie"> <!--controleren-->
-                                <a href="#">Vorige</a>
+                                <a href="#">&lt;&lt; Vorige</a>
                                 <button type="button" onclick="controleren()" id="controleren">Controleren</button>
                             </div>
                     </div><!--grid y-->
                 </section><!--vragen-->
 
+                <!--hulpfunctie knop/afbeeldingen -->
                 <div class="cell large-1">
                     <div class="cell large-1 large-offset-7" id="hulpfunctie"><!--hulpfunctie-->
-                        <button type="button" onclick="openHulpfunctie()" id="hulpfunctieShow"><img src="content/hulpfunctie.png"></button>
+                        <button type="button" onclick="openHulpfunctie()" id="hulpfunctieShow">
+                            <img id="hulpfunctieNormaal" src="content/hulpfunctie.svg">
+                            <img id="hulpfunctieHover" src="content/hulpfunctieHover.svg">
+                        </button>
                     </div>
                 </div>
 
@@ -109,7 +132,8 @@
             </div><!--grid y-->
         </div><!--wit vlak-->
 
-        <section class="grid-x" id="uitlegPopup"> <!--uitleg popup-->
+        <!-- UITLEG POPUP -->     
+        <section class="grid-x" id="uitlegPopup"> 
             <div class="cell large-10 large-offset-1" id="uitleg">
                 <h2>Wat moet je doen?</h2>
                 <p class="large-offset-3"><span>Sleutelvraag = </span>deze helpt je de tekst beter te begrijpen</p>
@@ -120,6 +144,8 @@
             </div>
         </section>
 
+
+
         <!-------------------------- HULPFUNCTIE -------------------------->
 
         <section class="grid-x" id="hulpfunctiePopup"><!--Hulpfunctie popup-->
@@ -129,7 +155,7 @@
                 <!---tekst gelezen?-->
                 <section class="grid-y" id="tekstGelezen"> <!--wit vlak-->
                     <div class="cell large-1">
-                        <button type="button" onclick="closeHulpfunctie()">X</button>
+                        <button type="button" onclick="closeHulpfunctie()" class="sluitHulp">X</button>
                     </div> 
                     <div class="grid-x"> <!--content-->
                         <div class="cell large-3"> <!--afbeelding-->
@@ -148,7 +174,7 @@
                 <!---moeite met-->
                 <section class="grid-y" id="moeiteMet"> <!--wit vlak-->
                     <div class="cell large-1">
-                        <button type="button" onclick="closeHulpfunctie()">X</button>
+                        <button type="button" onclick="closeHulpfunctie()" class="sluitHulp">X</button>
                     </div> 
                     <div class="grid-x"> <!--content-->
                         <div class="cell large-3"> <!--afbeelding-->
@@ -167,7 +193,7 @@
                 <!---Tekst niet gelezen-->
                 <section class="grid-y" id="naarTekst"> <!--wit vlak-->
                     <div class="cell large-1">
-                        <button type="button" onclick="closeHulpfunctie()">X</button>
+                        <button type="button" onclick="closeHulpfunctie()" class="sluitHulp">X</button>
                     </div> 
                     <div class="grid-x"> <!--content-->
                         <div class="cell large-3"> <!--afbeelding-->
@@ -185,7 +211,7 @@
                 <!---hulp bij de tekst-->
                 <section class="grid-y" id="hulpTekst"> <!--wit vlak-->
                     <div class="cell large-1">
-                        <button type="button" onclick="closeHulpfunctie()">X</button>
+                        <button type="button" onclick="closeHulpfunctie()" class="sluitHulp">X</button>
                     </div> 
                     <div class="grid-x"> <!--content-->
                         <div class="cell large-3"> <!--afbeelding-->
@@ -204,7 +230,7 @@
                 <!---hulp bij de vraag-->
                 <section class="grid-y" id="hulpVraag"> <!--wit vlak-->
                     <div class="cell large-1">
-                        <button type="button" onclick="closeHulpfunctie()">X</button>
+                        <button type="button" onclick="closeHulpfunctie()" class="sluitHulp">X</button>
                     </div> 
                     <div class="grid-x"> <!--content-->
                         <div class="cell large-3"> <!--afbeelding-->

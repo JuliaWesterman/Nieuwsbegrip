@@ -7,8 +7,6 @@ function controleren(){
     if (document.getElementById("antwoord1").checked){
         document.getElementById("a1").style.color = "red";
         document.getElementById("a1").style.textDecoration = "line-through";
-        document.getElementById("hiddena1").style.visibility = "visible";
-        document.getElementById("hiddena1").style.textDecoration = "none";
         document.getElementById("hulpfunctieShow").style.visibility = "visible";        
     };
     /*goed*/
