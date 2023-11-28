@@ -1,0 +1,26 @@
+#antwoorden{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    margin-bottom: 3rem;
+}
+
+#progress{
+    display: flex;
+    flex-direction: row;
+    gap: 0.7rem;
+}
+#progress > h3{
+    color: #77B72A;
+    align-self: center;
+    padding-left: 1rem;
+}
+#progressBalk{
+align-self: center;
+    height: 1.2rem;
+    width: 60%;
+    background: linear-gradient(to right, #77B72A 15%, rgb(225, 225, 225) 16%);
+}
+
+.huisje-homepage{
+ 
+}

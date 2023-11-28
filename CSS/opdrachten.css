@@ -1,4 +1,30 @@
 
+/*---------- JULIAAAAAA --------*/
+
+/*navigatie werkend maken*/
+
+@media screen and (max-width: 640px){
+    header .grid-x{
+        justify-content: space-between;
+    }
+    #homeLink{
+    text-align: left;
+    }
+    .nav{
+        border: none;
+    }
+    .main100 > .grid-x{
+        width: 95%;
+        margin: auto;
+    }
+    #iconen{
+        align-items: center;
+    }
+}
+
+
+
+
 
 /*----header nav hoeveelste opdracht----*/
 #progress{
@@ -25,44 +51,54 @@ align-self: center;
     display: flex;
     flex-direction: row;
     gap: 0.5rem;
-    margin-left: 2rem;
+    margin-left: -2rem;
 }
 #iconen img{
     width: 5em;
     height: 5em;
     margin-top: 2rem;
 }
+.icoonMetTekst{
+    text-align: center;
+    font-weight: bold;
+    align-self:last baseline;
+}
+.icoonMetTekst p {
+    font-size: 14px;
+}
 
 
 /*----vragen-----*/
+#opdrachtGrid{
+    padding: 1rem;
+}
 #antwoorden{
     display: grid;
     grid-template-rows: auto auto auto;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
 }
 
 /*----opdracht navigatie + controleren----*/
 #opdrachtNavigatie a{
-    background-color: rgb(192, 192, 192);
+    background-color: #949494;
     border-radius: 8px;
     color: white;
-    padding: 0.2rem 0.6rem;
+    padding: 0.5rem 0.8rem;
+    font-weight: bold;
 }
 #controleren{
     color: white;
-    background-color: #F8BD66;
+    font-weight: bold;
+    background-color: #EC671B;
     border-radius: 8px;
-    padding: 0.2rem 0.6rem;
+    padding: 0.7rem 0.8rem;
     margin-bottom: 2rem;
 }
 
-#hiddena1{
-    visibility: hidden;
-}
-#hiddena2{
-    visibility: hidden;
-}
 
+#opdrachtNavigatie button, #opdrachtNavigatie a{
+    font-size: 14px;
+}
 
 
 /*---------popup uitleg-------------*/
@@ -92,12 +128,13 @@ align-self: center;
     margin-top: 1rem;
 }
 #uitleg button{
-    background-color: #F8BD66;
-    color: black;
+    background-color: #EC671B;
+    color: white;
     padding: 0.5rem 1rem;
     border-radius: 10px;
     margin-top: 4rem;
     font-size: larger;
+    font-weight: bold;
 }
 
 /*mascotte*/
@@ -116,10 +153,28 @@ align-self: center;
 
 /*---------- HULPFUNCTIE ------*/
 #hulpfunctie button, #gefeliciteerd{
-    width: 20%;
+    width: 25%;
     position: absolute;
     right: 0;
     bottom: 0;
+    visibility: hidden;
+}
+
+#hulpfunctie img{
+    width: 100%;
+}
+
+
+#hulpfunctieHover{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+}
+#hulpfunctieShow:hover > #hulpfunctieHover{
+    visibility: visible;
+}
+#hulpfunctieShow:hover > #hulpfunctieNormaal{
     visibility: hidden;
 }
 
@@ -127,10 +182,11 @@ align-self: center;
 /*---popup----*/
 #hulpfunctiePopup .grid-y{
     background-color: white;
-    width: 66.667%;
-    height: 66.667%;
+    border: solid 0.3rem #D7E9FB;
+    width: 50.667%;
+    height: 50.667%;
     position: absolute;
-    top: 9rem;
+    top: 11rem;
     left: 0;
     right: 0;
     margin: auto;
@@ -141,6 +197,7 @@ align-self: center;
 #hulpfunctiePopup .grid-y .grid-x{
     justify-content: center;
 }
+
 
 #hulpfunctiePopup h2{
     text-align: center;
@@ -154,13 +211,19 @@ align-self: center;
     margin-top: 1rem;
 }
 #keuze button{
-    background-color: #F8BD66;
+    background-color: #EC671B;
     color: white;
     padding: 0.5rem 1rem;
     border-radius: 10px;
     font-size: larger;
 }
 
+.sluitHulp{
+    color: red;
+    font-weight: bold;
+    font-size: 25px;
+
+}
 
  #moeiteMet, #naarTekst, #hulpVraag, #hulpTekst{
     visibility: hidden;
