@@ -218,7 +218,7 @@ align-self: center;
 #keuze button{
     background-color: #EC671B;
     color: white;
-    width: 5rem;
+    width: 7rem;
     height: 2.5rem;
     border-radius: 10px;
     font-size: larger;
@@ -229,8 +229,6 @@ align-self: center;
     font-weight: bold;
     font-size: 2rem;
     margin-top: 1rem;
-
-
 }
 
  #moeiteMet, #naarTekst, #hulpVraag, #hulpTekst{
