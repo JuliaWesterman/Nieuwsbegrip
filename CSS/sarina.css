@@ -6,8 +6,31 @@ main{
     background-image: linear-gradient(#D7E8FB 45%, white 75%);
 }
 
+/*------------------------------- Navigatie -------------------------------------*/
+#navigatie {
+    margin: 1rem 1rem 1rem 1rem;
+    justify-content: center;
+}
 
-/*------------------------ TITEL ------------------------------*/
+/*----Profiel ----*/
+#cirkel {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #F9F9F7;
+    border: 3px solid #951B81;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#initialen {
+        font-size: 25px;
+        color: black;
+        font-weight: bold;
+}
+
+/*--------------------------------- TITEL ---------------------------------------*/
 #titel {
     background-image: url("../content/Pandaimg.svg"); /*alt toevoegeen*/
     background-repeat: no-repeat;
@@ -21,7 +44,6 @@ main{
     font-weight: bold;
     text-shadow:  0px 3px 6px black ;
 }
-
 
 /*------------------------ TEGEL RIJEN, KEUZE MENU ------------------------------*/
 #tegels{
@@ -55,7 +77,8 @@ main{
 }
 
 
-/*------------------------ BOEKENTIP ------------------------------*/
+/*------------------------------ BOEKENTIP ------------------------------------*/
+/*---- IMG boven de boekentip----*/
 #liggendepanda{
     display: flex;
     flex-direction: inherit;
@@ -66,12 +89,14 @@ main{
     height: 20em;
 }
 
+/*------------ IMG ------------*/
 #boekpanda img{
     margin: 3rem 1rem 1rem 10rem;
     width: 55em;
     height: 18em;
 }
 
+/*------ Boekentip text ------*/
 #boekentiptext{
     margin: 3rem 12rem 1rem 11rem;
 }
@@ -90,14 +115,16 @@ main{
     font-style: italic;
 }
 
-#boekentip a{
+#boekentiptext a{
     color: white;
     font-weight: bold;
     background-color: #EC671B;
     border-radius: 8px;
-    width: 7rem;
-    height: 2.5rem;
-    margin-bottom: 1rem;
+    padding: 0.5rem;
+    margin-bottom: 4rem;
 }
 
-/*------------------------ ..... ------------------------------*/
+#boekentiptext a:hover{ /*---- Muis over de link ----*/
+    background-color: #C57301;
+}
+/*------------------------ ..... ...... ..... .... ------------------------------*/
