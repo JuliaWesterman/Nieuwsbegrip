@@ -1,0 +1,91 @@
+/*HEADER NAVIGATIEBALK*/
+#progress{
+    display: flex;
+    flex-direction: row;
+    gap: 0.7rem;
+}
+#progress > h3{
+    color: #77B72A;
+    align-self: center;
+    padding-left: 1rem;
+}
+#progressBalk{
+align-self: center;
+    height: 1.2rem;
+    width: 60%;
+    background: linear-gradient(to right, #77B72A 15%, rgb(225, 225, 225) 16%);
+}
+
+
+/*PIJLTJE EN ICONEN BOVENAAN WITTE PAGINA*/
+#bovenkantgrid {
+    padding: 2rem;
+    gap: 5rem;
+}
+
+#bovenkantgrid img {
+    width: 5em;
+    height: 5em;
+    margin-top: 2rem;
+}
+
+#icoonmetonderschrift {
+    margin-top: -1.5rem;
+}
+
+#pijltjeterug {
+    margin-top: -1.5rem;
+    margin-left: 2rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+#icoonmetonderschrift p {
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#opdrachttoelichting {
+    padding-left: 5rem;
+}
+
+.tekstvlak {
+    padding: 0.5rem;
+    border: 1px solid gray;
+    outline: none;
+    height: 12rem;
+    width: 50rem;
+}
+
+
+/*CONTROLEREN KNOP*/
+#controlerenknop {
+    padding-left: 5rem;
+    padding-top: 2rem;
+}
+
+#controleren {
+    color: white;
+    font-weight: bold;
+    background-color: #EC671B;
+    border-radius: 8px;
+    width: 7rem;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#controlerenknop button {
+    font-size: 14px;
+}
+
+@media screen and (max-width: 1250px) {
+
+    #opdrachttoelichting {
+        margin-left: -5rem;
+    }
+
+    #controleren {
+        margin-left: -5rem;
+    }
+}
