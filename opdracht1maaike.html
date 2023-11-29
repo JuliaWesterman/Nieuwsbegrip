@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nieuwsbegrip | Voorleesfunctie</title>
+        <!--lettertype-->
+        <link rel="stylesheet" href="https://use.typekit.net/ezq3eak.css">
+        <link rel="stylesheet" href="https://use.typekit.net/ezq3eak.css">  
+        <link rel="stylesheet" href="https://kit.fontawesome.com/e1baee5c3f.css" crossorigin="anonymous">  
+    
+        <!--Framework-->
+        <link rel="stylesheet" href="css/foundation.css">
+        <link rel="stylesheet" href="css/app.css">
+        <script src="JavaScript/app.js"></script>
+    
+        <!--CSS + javascript-->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/opdracht1maaike.css">
+        <script src="JavaScript/main.js"></script>
+</head>
+
+<body>
+<header>
+    <nav>
+        <div class="grid-x">
+            <div class="cell large-1 medium-1 small-1 nav" id="homeLink">
+                <a href="index.html">
+                    <img src="content/home.svg">
+                    <h3 class="hide-for-small-only"><b>Homepage</b></h3>
+                </a>
+            </div>
+            <div class="cell large-1 medium-2 hide-for-small-only nav">
+                <a href="basisles.html"><h3>Basisles</h3></a>
+            </div>
+            <div class="cell large-1 medium-2 hide-for-small-only nav">
+                <a href="basisles.html"><h3>Opdrachten</h3></a>
+            </div>
+            <div class="cell large-7 medium-3 small-7" id="progress">
+                <h3><b>Opdracht 1 van 16</b></h3>
+                <div id="progressBalk" class="hide-for-small-only hide-for-medium-only"></div>
+            </div>
+            <div class="cell large-1 medium-2 small-1" id="stop">
+                <a href="basisles.html"><h3><span class="hide-for-small-only">Stoppen</span>  X</h3></a>
+            </div>
+        </div>
+        </nav>
+</header>
+
+<main class="main100">
+    <div class="grid-x">
+    
+        <!--Witte vlak-->
+        <div class="cell large-8 large-offset-2 main" id="bovenkantgrid"> 
+            <div class="grid-x">
+                
+                <!--Paarse pijltje terug-->
+                <div class="cell large-1" id="pijltjeterug">
+                    <img src="content/Pijltje terug.svg" alt="Pijltje terug">
+                </div>
+
+                <!--Voorlezen icoon-->
+                <div class="cell large-1 large-offset-8" id="icoonmetonderschrift">
+                    <img src="content/Pen met microfoon.svg" alt="Voorlezen icoon">
+                    <p>Voorlezen</p>
+                </div>
+
+                <!--Uitleg icoon-->
+                <div class="cell large-1" id="icoonmetonderschrift">
+                    <img src="content/Boek Uitleg 2.1.svg" alt="Uitleg icoon">
+                    <p>Uitleg</p>
+                </div>
+
+                <!--Leestekst icoon-->
+                <div class="cell large-1" id="icoonmetonderschrift">
+                    <img src="content/Boek leestekst.svg" alt="Leestekst icoon">
+                    <p>Leestekst</p>
+                </div>
+
+            </div>
+
+            <!--Opdracht tekst + tekstvak-->
+            <section id="opdrachttoelichting">
+
+                <!--Uitleg en vraag opdracht 1-->
+                <div id="opdrachttekst">
+                    <h3><b>Opdracht 1</b></h3>
+                    <p>Deze sleutelvraag hoort bij de hele leestekst.</p>
+
+                    <h4><b>Sleutelvraag</b></h4>
+                    <p>Sleutelvraag 1: Welke afspraken met China kom je in de tekst tegen?</p>
+                </div>
+
+                <!--Tekstvlak antwoord-->
+                <textarea class="tekstvlak" placeholder="Typ hier je antwoord..."> </textarea>
+            </section>
+
+            <div id="controlerenknop"> <!--Knop controleren onderaan-->
+                <button type="button" onclick="controleren()" id="controleren">Controleren</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    
+</main>
+
+</body>
+</html>
