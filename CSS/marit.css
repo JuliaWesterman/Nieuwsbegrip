@@ -1,3 +1,4 @@
+/*Instellingen titel */
 #instellingenTitel{
     color: #951B81;
     margin:auto;
@@ -5,44 +6,137 @@
     text-align: center;
 }
 
+/*Het naast elkaar staan van de verschillende lettergroottes */
 .lettergrootte{
     display: flex;
     flex-direction: row;
     max-width: 150px;
 }
 
+/*Kleinste lettertype */
 #achtergrondVlakA{
     background-color: #951B81;
     color: white;
-    margin-right: 60px;
-    margin-left: 80px;
+    margin-top: 5rem;
+    margin-right: 40px;
+    margin-left: 40px;
+    padding-top: 60px;
     text-align: center;
+    height: 100px;
 }
 
+/*Middel lettertype */
 #achtergrondVlakA2{
     background-color: #951B81;
     color: white;
-    margin-right: 80px;
+    margin-top: 5rem;
+    margin-right:40px;
+    padding-top: 25px;
     text-align: center;
-    vertical-align: baseline;
+    height: 100px;
+   
 }
 
+/*grootste lettertype */
 #achtergrondVlakA3{
     background-color: #951B81;
     color: white;
-    margin-right: 80px;
+    margin-top: 5rem;
+    margin-right: 40px;
+    padding-top: 10px;
+    height: 100px;
     text-align: center;
+    
 }
 
+/*--Groottes van de letters (zodat h3 main hier niet op werkt) */
 #achtergrondVlakA h3{
     font-size: 2rem;
 }
-
 #achtergrondVlakA2 h3{
-    font-size: 2.5rem;
+    font-size: 4rem;
+}
+#achtergrondVlakA3 h3{
+    font-size: 5rem;
 }
 
-#achtergrondVlakA3 h3{
-    font-size: 3rem;
+/*--Lettertype knop--*/
+.dropdown{
+    display:inline-block;
 }
+.dropdown button{
+    background-color: #DFDFDF;
+    color: #707070;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.dropdown .content{
+    display: none;
+    position: absolute;
+    background-color: #707070; 
+    min-width: 100px;
+    box-shadow: 2px 2px 5px #DFDFDF;
+}
+
+.dropdown:hover .content{
+    display: block;
+}
+
+.dropdown:hover .button{
+    background-color:#951B81; 
+}
+
+.dropdown a:hover{
+    background-color: #951B81; 
+}
+    
+/* Slider */
+.slidecontainer {
+    width: 40rem;
+  }
+  
+  .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 15px;
+    border-radius: 5rem;
+    background:#951B81;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border-style: black;
+    background: #1ebc16;
+    cursor: pointer;    
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
 

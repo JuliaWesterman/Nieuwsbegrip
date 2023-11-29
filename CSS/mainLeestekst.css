@@ -78,15 +78,13 @@ nav{
     color: red;
 }
 
-
 #grid-x{
     color: white;
 }
 
-#pijltje{
-    padding-right: 4rem;
-    color:blueviolet
-}
+#voorlees {
+    float: right;
+  }
 
 h4{
     text-align: center;

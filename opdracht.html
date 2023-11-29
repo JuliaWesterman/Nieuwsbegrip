@@ -33,14 +33,14 @@
             <a href="basislesmaaike.html"><h3>Basisles</h3></a>
         </div>
         <div class="cell large-1 medium-2 hide-for-small-only nav">
-            <a href="basisles.html"><h3>Opdrachten</h3></a>
+            <a href="basislesmaaike.html"><h3>Opdrachten</h3></a>
         </div>
         <div class="cell large-7 medium-3 small-7" id="progress">
             <h3><b>Opdracht 2 van 16</b></h3>
             <div id="progressBalk" class="hide-for-small-only hide-for-medium-only"></div>
         </div>
         <div class="cell large-1 medium-2 small-1" id="stop">
-            <a href="basisles.html"><h3><span class="hide-for-small-only">Stoppen</span>  X</h3></a>
+            <a href="basislesmaaike.html"><h3><span class="hide-for-small-only">Stoppen</span>  X</h3></a>
         </div>
     </div>
     </nav>
@@ -50,11 +50,22 @@
 <main class="main100">
     <div class="grid-x"> <!--main-->
 
-        <div class="cell large-8 large-offset-2 medium-12 small-12 main"> <!--witte vlak-->
+        <div class="cell large-8 large-offset-2 medium-8 medium-offset-2 small-12 main"> <!--witte vlak-->
             <div class="grid-y">
 
                 <!-- ICONEN / MASCOTTES -->
-                <div class="cell large-1 align-right" id="iconen"><!--iconen rij-->
+                <div class="cell large-1 small-1 align-right" id="iconen"><!--iconen rij-->
+
+                    <!---DIT WERKT HELAAS NOG NIET-->
+                    <!-- <div class="icoonMetTekst">
+                        <div class="cell show-for-small-only" id="hulpfunctieKlein">
+                            <button type="button" onclick="openHulpfunctie()" id="hulpfunctieShow">
+                                <img src="content/Pen met vraagtekenen.svg">
+                            </button>
+                            <p id="hulpfunctieShow">Hulp nodig?</p>
+                        </div>
+                    </div> -->
+
                     <div class="icoonMetTekst">
                         <img src="content/Pen met microfoon.svg" alt="voorlezen">
                         <p>Voorlezen</p>
@@ -68,7 +79,8 @@
                     <div class="icoonMetTekst">
                       <img src="content/Boek leestekst.svg" alt="leestekst">
                       <p>Leestekst</p>
-                    </div>                
+                    </div>   
+                    
                 </div>
                 
                 <!-- OPDRACHT -->
@@ -111,7 +123,7 @@
 
                 <!--hulpfunctie knop/afbeeldingen -->
                 <div class="cell large-1">
-                    <div class="cell large-1 large-offset-7" id="hulpfunctie"><!--hulpfunctie-->
+                    <div class="cell large-1 large-offset-7" id="hulpfunctie">
                         <button type="button" onclick="openHulpfunctie()" id="hulpfunctieShow">
                             <img id="hulpfunctieNormaal" src="content/hulpfunctie.svg">
                             <img id="hulpfunctieHover" src="content/hulpfunctieHover.svg">
@@ -138,7 +150,7 @@
                 <p class="large-offset-3">Weet je het antwoord op de vraag echt niet?<br>
                 Klik op het icoon van “leestekst” en lees de tekst nog eens rustig na, op zoek naar het antwoord!</p>
                 <button type="button" onclick="closeUitleg()">Ik snap het!</button>
-                <div><img src="content/Boek Uitleg 2.1.svg" alt="Uitleg mascotte"></div>
+                <div class="hide-for-medium-only hide-for-small-only"><img src="content/Boek Uitleg 2.1.svg" alt="Uitleg mascotte"></div>
             </div>
         </section>
 
@@ -153,10 +165,10 @@
                 <!---tekst gelezen?-->
                 <section class="grid-y" id="tekstGelezen"> <!--wit vlak-->
                     <div class="cell large-1">
-                        <!-- <button type="button" onclick="closeHulpfunctie()" class="sluitHulp">X</button> -->
+                        <button type="button" onclick="closeHulpfunctie()" class="sluitHulp">X</button>
                     </div> 
                     <div class="grid-x"> <!--content-->
-                        <div class="cell large-3"> <!--afbeelding-->
+                        <div class="cell large-3 show-for-large"> <!--afbeelding-->
                             <img src="content/Pen met microfoon.svg" alt="mascotte">
                         </div>
                         <div class="cell large-5 large-offset-1 bord">
@@ -175,7 +187,7 @@
                         <button type="button" onclick="closeHulpfunctie()" class="sluitHulp">X</button>
                     </div> 
                     <div class="grid-x"> <!--content-->
-                        <div class="cell large-3"> <!--afbeelding-->
+                        <div class="cell large-3 show-for-large"> <!--afbeelding-->
                             <img src="content/Pen met microfoon.svg" alt="mascotte">
                         </div>
                         <div class="cell large-5 large-offset-1 bord">
@@ -194,10 +206,10 @@
                         <button type="button" onclick="closeHulpfunctie()" class="sluitHulp">X</button>
                     </div> 
                     <div class="grid-x"> <!--content-->
-                        <div class="cell large-3"> <!--afbeelding-->
+                        <div class="cell large-3 show-for-large"> <!--afbeelding-->
                             <img src="content/Pen met microfoon.svg" alt="mascotte">
                         </div>
-                        <div class="cell large-6 large-offset-1 bord">
+                        <div class="cell large-6 large-offset-1 bord" id="andereMargin">
                             <h2>Het is handig om eerst de tekst te lezen voordat je de vragen beantwoord.</h2>
                             <div id="keuze">
                                 <button type="button" onclick="tekstOke()">Oke</button>
@@ -212,7 +224,7 @@
                         <button type="button" onclick="closeHulpfunctie()" class="sluitHulp">X</button>
                     </div> 
                     <div class="grid-x"> <!--content-->
-                        <div class="cell large-3"> <!--afbeelding-->
+                        <div class="cell large-3 show-for-large"> <!--afbeelding-->
                             <img src="content/Pen met microfoon.svg" alt="mascotte">
                         </div>
                         <div class="cell large-6 large-offset-1 bord">
@@ -231,7 +243,7 @@
                         <button type="button" onclick="closeHulpfunctie()" class="sluitHulp">X</button>
                     </div> 
                     <div class="grid-x"> <!--content-->
-                        <div class="cell large-3"> <!--afbeelding-->
+                        <div class="cell large-3 show-for-large"> <!--afbeelding-->
                             <img src="content/Pen met microfoon.svg" alt="mascotte">
                         </div>
                         <div class="cell large-5 large-offset-1 bord"><!--hulp vraag-->
