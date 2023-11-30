@@ -14,9 +14,14 @@ h3{
 h4{
     font-size: 12px;
 }
-p, li, ul, a{
+li, ul, a{
     font-family: 'Open Sans';
     font-size: 18px;
+}
+
+p{
+    font-family: 'open sans';
+    font-size: 10px;
 }
 
 /*blauwe achtergrond*/
@@ -74,7 +79,16 @@ main{
 
 #voortgang{
     height: 1rem;
-    width: 3rem;
+    width: 87%;
     margin: 0.7rem;
-    background: linear-gradient(to right, rgb(15, 232, 15) 16%, rgb(209, 209, 209) 17%);
+    background: linear-gradient(to right, rgb(15, 232, 15) 10%, rgb(209, 209, 209) 17%);
+    text-align: left;
+}
+
+#voortgangactieflezen{
+    height: 1rem;
+    width: 87%;
+    margin: 0.7rem;
+    background: linear-gradient(to right, rgb(15, 232, 15) 100%, rgb(209, 209, 209) 17%);
+    text-align: left;
 }
