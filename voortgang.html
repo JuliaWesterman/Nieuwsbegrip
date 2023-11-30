@@ -22,17 +22,16 @@
 <body>
     <header>
         <nav>
-            <div class="grid-x">
-            <div class="cell large-1 nav">
-                <a href="#">
-                    <h3><b>Deze week</b></h3>
-                </a>
-            </div>
-            <div class="cell large-1 nav">
-                <a href="#">
-                    <h3>Voortgang</h3>
-                </a>
-            </div>
+            <div class="grid-x"> 
+                <div class="cell large-1 medium-1 small-1 nav" id="homeLink">
+                    <a href="index.html">
+                        <img src="content/home.svg">
+                        <h3 class="hide-for-small-only"><b>Homepage</b></h3>
+                    </a>
+                </div>
+                <div class="cell large-1 medium-2 hide-for-small-only nav">
+                    <a href="#"><h3>Profiel</h3></a>
+                </div>
                 <!--Titel website Nieuwsbegrip-->
                 <div class="cell large-2 large-offset-3" id="logo">
                     <img src="content/Nieuwsbegrip logo.svg" alt="Logo van Nieuwsbegrip">
@@ -46,7 +45,7 @@
     </header>
 
     <main>
-        <div class="grid-x">
+    <div class="grid-x">
         <div class="cell large-8 large-offset-2 main"> <!--wit vlak--> 
         <div class="grid-y">
 
@@ -65,28 +64,121 @@
                         <img src="content/Pen met laptop.svg" alt="Penny de pen met een laptop">
                             <h3>Actief lezen</h3>
                             <div id="voortgangactieflezen"> <p>16/16</p></div>
+
+                            <div class="dropdown"> <!--dropdown-->
+                                <button class="dropdownbutton"><h3>Bekijken<h3></button>
+                                    <div class="dropdown-content">
+                                        <div class="voortgangdropal">
+                                            <h4>Goed</h4> <div id="voortgangdropalg"> <p>10/16</p></div>
+                                        </div>
+                                        <div class="voortgangdropal">
+                                            <h4>Fout</h4> <div id="voortgangdropalr"> <p>6/16</p></div>
+                                        </div>
+                                    </div>
+                            </div>
+
                     </div>
                     <div class="cell large-3 large-offset-1 tegel" id="Tegel2"> <!--tegel Tussenopdracht-->
                         <img src="content/Pen met schilderij.svg" alt="Penny de pen aan het schilderen">
                             <h3>Tussenopdracht</h3>
                             <div id="voortgang"> <p>1/16</p></div>
+
+                            <div class="dropdown"> <!--dropdown-->
+                                <button class="dropdownbutton"><h3>Bekijken<h3></button>
+                                    <div class="dropdown-content">
+                                        <div class="voortgangdrop">
+                                            <h4>Goed</h4> <div id="voortgangdropg"> <p>0/16</p></div>
+                                        </div>
+                                        <div class="voortgangdrop">
+                                            <h4>Fout</h4> <div id="voortgangdropr"> <p>0/16</p></div>
+                                        </div>
+                                    </div>
+                            </div>
                     </div>
                     <div class="cell large-3 large-offset-1 tegel" id="Tegel3"> <!--tegel Opdrachten-->
                         <img src="content/boek aan het schrijven.svg" alt="Barry het boek aan het schrijven">
                             <h3>Opdrachten</h3>
                             <div id="voortgang"> <p>1/16</p></div>
+
+                            <div class="dropdown"> <!--dropdown-->
+                                <button class="dropdownbutton"><h3>Bekijken<h3></button>
+                                    <div class="dropdown-content">
+                                        <div class="voortgangdrop">
+                                            <h4>Goed</h4> <div id="voortgangdropg"> <p>0/16</p></div>
+                                        </div>
+                                        <div class="voortgangdrop">
+                                            <h4>Fout</h4> <div id="voortgangdropr"> <p>0/16</p></div>
+                                        </div>
+                                    </div>
+                            </div>
+                    </div>
+                </div>
+        
+                
+        
+                
+                <div class="cell large-1 tegel" id="tegelandere">
+                    <h2>Andere lessen</h2>
+                </div>
+
+                <div class="grid-x opdrachtentegels">
+                    <div class="cell large-3 tegel" id="Tegel1"> <!--tegel Extra oefeningen-->
+                        <img src="content/Pen met kist.svg" alt="Penny de pen met een laptop">
+                            <h3>Extra oefeningen</h3>
+                            <div id="voortgang"> <p>1/16</p></div>
+
+                            <div class="dropdown"> <!--dropdown-->
+                                <button class="dropdownbutton"><h3>Bekijken<h3></button>
+                                    <div class="dropdown-content">
+                                        <div class="voortgangdrop">
+                                            <h4>Goed</h4> <div id="voortgangdropg"> <p>0/16</p></div>
+                                        </div>
+                                        <div class="voortgangdrop">
+                                            <h4>Fout</h4> <div id="voortgangdropr"> <p>0/16</p></div>
+                                        </div>
+                                    </div>
+                            </div>
+             
+                    </div>
+                    <div class="cell large-3 large-offset-1 tegel" id="Tegel2"> <!--tegel Woordenschat-->
+                        <img src="content/Boek met hoed.svg" alt="Penny de pen aan het schilderen">
+                            <h3>Woordenschat</h3>
+                            <div id="voortgang"> <p>1/16</p></div>
+
+                            <div class="dropdown"> <!--dropdown-->
+                                <button class="dropdownbutton"><h3>Bekijken<h3></button>
+                                    <div class="dropdown-content">
+                                        <div class="voortgangdrop">
+                                            <h4>Goed</h4> <div id="voortgangdropg"> <p>0/16</p></div>
+                                        </div>
+                                        <div class="voortgangdrop">
+                                            <h4>Fout</h4> <div id="voortgangdropr"> <p>0/16</p></div>
+                                        </div>
+                                    </div>
+                            </div>
+                    </div>
+                    <div class="cell large-3 large-offset-1 tegel" id="Tegel3"> <!--tegel Squla-->
+                        <img src="content/P+B puzzels.svg" alt="Barry het boek aan het schrijven">
+                        <h3>Squla</h3>
+                        <div id="voortgang"> <p>1/16</p></div>
+
+                        <div class="dropdown"> <!--dropdown-->
+                            <button class="dropdownbutton"><h3>Bekijken<h3></button>
+                                <div class="dropdown-content">
+                                    <div class="voortgangdrop">
+                                        <h4>Goed</h4> <div id="voortgangdropg"> <p>0/16</p></div>
+                                    </div>
+                                    <div class="voortgangdrop">
+                                        <h4>Fout</h4> <div id="voortgangdropr"> <p>0/16</p></div>
+                                    </div>
+                                </div>
+                        </div>
                     </div>
                 </div>
                 
-                
 
         </div>
-
-       
-
-
-
-     
+    </div>
     </main>
 </body>
 </html>
