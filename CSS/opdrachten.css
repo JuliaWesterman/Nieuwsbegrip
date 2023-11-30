@@ -216,6 +216,9 @@ align-self: center;
 
 
 
+
+
+
 /*navigatie werkend maken*/
 
 @media screen and (max-width: 640px){
@@ -240,17 +243,24 @@ align-self: center;
         scale: 80%;
     }
 
+    #opdrachtNavigatie{
+        text-align: center;
+    }
+
     #hulpfunctiePopup .grid-y{
         width: 90%;
         padding: 1rem;
-    }
-    #andereMargin{
-        margin-top: -2rem;
+        height: max-content;
     }
 
     #hulpfunctiePopup .grid-y h2{
         scale: 80%;
         width: 100%;
+        margin: auto;
+    }
+
+    .bord{
+        margin-top: -2.3rem;
     }
 
     #hulpfunctiePopup img{
@@ -258,8 +268,6 @@ align-self: center;
     }
 
     #hulpfunctieKlein{
-        position: relative;
-        width: max-content;
         visibility: hidden;
     }
 }
@@ -302,8 +310,11 @@ align-self: center;
 
 
 
+
+
+
 /*---------------------------------------------- BASISLESSEN PAGINA --------------------------------------------*/
-#titel h2{
+/* #titel h2{
     margin: 3rem 0 1.5rem 0;
     text-align: center;
     font-size: 2rem;
@@ -346,6 +357,25 @@ align-self: center;
     margin-top: 0.9rem;
 }
 
+
+#gefeliciteerdAfgerond{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 50%;
+    backdrop-filter: blur(6px);
+}
+#gefeliciteerdAfgerond h2{
+    text-align: center;
+    color: white;        
+    font-size: larger;
+    font-weight: bold;
+    background-color: #EC671B;
+    border-radius: 8px;
+    width: 70%;
+    padding: 0.7rem;
+    margin: 4rem auto 1rem auto;
+} */
 
 
 

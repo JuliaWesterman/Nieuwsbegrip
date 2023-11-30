@@ -67,6 +67,17 @@ header .grid-x {
 
 @media screen and (max-width: 1250px) {
 
+#basisles {
+    background-color: red;
+    align-items: center;
+    margin: 2em;
+    border-radius: 25px;
+    padding: 1.5rem;
+    box-shadow: 4px 6px 23px #ADADAE; /*10px bepaald de 'blur'*/
+    height: 5em;
+    width: 30em;
+}
+
 #pijltjeterug {
     margin-left: 2rem;
 }
@@ -96,6 +107,16 @@ header .grid-x {
 .tegel {
     width: 30em;
     height: 10em;
+}
+
+#leestekstlink {
+    background-color: red;
+    align-items: center;
+    border-radius: 25px;
+    padding: 1.5rem;
+    box-shadow: 4px 6px 23px #ADADAE; /*10px bepaald de 'blur'*/
+    height: 5em;
+    width: 30em;
 }
 
 }
