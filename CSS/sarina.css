@@ -1,7 +1,7 @@
 /*ID MOET CLASS WEZEN MAAR CSS IS VERVLOEKT!!!!!!!*/
 
 
-main{
+main {
     background-color: none;
     background-image: linear-gradient(#D7E8FB 45%, white 75%);
 }
@@ -30,21 +30,32 @@ main{
         font-weight: bold;
 }
 
-#cirkel :hover{
-    width: 50px;
-    height: 50px;
-    border-radius: 100%;
+#cirkel:hover {
     background-color: #EC671B;
-    border: 3px solid #951B81;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-#initialen h3:hover{
+#initialen:hover {
     font-size: 25px;
     color: white;
     font-weight: bold;
+}
+
+/*----Profiel inhoud----*/
+#profiel {
+    margin: 1rem 3.5rem 1rem 70rem;
+    background-color: red;
+    color: #DD4A9A;
+    z-index: 3;
+}
+#profiel img {
+    width: 50px;
+    height: 50px;
+}
+.balk {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem 1rem 1rem 1rem;
+    background-color: white;
 }
 
 /*--------------------------------- TITEL ---------------------------------------*/
@@ -55,7 +66,7 @@ main{
  
 
 }
-#titel h1{
+#titel h1 {
     color: white;
     font-size: 3.5rem;
     font-weight: bold;
@@ -63,16 +74,16 @@ main{
 }
 
 /*------------------------ TEGEL RIJEN, KEUZE MENU ------------------------------*/
-#tegels{
+#tegels {
 	grid-gap: 1rem;
     margin: 1rem 9.5rem;
 }
 
-#tegels img{
+#tegels img {
     width: 10em;
     height: 10em;
 }
-#tegels .cell{
+#tegels .cell {
     background-color: white;
     padding: 1.5rem;
     width: 16em;
@@ -82,13 +93,13 @@ main{
     border-radius: 25px;
 
 }
-#tegels .cell h2{
+#tegels .cell h2 {
     color: #C7067F;
     font-size: 22px;
     font-weight: bold;
 }
 
-#tegels .cell p{
+#tegels .cell p {
     color: #808080;
     margin-top: -0.8rem;
 }
@@ -96,7 +107,7 @@ main{
 
 /*------------------------------ BOEKENTIP ------------------------------------*/
 /*---- IMG boven de boekentip----*/
-#liggendepanda{
+#liggendepanda {
     display: flex;
     flex-direction: inherit;
     align-self: center;
@@ -107,32 +118,32 @@ main{
 }
 
 /*------------ IMG ------------*/
-#boekpanda img{
+#boekpanda img {
     margin: 3rem 1rem 1rem 10rem;
     width: 55em;
     height: 18em;
 }
 
 /*------ Boekentip text ------*/
-#boekentiptext{
+#boekentiptext {
     margin: 3rem 12rem 1rem 11rem;
 }
 
-#boekentiptext h2{
+#boekentiptext h2 {
     color: #951B80;
     font-weight: bold;
 }
-#boekentiptext h1{
+#boekentiptext h1 {
     font-weight: bold;
 }
-#boekentiprtext p{
+#boekentiprtext p {
     color: #707070;
 }
-#italic{
+#italic {
     font-style: italic;
 }
 
-#boekentiptext a{
+#boekentiptext a {
     color: white;
     font-weight: bold;
     background-color: #EC671B;
@@ -141,7 +152,7 @@ main{
     margin-bottom: 4rem;
 }
 
-#boekentiptext a:hover{ /*---- Muis over de link ----*/
+#boekentiptext a:hover { /*---- Muis over de link ----*/
     background-color: #C57301;
 }
 /*------------------------ ..... ...... ..... .... ------------------------------*/
