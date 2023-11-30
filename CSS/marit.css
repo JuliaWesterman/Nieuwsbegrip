@@ -6,11 +6,22 @@
     text-align: center;
 }
 
+.lettersInstellingen{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+   justify-content: center;
+   max-width: 150px;
+}
+
 /*Het naast elkaar staan van de verschillende lettergroottes */
 .lettergrootte{
     display: flex;
     flex-direction: row;
+    align-items:end;
     max-width: 150px;
+    vertical-align: middle;
+    z-index: 9;
 }
 
 /*Kleinste lettertype */
@@ -23,6 +34,8 @@
     padding-top: 60px;
     text-align: center;
     height: 100px;
+    border: 5px;
+   
 }
 
 /*Middel lettertype */
@@ -92,27 +105,46 @@
 }
 
 .dropdown:hover .button{
-    background-color:#951B81; 
+    background-color:#ec671b; 
 }
 
 .dropdown a:hover{
-    background-color: #951B81; 
+    background-color: #c7067f; 
 }
+
+/*Regelafstand Titel en slider samen*/
+#regelafstand{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
+    margin-top: 4rem;
+}
+
+/*Regelafstand alleen Titel*/
+#regelafstandTitel{
+    margin-right: 8rem;
+    margin-top: 1rem;
     
+}
+
 /* Slider */
 .slidecontainer {
-    width: 40rem;
+    width: 49.5rem;
+
   }
   
   .slider {
     -webkit-appearance: none;
     width: 100%;
-    height: 15px;
+    height: 40px;
     border-radius: 5rem;
     background:#951B81;
+    border-style: solid;
+    border-color: #707070;
     outline: none;
     -webkit-transition: .2s;
     transition: opacity .2s;
+    
   }
   
   .slider:hover {
@@ -122,11 +154,12 @@
   .slider::-webkit-slider-thumb {
     -webkit-appearance: none;
     appearance: none;
-    width: 25px;
-    height: 25px;
+    width: 45px;
+    height: 45px;
     border-radius: 50%;
-    border-style: black;
-    background: #1ebc16;
+    border-style:solid; 
+    border-color:#707070;
+    background: #ffff;
     cursor: pointer;    
   }
   
@@ -139,4 +172,91 @@
     cursor: pointer;
   }
 
+  /*Voorbeeld tekst hokje*/
+  .voorbeeld{
+    padding-inline: 5rem;
+    margin-inline: 3rem;
+    background-color: #ffff;
+    border-style: solid;
+    border-width: 1rem;
+    border-color: #D7E8FB;
+    border-radius: 1rem;
+    margin-top: 3rem;
+  }
 
+  #voorbeeldTitel{
+    text-align: center;
+    color: #707070;
+  }
+
+   /*Alle rondjes*/
+ .themasKleuren{
+    height: 100px;
+    width: 100px;
+    background-color: #ca1212;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5rem;
+    align-content: center;
+ 
+ }
+
+ #witRondje{
+    background-color: #ffffff;
+    border: solid;
+ }
+
+ #zwartRondje{
+    background-color: #000000;
+    border: solid;
+ }
+
+ #grijsRondje{
+    background-color: #A5A5A5;
+    border: solid;
+ }
+
+ #beigeRondje{
+    background-color: #F6E6D1;
+    border: solid;
+ }
+
+ #geelRondje{
+    background-color: #F1F100;
+    border: solid;
+ }
+
+.themas{
+    margin-left: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    color: #707070 ;
+}
+
+.themas h2{
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+#mascottes{
+    display: flex;
+    flex-direction: row;
+    align-items: last baseline;
+    color:#707070;
+}
+
+#voorleesstemTitel{
+    color:#707070;
+    margin-top: 3rem;
+}
+
+#opmaakTitel{
+    color:#707070;
+    margin-top: 3rem;
+}
+
+#opmaakCategorien{
+    color: #951B81;
+
+
+}
