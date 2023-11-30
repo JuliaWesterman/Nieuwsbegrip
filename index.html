@@ -19,14 +19,11 @@
         <link rel="stylesheet" href="css/sarina.css">
         <script src="JavaScript/main.js"></script>
 </head>
-<body>
-<!--Homepage (Sarina)-->  
-<!--Navigatiebalk-->    
-
+<body>  
 <!------------------------ HEADER ------------------------------>
 <header>
     <nav>
-        <div class="grid-x">
+        <div class="grid-x" id="navigatie">
             <!--Hamburger-->
             <div class="cell large-1">
                 <h3>Hamburber</h3>
@@ -36,8 +33,28 @@
                 <img src="content/Nieuwsbegrip logo.svg" alt="Logo van Nieuwsbegrip">
             </div>
             <!--Profiel-->
-            <div class="cell large-1 large-offset-4">
-                    <h3>BK</h3>
+            <div class="cell large-1 large-offset-4" id="cirkel">
+                <a href="#"><h3 id="initialen">BK</h3></a>
+            </div>
+                <!--Profiel inhoud-->
+                <div class="cell auto" id="profiel">
+                    <div>
+                        <img src="content/" alt="Initialen profiel"><!--initialen icoon, ook geoon of afbeelding-->
+                        <h2>Profiel</h2>
+                    </div>
+                    <div>
+                        <img src="content/Voortgang.svg" alt="Voortgang">
+                        <h2>Voortgang</h2>
+                    </div>
+                    <div>
+                        <img src="content/Instellingen.svg" alt="Instellingen">
+                        <h2>Instellingen</h2>
+                    </div>
+                    <div>
+                        <img src="content/Uitloggen.svg" alt="Uitloggen">
+                        <h2>Uitloggen</h2>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
@@ -45,7 +62,7 @@
 
 <!------------------------ MAIN ------------------------------>
 <main>
-     <!--Titel-->
+     <!----Titel---->
     <div class="grid-x">
         <div class="cell large-10 large-offset-1 main" id="titel"><!--doorzichtig vlak-->
             <h1>Reuzenpandajong Fan Xing naar China gebracht</h1>
@@ -53,13 +70,15 @@
     </div>
 
 
-    <!--Tegel rij 1-->
+    <!----Tegel rij 1---->
     <div class="grid-x" id="tegels"><!--ID MOET CLASS WEZEN MAAR CSS IS VERVLOEKT!!!!!!!-->
         <!--Tegel Basisles-->
         <div class="cell auto">
+            <a href="#">
              <img src="content/Boek met schoolbord.svg" alt="Boek met een schoolbord">
              <h2>Basisles</h2>
               <p>Je bent bezig</p>
+            </a>
          </div>
           
          <!--Tegel Extra oefeningen-->
@@ -83,7 +102,7 @@
     </div>
 
 
-     <!--Tegel rij 2-->
+     <!----Tegel rij 2---->
     <div class="grid-x" id="tegels"> <!--ID MOET CLASS WEZEN MAAR CSS IS VERVLOEKT!!!!!!!-->
         <!--Tegel Toetsen-->
        <div class="cell auto">
@@ -112,13 +131,13 @@
    </div>
 
 
-    <!--Boekentip pandabeer ligt te slapen-->
+    <!----Boekentip pandabeer ligt te slapen---->
         <div id="liggendepanda">
             <img src="content/Pandabeer.png" alt="Pandabeer ligt te slapen">
         </div> 
 
 
-   <!--De boekentip-->
+   <!----De boekentip---->
    <div class="grid-x" id="boekentip">
         <div class="cell large-2" id="boekpanda">
             <img src="content/Grote panda en kleine draak boek.png" alt="Boek grote panda en kleine draak">
