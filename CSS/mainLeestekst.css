@@ -23,6 +23,7 @@ p, li, ul, a{
 main{
     background-color: #D7E9FB;
     padding-top: 7rem;
+    padding-bottom: 3rem; 
 }
 /*Wit vlak*/
 .main{
@@ -101,4 +102,10 @@ h4{
     border-radius: 8px;
     padding: 0.7rem 0.8rem;
     margin-bottom: 2rem;
+}
+
+@media(max-device-width: 800px){
+    .verder{
+        align-self: center;
+    }
 }
