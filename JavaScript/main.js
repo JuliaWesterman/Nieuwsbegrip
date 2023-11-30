@@ -1,12 +1,21 @@
 
+/*--------Uitleg popup aan en uit-------*/
+function openUitleg(){
+    document.getElementById("uitlegPopup").style.visibility = "visible";
+};
+
+function closeUitleg(){
+    document.getElementById("uitlegPopup").style.visibility = "hidden";
+}
+
+
 /*Antwoord voor de opdracht controleren*/
-/*uiterlijk aanpassen naar vernieuwing prototype*/
-/*kruisje is nu ook doorstreept*/
 function controleren(){
         /*fout*/
         if (document.getElementById("antwoord1").checked){
             document.getElementById("a1").style.color = "red";
             document.getElementById("a1").style.textDecoration = "line-through";
+            document.getElementById("gefeliciteerd").style.visibility = "hidden";               
             document.getElementById("hulpfunctieShow").style.visibility = "visible";        
             document.getElementById("hulpfunctieKleinShow").style.visibility = "visible";
             document.getElementById("hulpfunctieTekstKleinShow").style.visibility = "visible";   
@@ -26,6 +35,7 @@ function controleren(){
         if (document.getElementById("antwoord3").checked){
             document.getElementById("a3").style.color = "red";
             document.getElementById("a3").style.textDecoration = "line-through";
+            document.getElementById("gefeliciteerd").style.visibility = "hidden";               
             document.getElementById("hulpfunctieShow").style.visibility = "visible";        
             document.getElementById("hulpfunctieKleinShow").style.visibility = "visible";        
             document.getElementById("hulpfunctieTekstKleinShow").style.visibility = "visible"; 
@@ -33,19 +43,6 @@ function controleren(){
         };        
 
     };
-
-
-
-
-
-/*--------Uitleg popup aan en uit-------*/
-function openUitleg(){
-    document.getElementById("uitlegPopup").style.visibility = "visible";
-};
-
-function closeUitleg(){
-    document.getElementById("uitlegPopup").style.visibility = "hidden";
-}
 
 
 /*-------------------------------- HULPFUNCTIE ------------------------------------*/
