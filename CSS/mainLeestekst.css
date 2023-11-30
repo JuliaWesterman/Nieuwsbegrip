@@ -139,7 +139,7 @@ h4{
 
 /*responsive voor telefoon (small)*/
 @media screen and (max-width: 640px){
-    header .grid-x{
+    header > .grid-x{
         justify-content: space-between;
     }
     #homeLink{
@@ -148,15 +148,24 @@ h4{
     .nav{
         border: none;
     }
-    .main100{
-        height: 100%;
+
+    main{
+        padding-top: 3rem;
     }
-    .main100 > .grid-x{
+
+    main > .grid-x{
         width: 95%;
         margin: auto;
     }
     #iconen{
         margin: auto;
         scale: 80%;
+    }
+    #voorlees{
+        text-align: right;
+        padding-right: 2rem;
+    }
+    #titel{
+        text-align: center;
     }
 }
