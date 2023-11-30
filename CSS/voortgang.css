@@ -40,7 +40,7 @@ main{
     position: relative;
 }
 
-
+/*Navigatie*/
 .nav h3{
     color: #C7067F;
     text-align: center;
@@ -48,6 +48,28 @@ main{
     border-right: solid 2px #C7067F;
     margin: 0;
 }
+
+#logo{
+    max-width: 50vw;
+    align-content: center;
+}
+
+/*Het huisje in de navigatie*/
+#homeLink{
+    width: max-content;
+}
+#homeLink a{
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    padding-right: 0.6rem;
+}
+#homeLink img{
+    width: 2rem;
+    margin-top: -0.3rem;
+}
+
+/*Bovenaan*/
 
 .grid-y h2{
     color: #C7067F;
@@ -200,4 +222,32 @@ main{
     margin: 0.7rem;
     background: linear-gradient(to right, rgb(15, 232, 15) 100%, rgb(209, 209, 209) 17%);
     text-align: left;
+}
+
+/*responsive voor telefoon (small)*/
+@media screen and (max-width: 640px){
+    header .grid-x{
+        justify-content: space-between;
+    }
+    #homeLink{
+        text-align: left;
+    }
+    .nav{
+        border: none;
+    }
+    .main100{
+        height: 100%;
+    }
+    .main100 > .grid-x{
+        width: 95%;
+        margin: auto;
+    }
+    #iconen{
+        margin: auto;
+        scale: 80%;
+    }
+    .opdrachtentegels{
+    padding-bottom: 5rem;
+    }
+
 }
