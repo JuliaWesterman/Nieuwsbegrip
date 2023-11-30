@@ -76,6 +76,12 @@ align-self: center;
     font-size: 14px;
 }
 
+#opdrachtNavigatie button:hover{
+    background-color: #C57301;
+}
+#opdrachtNavigatie a:hover{
+    background-color: #767676;
+}
 
 /*---------popup uitleg-------------*/
 #uitlegPopup{
@@ -114,6 +120,10 @@ align-self: center;
     font-size: larger;
 }
 
+#uitleg button:hover{
+    background-color: #C57301;
+}
+
 /*mascotte*/
 #uitleg div{
     background-color: white;
@@ -135,6 +145,11 @@ align-self: center;
     right: 0;
     bottom: 0;
     visibility: hidden;
+}
+
+#gefeliciteerd{
+    right: 0.5rem;
+    bottom: 0.5rem;
 }
 
 #hulpfunctie img{
@@ -186,20 +201,24 @@ align-self: center;
     text-align: center;
     width: 100%;
 }
-#keuze{ /*knoppen*/
+.keuze{ /*knoppen*/
     display: flex;
     flex-direction: row;
     gap: 2rem;
     justify-content: center;
     margin-top: 1rem;
 }
-#keuze button{
+.keuze button{
     background-color: #EC671B;
     color: white;
     width: 7rem;
     height: 2.5rem;
     border-radius: 10px;
     font-size: larger;
+}
+
+.keuze button:hover{
+    background-color: #C57301;
 }
 
 .sluitHulp{
@@ -215,34 +234,9 @@ align-self: center;
 
 
 
-
-
-
-
 /*navigatie werkend maken*/
 
 @media screen and (max-width: 640px){
-    header .grid-x{
-        justify-content: space-between;
-    }
-    #homeLink{
-    text-align: left;
-    }
-    .nav{
-        border: none;
-    }
-    .main100{
-        height: 100%;
-    }
-    .main100 > .grid-x{
-        width: 95%;
-        margin: auto;
-    }
-    #iconen{
-        margin: auto;
-        scale: 80%;
-    }
-
     #opdrachtNavigatie{
         text-align: center;
     }
@@ -292,15 +286,6 @@ align-self: center;
         visibility: hidden;
     }
 }
-
-
-
-
-
-
-
-
-
 
 
 

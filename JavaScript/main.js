@@ -3,11 +3,6 @@
 /*uiterlijk aanpassen naar vernieuwing prototype*/
 /*kruisje is nu ook doorstreept*/
 function controleren(){
-
-    if (document.getElementById("gefeliciteerd").style.visibility = "visible"){
-        window.location.href = "../basislesmaaike.html";
-    }
-    else{
         /*fout*/
         if (document.getElementById("antwoord1").checked){
             document.getElementById("a1").style.color = "red";
@@ -24,7 +19,7 @@ function controleren(){
             document.getElementById("gefeliciteerd").style.visibility = "visible";               
             document.getElementById("hulpfunctieShow").style.visibility = "hidden"; 
             document.getElementById("hulpfunctieKleinShow").style.visibility = "hidden";  
-            document.querySelector('input[name="antwoord"]:checked').style.accentColor = "#77B72A";        
+            document.querySelector('input[name="antwoord"]:checked').style.accentColor = "#77B72A";      
 
         };
         /*fout*/
@@ -35,9 +30,13 @@ function controleren(){
             document.getElementById("hulpfunctieKleinShow").style.visibility = "visible";        
             document.getElementById("hulpfunctieTekstKleinShow").style.visibility = "visible"; 
             document.querySelector('input[name="antwoord"]:checked').style.accentColor = "#FF0000";         
-        };
+        };        
+
     };
-};
+
+
+
+
 
 /*--------Uitleg popup aan en uit-------*/
 function openUitleg(){
