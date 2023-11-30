@@ -20,19 +20,29 @@ align-self: center;
 /*PIJLTJE EN ICONEN BOVENAAN WITTE PAGINA*/
 #bovenkantgrid {
     padding: 2rem;
-    gap: 5rem;
 }
 
+/*Iconen (img) grootte*/
 #bovenkantgrid img {
     width: 5em;
     height: 5em;
     margin-top: 2rem;
 }
 
-#icoonmetonderschrift {
+/*Drie iconen mascottes*/
+#iconennavigatie {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: right;
+}
+
+/*Individuele iconen met onderschrift*/
+.icoonmetonderschrift {
     margin-top: -1.5rem;
 }
 
+/*Paars pijltje links bovenin witte vlak*/
 #pijltjeterug {
     margin-top: -1.5rem;
     margin-left: 2rem;
@@ -40,7 +50,7 @@ align-self: center;
     height: 3rem;
 }
 
-#icoonmetonderschrift p {
+.icoonmetonderschrift p {
     font-size: 14px;
     text-align: center;
     font-weight: bold;
@@ -64,9 +74,9 @@ align-self: center;
 }
 
 /*CONTROLEREN KNOP*/
-
 #controlerenknop {
     margin-top: 2rem;
+    margin-bottom: 1rem;
 }
 
 #controlerenknop a {
@@ -76,7 +86,6 @@ align-self: center;
     border-radius: 8px;
     font-size: 14px;
     padding: 0.5rem;
-    margin-bottom: 4rem;
 }
 
 #controlerenknop a:hover {
@@ -84,18 +93,15 @@ align-self: center;
 }
 
 
-@media screen and (max-width: 1250px) {
-
-    #opdrachttoelichting {
-        margin-left: -5rem;
-    }
+@media screen and (max-width: 1024px) {
 
     #opdracht1 {
-        padding-left: 0rem;
+        padding-right: 2rem;
     }
 
-    #controleren {
-        margin-left: -5rem;
+    #iconennavigatie {
+        padding-right: 2rem;
+        margin-left: 0rem;
     }
 
 }

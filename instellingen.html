@@ -22,27 +22,40 @@
 
 <!------------------------------HEADER---------------------------->
 <nav>
+    <!--Linksbovenin pagina-->
     <div class="grid-x">
-        <div class="cell large-1 medium-1 small-1 nav" id="homeLink">
+        <div class="cell large-1 medium-1 small-1 nav" id="homeLink"> 
             <a href="index.html">
-                <img src="content/home.svg">
-                <h3 class="hide-for-small-only"><b>Homepage</b></h3>
+                <img src="content/home.svg">  <!--Linksbovenin Huisje-->
+                <h3 class="hide-for-small-only"><b>Homepage</b></h3> <!--Linksbovenin tekst homepage-->
             </a>
         </div>
-    
 
+         <!--Titel profiel links bovenin-->
         <div class="cell large-1 medium-2 hide-for-small-only nav">
-            <a href="basislesmaaike.html"><h3>Profiel</h3></a>
+            <a href="profiel.html"><h3>Profiel</h3></a>
         </div>
 
          <!--Titel website Nieuwsbegrip-->
          <div class="cell small-4 medium-4 large-2 large-offset-3" id="logo">
+            <a href="index.html">
             <img src="content/Nieuwsbegrip logo.svg" alt="Logo van Nieuwsbegrip">
+            </a>
         </div>
 
-         <!--Profiel-->
-         <div class="cell large-1 large-offset-2">
-            <img src="content/i"
+        <!--Rechtsboven iconen-->
+         <div class="cell large-2 large-offset-2" id="iconen">  <!--Grote div eromheen om positie te bepalen-->
+            <div id="voortgangIcon"> <!-- Div om alle iconen heen alles bij elkaar te houden-->
+                <img src="content/Voortgang.svg"> <!--Voortgang-->
+                <img src="content/Instellingen.svg" id="instellingenIcon"> <!--Instellingen-->
+            </div>
+
+            <div class="cell large-2 " id="cirkel">
+                <a href="#"><h3 id="initialen">BK</h3></a>
+            </div>
+
+            </div>
+    </div>
     </div>
     </div>
 </nav>
@@ -62,7 +75,7 @@
             <!--Alle instellingen voor lettergroote/lettertype (om op 1 lijn te krijgen)-->
         <div class="lettersInstellingen">
             <div class="lettergrootte">
-                 <div class="cell large-1 large-offset-2 ">
+                 <div class="cell large-1 large-offset-2" >
                     <h3><b>Lettergrootte</b></h3>
                   </div>
                     
@@ -81,6 +94,7 @@
                     <h3>A</h3>
                 </div>
                 
+
                 <!--lettertype Titel-->
                 <div class="cell large-1" id="lettertype">
                     <h3><b>Lettertype</b></h3>
