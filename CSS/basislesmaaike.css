@@ -1,17 +1,21 @@
+/*Navigatie/ broodkruimels*/
 header .grid-x {
     justify-content: left;
 }
 
+/*Titel bovenaan witte vlak ('basisles')*/
 #basisles h1 {
     text-align: center;
     font-weight: bold;
     margin: auto;
 }
 
+/*Bovenkant van het witte vlak*/
 #bovenkantgrid {
     padding-top: 7rem;
 }
 
+/*De 3 tegels met verschillende opties*/
 #tegelsbasisles {
     display: flex;
     flex-direction: row;
@@ -19,6 +23,7 @@ header .grid-x {
     width: max-content;
 }
 
+/*1 tegel individueel*/
 .tegel {
     background-color: white;
     text-align: center;
@@ -27,30 +32,34 @@ header .grid-x {
     margin: 2rem;
     border-radius: 25px;
     padding: 1.5rem;
-    box-shadow: 4px 6px 23px #ADADAE; /*10px bepaald de 'blur'*/
+    box-shadow: 4px 6px 23px #ADADAE; /*23px bepaald de 'blur'*/
 }
 
+/*De iconen in de tegels*/
 #tegelsbasisles img {
     width: 10em;
     height: 10em;
 }
 
+/*De titels in de tegels*/
 #tegelsbasisles .cell h2 {
     color: #C7067F;
     font-style: bold;
 }
 
+/*De voortgang tekst (kleiner) in de tegels*/
 #tegelsbasisles .cell p {
     color: #808080;
     margin-top: -0.8rem;
 }
 
-
+/*Het icoon van de leestekst*/
 #leestekstlink img {
     width: 4em;
     height: 4em;
 }
 
+/*Het icoon + tekst van de leestekst*/
 #leestekstlink {
     display: flex;
     justify-content: center;
@@ -61,6 +70,7 @@ header .grid-x {
     padding-bottom: 3rem;
 }
 
+/*De tekst (van de leestekst link)*/
 #leestekstlink h2 {
     color: #C7067F;
     font-weight: bold;
@@ -70,11 +80,13 @@ header .grid-x {
 /*TABLET VERSION*/
 @media screen and (max-width: 1024px) {
 
+/*Bovenkant witte vlak*/
 .main {
     background-color: #D7E9FB;
     margin-top: -8em;
 }
 
+/*Titel 'basisles' bovenaan*/
 #basisles {
     background-color: white;
     padding: 0.7rem;
@@ -85,35 +97,42 @@ header .grid-x {
     margin: auto;
 }
 
+/*Paarse pijltje terug*/
 #pijltjeterug {
     visibility: hidden;
 }
     
+/*De 3 tegels met verschillende opties*/
 #tegelsbasisles {
    justify-content: center;
-   width: 25em; /*zorgt ervoor dat de tegels onder elkaar komen te staan*/
+   width: 25em; 
 } 
 
+/*De iconen in de tegels*/
 #tegelsbasisles img {
     width: 8em;
     height: 8em;
     float: left;
 }
 
+/*De titels in de tegels*/
 #tegelsbasisles .cell h2 {
     text-align: center;
     margin-top: 0.7em; 
 }
 
+/*De voortgang tekst (kleiner) in de tegels*/
 #tegelbasisles .cell p {
     text-align: center;
 }
 
+/*1 tegel individueel*/
 .tegel {
     width: 100%;
     height: 10em;
 }
 
+/*Het icoon + tekst van de leestekst*/
 #leestekstlink {
     background-color: white;
     align-items: center;
@@ -130,12 +149,14 @@ header .grid-x {
 /*MOBILE VERSION*/
 @media screen and (max-width: 640px) {
 
+    /*Titel 'basisles' bovenaan*/
     #basisles {
     height: 5em;
     width: 20em;
     margin-bottom: 2em;
     }
 
+    /*De 3 tegels met verschillende opties*/
     #tegelsbasisles {
         width: 23em;
     }
@@ -144,6 +165,7 @@ header .grid-x {
         margin-top: 0.2em;
     }
 
+    /*1 tegel individueel*/
     #tegelsbasisles img {
         width: 5em;
         height: 5em;
@@ -151,6 +173,7 @@ header .grid-x {
         margin-top: 1em;
     }
 
+    /*Het icoon + tekst van de leestekst*/
     #leestekstlink {
         height: 5em;
         width: 20em; 
