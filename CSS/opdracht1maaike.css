@@ -62,7 +62,7 @@ align-self: center;
 
 .tekstvlak {
     padding: 0.5rem;
-    padding-left: 3rem;
+    padding-left: 1rem;
     border: 1px solid gray;
     outline: none;
     height: 12rem;
@@ -74,12 +74,12 @@ align-self: center;
 }
 
 /*CONTROLEREN KNOP*/
-#controlerenknop {
+#volgendeknop {
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
 
-#controlerenknop a {
+#volgendeknop a {
     color: white;
     font-weight: bold;
     background-color: #EC671B;
@@ -88,7 +88,7 @@ align-self: center;
     padding: 0.5rem;
 }
 
-#controlerenknop a:hover {
+#volgende a:hover {
     background-color: #C57301;
 }
 
