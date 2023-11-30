@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nieuwsbegrip | Opdracht 2</title>
+    <!--lettertype-->
+    <link rel="stylesheet" href="https://use.typekit.net/ezq3eak.css">  
+    <link rel="stylesheet" href="https://kit.fontawesome.com/e1baee5c3f.css" crossorigin="anonymous">  
+
+    <!--Framework-->
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="JavaScript/app.js"></script>
+
+    <!--CSS + javascript-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/opdracht2Julia.css">
+    <script src="JavaScript/main.js"></script>
+</head>
+<body>
+<!------------------------ HEADER ------------------------------>
+<header>
+    <nav>
+    <div class="grid-x"> <!--Navigatie-->
+        <div class="cell large-1 medium-1 small-1 nav" id="homeLink">
+            <a href="index.html">
+                <img src="content/home.svg">
+                <h3 class="hide-for-small-only"><b>Homepage</b></h3>
+            </a>
+        </div>
+        <div class="cell large-1 medium-2 hide-for-small-only nav">
+            <a href="basislesmaaike.html"><h3>Basisles</h3></a>
+        </div>
+        <div class="cell large-1 medium-2 hide-for-small-only nav">
+            <a href="basislesmaaike.html"><h3>Opdrachten</h3></a>
+        </div>
+        <div class="cell large-7 medium-3 small-7" id="progress">
+            <h3><b>Opdracht 2 van 16</b></h3>
+            <div id="progressBalk" class="hide-for-small-only hide-for-medium-only"></div>
+        </div>
+        <div class="cell large-1 medium-2 small-1" id="stop">
+            <a href="basislesmaaike.html"><h3><span class="hide-for-small-only">Stoppen</span>  X</h3></a>
+        </div>
+    </div>
+    </nav>
+</header>
+
+<!------------------------ MAIN ------------------------------>
+<main class="main100">
+    <div class="grid-x"><!--main-->
+
+        <div class="cell large-8 large-offset-2 medium-8 medium-offset-2 small-12 main"> <!--wit vlak-->
+            <div class="grid-y">
+
+
+                <!-- ICONEN / MASCOTTES -->
+                <section>
+                    <div class="cell large-1 small-1 align-right" id="iconen">
+                        <!---Hulpfunctie bij mobile version-->
+                        <div class="icoonMetTekst">
+                            <div class="cell show-for-small-only" id="hulpfunctieKlein">
+                                <button type="button" onclick="openHulpfunctie()" id="hulpfunctieKleinShow">
+                                    <img src="content/Pen met vraagtekenen.svg">
+                                </button>
+                                <p id="hulpfunctieTekstKleinShow">Hulp</p>
+                            </div>
+                        </div>
+
+                        <!--icoon luisterfunctie-->
+                        <div class="icoonMetTekst">
+                            <a href="voorleesfunctiemaaike.html" aria-label="Voorleesfunctie"><img src="content/Pen met microfoon.svg" alt="voorlezen"></a>
+                            <p>Voorlezen</p>
+                        </div>
+                        
+                        <!--icoon uitleg-->
+                        <div class="icoonMetTekst">
+                            <button type="button" onclick="openUitleg()"><img src="content/Boek Uitleg 2.1.svg" alt="Uitleg"></button>
+                            <p>Uitleg</p>
+                        </div>
+                        
+                        <!--icoon leestekst-->
+                        <div class="icoonMetTekst">
+                            <a href="Nieuwsbegriptekst.html" aria-label="Leestekst"><img src="content/Boek leestekst.svg" alt="leestekst"></a>
+                        <p>Leestekst</p>
+                        </div>    
+                    </div>
+                </section>
+
+
+
+
+                
+            <!-- OPDRACHT -->
+                <!--vragen rij-->
+                <section class="cell large-1">
+                    <div class="grid-y" id="opdrachtGrid">
+
+                        <!--Opdracht tekst/vraag-->
+                        <div class="cell large-1 large-offset-1">
+                            <h3><b>Opdracht 2</b></h3>
+                        </div>
+                        <div class="cell large-1 large-offset-1">
+                            <p>Deze sleutelopdracht hoort bij de inleiding</p>
+                        </div>
+                        <div class="cell large-1 large-offset-1">
+                            <h4><b>Inleiding</b></h4>
+                        </div>
+                        <div class="cell large-1 large-offset-1">
+                            <p>Sleutelvraag 2: Over welke reis gaat het over in de inleiding?</p>
+                        </div>
+
+                        <!--Opdracht antwoordkeuzes-->
+                        <form class="cell large-4 large-offset-1" id="antwoorden">
+                            <div>
+                                <input type="radio" name="antwoord" value="false1" id="antwoord1">
+                                <label for="antwoord1" id="a1">De reis van de ouders van panda Fan Xing naar Ouwehands Dierenpark.</label>
+                            </div>                    
+                            <div>
+                                <input type="radio" name="antwoord" value="true" id="antwoord2">
+                                <label for="antwoord2" id="a2">De reis van de panda Fan Xing van Nederland naar China.</label>
+                            </div>                    
+                            <div>
+                                <input type="radio" name="antwoord" value="false2" id="antwoord3">
+                                <label for="antwoord3" id="a3">De reis van panda Fan Xing naar haar ouders in Rhenen.</label>
+                            </div>    
+                        </form>
+
+                        <!--Vorige en controleer knoppen-->
+                        <div class="cell large-2 large-offset-1" id="opdrachtNavigatie">
+                            <a href="opdracht1maaike.html">&lt;&lt; Vorige</a>
+                            <button type="button" onclick="controleren()" id="controleren">Controleren</button>
+                        </div>
+
+
+                        </div><!--grid-->
+                    </section><!--Opdracht-->
+                
+
+                <!--hulpfunctie knop/iconen -->
+                <section>
+                    <div class="cell large-1">
+                        <div class="cell large-1 large-offset-7 hide-for-small-only" id="hulpfunctie">
+                            <button type="button" onclick="openHulpfunctie()" id="hulpfunctieShow">
+                                <img id="hulpfunctieNormaal" src="content/hulpfunctie.svg">
+                                <img id="hulpfunctieHover" src="content/hulpfunctieHover.svg">
+                            </button>
+                        </div>
+                    </div>
+                </section>
+
+                <!--Opdracht goed gedaan icoon-->
+                <section>
+                    <div class="cell large-1 hide-for-small-only">
+                        <div class="large-offset-7" id="gefeliciteerd">
+                            <img src="content/Gefeliciteerd.svg">
+                        </div>
+                    </div>
+                </section>
+
+
+            </div><!--grid y-->
+        </div><!--wit vlak-->
+
+
+
+
+
+<!---------------------------------------------POP UPS ------------------------------------------------->    
+
+        <!--------------------------- UITLEG POPUP ------------------------->     
+        <section class="grid-x" id="uitlegPopup"> 
+            <div class="cell large-10 large-offset-1" id="uitleg">
+                <h2>Wat moet je doen?</h2>
+                <p class="large-offset-3"><span>Sleutelvraag = </span>deze helpt je de tekst beter te begrijpen</p>
+                <p class="large-offset-3">Weet je het antwoord op de vraag echt niet?<br>
+                Klik op het icoon van “leestekst” en lees de tekst nog eens rustig na, op zoek naar het antwoord!</p>
+
+                <button type="button" onclick="closeUitleg()">Ik snap het!</button>
+                <div class="hide-for-medium-only hide-for-small-only"><img src="content/Boek Uitleg 2.1.svg" alt="Uitleg mascotte"></div>
+            </div>
+        </section>
+
+
+
+        <!-------------------------- HULPFUNCTIE -------------------------->
+        <section class="grid-x" id="hulpfunctiePopup">
+
+
+            <!-------------- VRAGEN VAN DE HULPFUNCTIE DIA'S ------------>
+
+                <!--Tekst al gelezen?--->
+                <section class="grid-y" id="tekstGelezen"> <!--achtergrond vlak-->
+                    <div class="cell large-1">
+                        <button type="button" onclick="closeHulpfunctie()" class="sluitHulp">X</button>
+                    </div> 
+                    <!--content-->
+                    <div class="grid-x">
+                        <div class="cell large-3 show-for-large"> <!--afbeelding-->
+                            <img src="content/Pen met microfoon.svg" alt="mascotte">
+                        </div>
+                        <div class="cell large-5 large-offset-1 bord"><!--vraag-->
+                            <h2>Heb je de tekst al gelezen?</h2>
+                            <div class="keuze">
+                                <button type="button" onclick="ja()">Ja</button>
+                                <button type="button" onclick="nee()">Nee</button>
+                            </div>
+                        </div>
+                    </div> 
+                </section>  
+
+                <!----- Feedback: Tekst niet gelezen ----->
+                <section class="grid-y" id="naarTekst"> <!--achtergrond vlak-->
+                    <div class="cell large-1">
+                        <button type="button" onclick="closeHulpfunctie()" class="sluitHulp">X</button>
+                    </div> 
+                    <!--content-->
+                    <div class="grid-x">
+                        <div class="cell large-3 show-for-large"> <!--afbeelding-->
+                            <img src="content/Pen met microfoon.svg" alt="mascotte">
+                        </div>
+                        <div class="cell large-6 large-offset-1 bord"><!--vraag-->
+                            <h2>Het is handig om eerst de tekst te lezen voordat je de vragen beantwoord.</h2>
+                            <div class="keuze">
+                                <button type="button" onclick="tekstOke()">Oke</button>
+                            </div>
+                        </div>
+                    </div> 
+                </section>
+
+
+                <!----- Feedback tekst gelezen: waar moeite mee ---->
+                <section class="grid-y" id="moeiteMet"> <!--achtergrond vlak-->
+                    <div class="cell large-1">
+                        <button type="button" onclick="closeHulpfunctie()" class="sluitHulp">X</button>
+                    </div> 
+                    <!--content-->
+                    <div class="grid-x">
+                        <div class="cell large-3 show-for-large"> <!--afbeelding-->
+                            <img src="content/Pen met microfoon.svg" alt="mascotte">
+                        </div>
+                        <div class="cell large-5 large-offset-1 bord"><!--vraag-->
+                            <h2>Waar heb je hulp bij nodig?</h2>
+                            <div class="keuze">
+                                <button type="button" onclick="tekst()">De tekst</button>
+                                <button type="button" onclick="vraag()">De vraag</button>
+                            </div>
+                        </div>
+                    </div> 
+                </section>  
+
+                <!--- hulp bij de tekst --->
+                <section class="grid-y" id="hulpTekst"> <!--achtergrond vlak-->
+                    <div class="cell large-1">
+                        <button type="button" onclick="closeHulpfunctie()" class="sluitHulp">X</button>
+                    </div>
+                    <!--content--> 
+                    <div class="grid-x">
+                        <div class="cell large-3 show-for-large"> <!--afbeelding-->
+                            <img src="content/Pen met microfoon.svg" alt="mascotte">
+                        </div>
+                        <div class="cell large-6 large-offset-1 bord"><!--vraag-->
+                            <h2>Kijk naar de titel en lees regel 1. 
+                                Lees ook regel 4 en 5.</h2>
+                            <div class="keuze">
+                                <button type="button" onclick="oke()">Oke</button>
+                            </div>
+                        </div>
+                    </div> 
+                </section> 
+
+                <!---hulp bij de vraag-->
+                <section class="grid-y" id="hulpVraag"><!--achtergrond vlak-->
+                    <div class="cell large-1">
+                        <button type="button" onclick="closeHulpfunctie()" class="sluitHulp">X</button>
+                    </div> 
+                    <!--content-->
+                    <div class="grid-x">
+                        <div class="cell large-3 show-for-large"> <!--afbeelding-->
+                            <img src="content/Pen met microfoon.svg" alt="mascotte">
+                        </div>
+                        <div class="cell large-5 large-offset-1 bord"><!--vraag-->
+                            <h2>Over welke panda gaat het? 
+                                Wie heeft er pas een reis gemaakt?</h2>
+                            <div class="keuze">
+                                <button type="button" onclick="oke()">Oke</button>
+                            </div>
+                        </div>                    
+                    </div> 
+                </section>
+        </section> <!--hulpfunctie popup-->
+
+
+
+    </div><!--class main-->
+</main> 
+
+
+</body>
+</html>
