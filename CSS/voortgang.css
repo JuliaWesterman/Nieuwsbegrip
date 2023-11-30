@@ -1,0 +1,80 @@
+/*--- TYPOGRAFIE ---*/
+h1, h2, h3, h4{
+    font-family: 'Asap';
+}
+h1{
+    font-size: 25px;
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 16px;
+}
+h4{
+    font-size: 12px;
+}
+p, li, ul, a{
+    font-family: 'Open Sans';
+    font-size: 18px;
+}
+
+/*blauwe achtergrond*/
+main{
+    background-color: #D7E9FB;
+    padding-top: 7rem;
+}
+/*Wit vlak*/
+.main{
+    background-color: white;
+    padding-bottom: 1rem;
+    position: relative;
+}
+/*schermhoogte 100%*/
+.main100{
+    height: 100vh;
+}
+
+.nav h3{
+    color: blueviolet;
+    text-align: center;
+    padding: 0.5rem;
+    border-right: solid 2px blueviolet;
+    margin: 0;
+}
+
+#voortgangtekst{
+    color: blueviolet;
+    text-align: center;
+    padding: 1rem;
+}
+
+.tegel{
+    background-color: white;
+    padding: 1.5rem;
+    box-shadow: 3px 6px 23px #ADADAE;
+    text-align: center;
+    border-radius: 25px;
+}
+
+#tegelbasisles{
+    width: 90%;
+    margin: auto;
+    background-color: white
+}
+
+.opdrachtentegels{
+    margin-top: 2rem;
+    justify-content: center;
+}
+
+.tegel img{
+    height: 6rem;
+}
+
+#voortgang{
+    height: 1rem;
+    width: 3rem;
+    margin: 0.7rem;
+    background: linear-gradient(to right, rgb(15, 232, 15) 16%, rgb(209, 209, 209) 17%);
+}
