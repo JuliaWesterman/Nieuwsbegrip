@@ -1,7 +1,15 @@
 
+/*--------Uitleg popup aan en uit-------*/
+function openUitleg(){
+    document.getElementById("uitlegPopup").style.visibility = "visible";
+};
+
+function closeUitleg(){
+    document.getElementById("uitlegPopup").style.visibility = "hidden";
+}
+
+
 /*Antwoord voor de opdracht controleren*/
-/*uiterlijk aanpassen naar vernieuwing prototype*/
-/*kruisje is nu ook doorstreept*/
 function controleren(){
         /*fout*/
         if (document.getElementById("antwoord1").checked){
@@ -35,19 +43,6 @@ function controleren(){
         };        
 
     };
-
-
-
-
-
-/*--------Uitleg popup aan en uit-------*/
-function openUitleg(){
-    document.getElementById("uitlegPopup").style.visibility = "visible";
-};
-
-function closeUitleg(){
-    document.getElementById("uitlegPopup").style.visibility = "hidden";
-}
 
 
 /*-------------------------------- HULPFUNCTIE ------------------------------------*/
