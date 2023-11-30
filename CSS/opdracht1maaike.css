@@ -1,4 +1,4 @@
-/*HEADER NAVIGATIEBALK*/
+/*HEADER NAVIGATIEBALK BROODKRUIMELS*/
 #progress{
     display: flex;
     flex-direction: row;
@@ -50,16 +50,19 @@ align-self: center;
     height: 3rem;
 }
 
+/*Tekst onder de iconen rechts bovenin*/
 .icoonmetonderschrift p {
     font-size: 14px;
     text-align: center;
     font-weight: bold;
 }
 
-#opdrachttoelichting {
-    padding-left: 5rem;
+/*GEHELE OPDRACHT (+ TEKSTVLAK) */
+#opdracht1 {
+    padding-left: 3rem;
 }
 
+/*Tekstvlak om antwoord in te typen*/
 .tekstvlak {
     padding: 0.5rem;
     padding-left: 1rem;
@@ -69,16 +72,13 @@ align-self: center;
     width: 50rem;
 }
 
-#opdracht1 {
-    padding-left: 3rem;
-}
-
-/*CONTROLEREN KNOP*/
+/*'VOLGENDE' KNOP*/
 #volgendeknop {
     margin-top: 2rem;
     margin-bottom: 1rem;
 }
 
+/*'Volgende' knop*/
 #volgendeknop a {
     color: white;
     font-weight: bold;
@@ -88,11 +88,12 @@ align-self: center;
     padding: 0.5rem;
 }
 
+/*'Volgende' knop hover*/
 #volgende a:hover {
     background-color: #C57301;
 }
 
-
+/*TABLET (EN MOBILE) VERSION*/
 @media screen and (max-width: 1024px) {
 
     #opdracht1 {

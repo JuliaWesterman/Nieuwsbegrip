@@ -1,4 +1,4 @@
-/*----header nav hoeveelste opdracht----*/
+/*HEADER NAVIGATIEBALK BROODKRUIMELS*/
 #progress{
     display: flex;
     flex-direction: row;
@@ -25,14 +25,17 @@ align-self: center;
     height: 10rem; 
 }
 
+/*Vlak voor het leesmasker (linker)*/
 #leesmaskervlak {
     border-radius: 0.7rem 0rem 0rem 0.7rem;
 }
 
+/*Vlak voor het afspelen (rechter)*/
 #afspelenvlak {
     border-radius: 0rem 0.7rem 0.7rem 0rem;
 }
 
+/*Afbeeldingen afspeelvlak (iconen)*/
 #afspelenvlak img {
     display: flex;
     justify-content: center;
