@@ -8,8 +8,8 @@ main{
 
 /*------------------------------- Navigatie -------------------------------------*/
 #navigatie {
-    margin: 1rem 1rem 1rem 1rem;
-    justify-content: center;
+    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    align-items: center;
 }
 
 /*----Profiel ----*/
@@ -28,6 +28,23 @@ main{
         font-size: 25px;
         color: black;
         font-weight: bold;
+}
+
+#cirkel :hover{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #EC671B;
+    border: 3px solid #951B81;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#initialen h3:hover{
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
 }
 
 /*--------------------------------- TITEL ---------------------------------------*/
