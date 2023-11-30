@@ -1,3 +1,6 @@
+
+
+
 /*--- TYPOGRAFIE ---*/
 h1, h2, h3, h4{
     font-family: 'Asap';
@@ -28,28 +31,67 @@ p{
 main{
     background-color: #D7E9FB;
     padding-top: 7rem;
+    padding-bottom: 3rem; 
 }
 /*Wit vlak*/
 .main{
     background-color: white;
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
     position: relative;
 }
-/*schermhoogte 100%*/
-.main100{
-    height: 100vh;
+
+header{
+    padding: 0.1rem;
 }
 
+/*Navigatie*/
 .nav h3{
-    color: blueviolet;
+    color: #C7067F;
     text-align: center;
-    padding: 0.5rem;
-    border-right: solid 2px blueviolet;
+    padding: 1rem;
+    border-right: solid 2px #C7067F;
     margin: 0;
 }
 
+/*grootte logo responsive*/
+#logo{
+    align-items: center;
+    max-width: 50vw;
+    justify-content: center;
+}
+
+/*BK rechts zetten*/
+#bk h3{
+    text-align: right;
+}
+
+/*Het huisje in de navigatie*/
+#homeLink{
+    width: max-content;
+}
+#homeLink a{
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    padding-right: 0.6rem;
+}
+#homeLink img{
+    width: 2rem;
+    margin-top: -0.3rem;
+}
+
+/*Bovenaan*/
+
+.grid-y h2{
+    color: #C7067F;
+}
+
+.opdrachtentegels h3{
+    color: #C7067F;
+}
+
 #voortgangtekst{
-    color: blueviolet;
+    color: #C7067F;
     text-align: center;
     padding: 1rem;
 }
@@ -62,9 +104,109 @@ main{
     border-radius: 25px;
 }
 
+/*voor positionering content*/
+.dropdown{
+    width: 100%;
+    position: relative;
+    display: inline-block;
+}
+
+/*inhoud content*/
+.dropdown-content{
+    align-self: center;
+    border-radius: 10px;
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 100%;
+    box-shadow: 3px 6px 23px #ADADAE;
+    z-index: 1;
+  }
+
+/*tekst in dropdown*/
+  .dropdown-content h4{
+    color: #C7067F;
+  }
+
+/* dropdown menu via hover */
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+
+/* hover dropdown */
+.dropdown:hover .dropdownbutton{
+    background-color: #ADADAE;
+}
+
+/*voortgangsbalk in dropdown naast goed/fout*/
+.voortgangdropal{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.voortgangdropal h4{
+    padding-top: 0.7rem;
+}
+
+/*voortgangsbalk in dropdown van actief lezen, goed*/
+#voortgangdropalg{
+    height: 1rem;
+    width: 25%;
+    margin: 0.7rem;
+    background: linear-gradient(to right, rgb(15, 232, 15) 70%, rgb(209, 209, 209) 17%);
+    text-align: left;
+}
+
+/*voortgangsbalk in dropdown van actief lezen, fout*/
+#voortgangdropalr{
+    height: 1rem;
+    width: 25%;
+    margin: 0.7rem;
+    background: linear-gradient(to right, red 30%, rgb(209, 209, 209) 17%);
+    text-align: left;
+}
+
+
+/*voortgangsbalk in dropdown naast goed/fout*/
+.voortgangdrop{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.voortgangdrop h4{
+    padding-top: 0.7rem;
+}
+
+/*voortgangsbalk in dropdown van alles behalve actief lezen, goed*/
+#voortgangdropg{
+    height: 1rem;
+    width: 25%;
+    margin: 0.7rem;
+    background: linear-gradient(to right, rgb(15, 232, 15) 1%, rgb(209, 209, 209) 17%);
+    text-align: left;
+}
+
+/*voortgangsbalk in dropdown van actief lezen, fout*/
+#voortgangdropr{
+    height: 1rem;
+    width: 25%;
+    margin: 0.7rem;
+    background: linear-gradient(to right, red 1%, rgb(209, 209, 209) 17%);
+    text-align: left;
+}
+
 #tegelbasisles{
     width: 90%;
     margin: auto;
+    background-color: white
+}
+
+#tegelandere{
+    width: 90%;
+    align-self: center;
+    margin-top: 2rem;
     background-color: white
 }
 
@@ -91,4 +233,33 @@ main{
     margin: 0.7rem;
     background: linear-gradient(to right, rgb(15, 232, 15) 100%, rgb(209, 209, 209) 17%);
     text-align: left;
+}
+
+/*responsive voor telefoon (small)*/
+@media screen and (max-width: 640px){
+    header .grid-x{
+        justify-content: space-between;
+    }
+    #homeLink{
+        text-align: left;
+    }
+    .nav{
+        border: none;
+    }
+    .main100{
+        height: 100%;
+    }
+    .main100 > .grid-x{
+        width: 95%;
+        margin: auto;
+    }
+    #iconen{
+        margin: auto;
+        scale: 80%;
+    }
+
+    .tegel{
+        margin-bottom: 2rem;
+    }
+
 }

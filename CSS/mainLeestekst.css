@@ -1,28 +1,29 @@
 /*--- TYPOGRAFIE ---*/
 h1, h2, h3, h4{
-    font-family: 'Asap';
+    font-family: 'asap';
 }
 h1{
-    font-size: 25px;
+    font-size: 2.5rem;
 }
 h2{
-    font-size: 30px;
+    font-size: 1.8rem;
 }
 h3{
-    font-size: 25px;
+    font-size: 1.3rem;
 }
 h4{
-    font-size: 12px;
+    font-size: 1.3rem;
 }
-p, li, ul, a{
-    font-family: 'Open Sans';
-    font-size: 18px;
+p, li, ul, a, button, label{
+    font-family: 'open-sans';
+    font-size: 1.1rem;
 }
 
 /*blauwe achtergrond*/
 main{
     background-color: #D7E9FB;
     padding-top: 7rem;
+    padding-bottom: 3rem; 
 }
 /*Wit vlak*/
 .main{
@@ -35,13 +36,17 @@ main{
     height: 100vh;
 }
 
-
-h3{
-    font-size: 16px;
-}
 a{
     color: black;
 }
+
+
+
+/*Navigatie*/
+nav{
+    background-color: white;
+}
+
 .nav h3{
     color: blueviolet;
     text-align: center;
@@ -49,51 +54,80 @@ a{
     border-right: solid 2px blueviolet;
     margin: 0;
 }
-nav{
-    background-color: white;
-    
-}
+
 #voortgangdiv{
     display: flex;
     flex-direction: row;
+    gap: 0.7rem;
 }
 #voortgangdiv h3{
-    color:  rgb(15, 232, 15);
-    font-weight: bold;
-    padding: 0.5rem;
+    color: #77B72A;
+    align-self: center;
+    padding-left: 1rem;
 }
 #voortgang{
-    height: 1rem;
-    width: 70%;
-    margin: 0.7rem;
-    background: linear-gradient(to right, rgb(15, 232, 15) 16%, rgb(209, 209, 209) 17%);
+align-self: center;
+    height: 1.2rem;
+    width: 60%;
+    background: linear-gradient(to right, #77B72A 15%, rgb(225, 225, 225) 16%);
 }
 
-#stoppen h3{
-    color: rgb(0, 98, 255);
-    font-weight: bold;
-    padding: 0.5rem;
+#stop{
+    padding: 1rem 0.6rem;
+    text-align: right;
 }
-#stoppen span{
+#stop h3{
+    font-weight: bold;
     color: red;
+
+}
+#stop span{
+    color: #56A5EA;
 }
 
 #grid-x{
     color: white;
 }
 
-#voorlees {
-    float: right;
-  }
+#bovensterij{
+    padding-top: 2rem;
+}
 
 h4{
     text-align: center;
 }
 
+
 .main span{
     font-size: 2rem;
 }
 
+/*Het huisje in de navigatie*/
+#homeLink{
+    width: max-content;
+}
+#homeLink a{
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    padding-right: 0.6rem;
+}
+#homeLink img{
+    width: 2rem;
+    margin-top: -0.3rem;
+}
+
+#afbeelding h4{
+    font-size: 1rem;
+}
+
+#pijltje{
+    padding-top: 1rem;
+}
+
+
+
+/*verderknop onderaan*/
 #verder{
     color: white;
     font-weight: bold;
@@ -101,4 +135,37 @@ h4{
     border-radius: 8px;
     padding: 0.7rem 0.8rem;
     margin-bottom: 2rem;
+}
+
+/*responsive voor telefoon (small)*/
+@media screen and (max-width: 640px){
+    header > .grid-x{
+        justify-content: space-between;
+    }
+    #homeLink{
+        text-align: left;
+    }
+    .nav{
+        border: none;
+    }
+
+    main{
+        padding-top: 3rem;
+    }
+
+    main > .grid-x{
+        width: 95%;
+        margin: auto;
+    }
+    #iconen{
+        margin: auto;
+        scale: 80%;
+    }
+    #voorlees{
+        text-align: right;
+        padding-right: 2rem;
+    }
+    #titel{
+        text-align: center;
+    }
 }
