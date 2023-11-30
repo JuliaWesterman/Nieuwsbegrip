@@ -188,7 +188,34 @@ main {
 
 /*--------------------------------------------------------- RESPONSIVE --------------------------------------------------------------*/
 @media screen and (max-width: 640px){
-        
+
+/*------------------------ TEGEL RIJEN, KEUZE MENU ------------------------------*/
+#tegels {
+	grid-gap: 1rem;
+    margin: 23rem;
+}
+
+#tegels img {
+    width: 8em;
+    height: 8em;
+}
+
+#tegels .cell {
+    padding: 1.5rem;
+    width: 5em;
+    height: 5em;
+
+}
+#tegels .cell h2 {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+#tegels .cell p {
+    margin-top: -0.8rem;
+}
+       
+
 
     
 
