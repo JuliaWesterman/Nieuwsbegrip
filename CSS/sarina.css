@@ -42,20 +42,27 @@ main {
 
 /*----Profiel inhoud----*/
 #profiel {
-    margin: 1rem 3.5rem 1rem 70rem;
-    background-color: red;
+    margin: -0.5rem 3.5rem 9rem 64rem;
+    background-color: #D7E8FB;
+    border-radius: 4%;
+    box-shadow: 3px 6px 23px #3B8035;
     color: #DD4A9A;
     z-index: 3;
 }
 #profiel img {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 70px;
 }
 .balk {
     display: flex;
     flex-direction: row;
-    padding: 1rem 1rem 1rem 1rem;
+    margin: 2rem 1rem 2rem 1rem;
+    padding: 1.5rem 3rem 1.5rem 3rem;
+    gap: 4rem;
     background-color: white;
+    border: 3px solid #951B81;
+    border-radius: 20%;
+    align-items: center;
 }
 
 /*--------------------------------- TITEL ---------------------------------------*/
