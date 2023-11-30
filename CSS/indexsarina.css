@@ -158,7 +158,7 @@ a:hover{
     display: flex;
     flex-direction: inherit;
     align-self: center;
-    margin-left: 12rem;
+    margin-left: 20rem;
     margin-top: 3rem;
     width: 70em;
     height: 20em;
@@ -217,19 +217,17 @@ a:hover{
 /*------------------------------ BOEKENTIP ------------------------------------*/
 /*---- IMG boven de boekentip----*/
 #liggendepanda {
-    display: flex;
-    flex-direction: inherit;
-    align-self: center;
-    margin-left: rem;
+    margin: 0;
+}
+#liggendepanda img{
     margin-top: 3rem;
-    width: 70em;
-    height: 20em;
+    width: 50em;
+    height: 10em;
 }
 
 /*------------ IMG ------------*/
 #boekpanda{padding-right: 0.3rem;}
 #boekpanda img {
- 
     width: 10em;
     height: 12em;
 }
