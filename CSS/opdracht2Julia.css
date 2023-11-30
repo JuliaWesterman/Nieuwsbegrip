@@ -76,6 +76,12 @@ align-self: center;
     font-size: 14px;
 }
 
+#opdrachtNavigatie button:hover{
+    background-color: #C57301;
+}
+#opdrachtNavigatie a:hover{
+    background-color: #767676;
+}
 
 /*---------popup uitleg-------------*/
 #uitlegPopup{
@@ -114,6 +120,10 @@ align-self: center;
     font-size: larger;
 }
 
+#uitleg button:hover{
+    background-color: #C57301;
+}
+
 /*mascotte*/
 #uitleg div{
     background-color: white;
@@ -135,6 +145,11 @@ align-self: center;
     right: 0;
     bottom: 0;
     visibility: hidden;
+}
+
+#gefeliciteerd{
+    right: 0.5rem;
+    bottom: 0.5rem;
 }
 
 #hulpfunctie img{
@@ -186,20 +201,24 @@ align-self: center;
     text-align: center;
     width: 100%;
 }
-#keuze{ /*knoppen*/
+.keuze{ /*knoppen*/
     display: flex;
     flex-direction: row;
     gap: 2rem;
     justify-content: center;
     margin-top: 1rem;
 }
-#keuze button{
+.keuze button{
     background-color: #EC671B;
     color: white;
     width: 7rem;
     height: 2.5rem;
     border-radius: 10px;
     font-size: larger;
+}
+
+.keuze button:hover{
+    background-color: #C57301;
 }
 
 .sluitHulp{
@@ -215,34 +234,9 @@ align-self: center;
 
 
 
-
-
-
-
-/*navigatie werkend maken*/
+/*---------------------  RESPONSIVE  ---------------*/
 
 @media screen and (max-width: 640px){
-    header .grid-x{
-        justify-content: space-between;
-    }
-    #homeLink{
-    text-align: left;
-    }
-    .nav{
-        border: none;
-    }
-    .main100{
-        height: 100%;
-    }
-    .main100 > .grid-x{
-        width: 95%;
-        margin: auto;
-    }
-    #iconen{
-        margin: auto;
-        scale: 80%;
-    }
-
     #opdrachtNavigatie{
         text-align: center;
     }
@@ -272,8 +266,6 @@ align-self: center;
     }
 }
 
-
-
 @media screen and (max-width: 1024px){
     #uitleg{
         padding: 1rem;
@@ -292,110 +284,3 @@ align-self: center;
         visibility: hidden;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*---------------------------------------------- BASISLESSEN PAGINA --------------------------------------------*/
-/* #titel h2{
-    margin: 3rem 0 1.5rem 0;
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
-}
-.verwijzing{
-    padding: 0.4rem;
-    border: solid 0.4rem #D7E9FB;
-    border-radius: 10px;
-}
-#actiefLezen{
-    margin-left: 3rem;
-}
-.verwijzing h3{
-    text-align: center;
-    color: #951B81;
-    font-weight: bold;
-}
-
-#onderNavigatie{
-    margin-top: 2rem;
-}
-#leestekstVerwijzing{
-    display: flex;
-    flex-direction: row;
-    gap: 0.5rem;
-}
-#leestekstVerwijzing h4{
-    align-self: center;
-}
-#leestekstVerwijzing img{
-    height: 3rem;
-}
-
-#onderNavigatie a{
-    color: white;
-    background-color: #F8BD66;
-    border-radius: 5px;
-    padding: 0.2rem 0.6rem;
-    margin-top: 0.9rem;
-}
-
-
-#gefeliciteerdAfgerond{
-    position: absolute;
-    z-index: 2;
-    width: 100%;
-    height: 50%;
-    backdrop-filter: blur(6px);
-}
-#gefeliciteerdAfgerond h2{
-    text-align: center;
-    color: white;        
-    font-size: larger;
-    font-weight: bold;
-    background-color: #EC671B;
-    border-radius: 8px;
-    width: 70%;
-    padding: 0.7rem;
-    margin: 4rem auto 1rem auto;
-} */
-
-
-
-
-/*shhhhh*/
-    /* #hulpfunctie button, #gefeliciteerd{
-        width: 25%;
-        position: absolute;
-        left: 0;
-        top: 0;
-        visibility: hidden;
-    }
-    
-    #hulpfunctie img{
-        width: 100%;
-    }
-    
-    #hulpfunctieHover{
-        position: absolute;
-        left: 0;
-        top: 0;
-        visibility: hidden;
-    } */
