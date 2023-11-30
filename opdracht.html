@@ -56,15 +56,15 @@
                 <!-- ICONEN / MASCOTTES -->
                 <div class="cell large-1 small-1 align-right" id="iconen"><!--iconen rij-->
 
-                    <!---DIT WERKT HELAAS NOG NIET-->
-                    <!-- <div class="icoonMetTekst">
+                    <!---Hulpfunctie bij Telefoon-->
+                    <div class="icoonMetTekst">
                         <div class="cell show-for-small-only" id="hulpfunctieKlein">
-                            <button type="button" onclick="openHulpfunctie()" id="hulpfunctieShow">
+                            <button type="button" onclick="openHulpfunctie()" id="hulpfunctieKleinShow">
                                 <img src="content/Pen met vraagtekenen.svg">
                             </button>
-                            <p id="hulpfunctieShow">Hulp nodig?</p>
+                            <p id="hulpfunctieTekstKleinShow">Hulp</p>
                         </div>
-                    </div> -->
+                    </div>
 
                     <div class="icoonMetTekst">
                         <img src="content/Pen met microfoon.svg" alt="voorlezen">
@@ -123,7 +123,7 @@
 
                 <!--hulpfunctie knop/afbeeldingen -->
                 <div class="cell large-1">
-                    <div class="cell large-1 large-offset-7" id="hulpfunctie">
+                    <div class="cell large-1 large-offset-7 hide-for-small-only" id="hulpfunctie">
                         <button type="button" onclick="openHulpfunctie()" id="hulpfunctieShow">
                             <img id="hulpfunctieNormaal" src="content/hulpfunctie.svg">
                             <img id="hulpfunctieHover" src="content/hulpfunctieHover.svg">
@@ -131,9 +131,9 @@
                     </div>
                 </div>
 
-                <div class="cell large-1">
+                <div class="cell large-1 hide-for-small-only">
                     <div class="large-offset-7" id="gefeliciteerd">
-                        <a href="index.html"><img src="content/gefeliciteerd.png"></a>
+                        <img src="content/Gefeliciteerd.svg">
                     </div>
                 </div>
 
@@ -163,7 +163,7 @@
 
 
                 <!---tekst gelezen?-->
-                <section class="grid-y" id="tekstGelezen"> <!--wit vlak-->
+                <section class="grid-y" id="tekstGelezen"> <!--achtergrond vlak-->
                     <div class="cell large-1">
                         <button type="button" onclick="closeHulpfunctie()" class="sluitHulp">X</button>
                     </div> 
@@ -182,7 +182,7 @@
                 </section>  
 
                 <!---moeite met-->
-                <section class="grid-y" id="moeiteMet"> <!--wit vlak-->
+                <section class="grid-y" id="moeiteMet"> <!--achtergrond vlak-->
                     <div class="cell large-1">
                         <button type="button" onclick="closeHulpfunctie()" class="sluitHulp">X</button>
                     </div> 
@@ -201,7 +201,7 @@
                 </section> 
 
                 <!---Tekst niet gelezen-->
-                <section class="grid-y" id="naarTekst"> <!--wit vlak-->
+                <section class="grid-y" id="naarTekst"> <!--achtergrond vlak-->
                     <div class="cell large-1">
                         <button type="button" onclick="closeHulpfunctie()" class="sluitHulp">X</button>
                     </div> 
@@ -209,7 +209,7 @@
                         <div class="cell large-3 show-for-large"> <!--afbeelding-->
                             <img src="content/Pen met microfoon.svg" alt="mascotte">
                         </div>
-                        <div class="cell large-6 large-offset-1 bord" id="andereMargin">
+                        <div class="cell large-6 large-offset-1 bord">
                             <h2>Het is handig om eerst de tekst te lezen voordat je de vragen beantwoord.</h2>
                             <div id="keuze">
                                 <button type="button" onclick="tekstOke()">Oke</button>
@@ -219,7 +219,7 @@
                 </section> 
 
                 <!---hulp bij de tekst-->
-                <section class="grid-y" id="hulpTekst"> <!--wit vlak-->
+                <section class="grid-y" id="hulpTekst"> <!--achtergrond vlak-->
                     <div class="cell large-1">
                         <button type="button" onclick="closeHulpfunctie()" class="sluitHulp">X</button>
                     </div> 
@@ -238,7 +238,7 @@
                 </section> 
 
                 <!---hulp bij de vraag-->
-                <section class="grid-y" id="hulpVraag"> <!--wit vlak-->
+                <section class="grid-y" id="hulpVraag"> <!--achtergrond vlak-->
                     <div class="cell large-1">
                         <button type="button" onclick="closeHulpfunctie()" class="sluitHulp">X</button>
                     </div> 

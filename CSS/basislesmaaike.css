@@ -64,3 +64,59 @@ header .grid-x {
     font-weight: bold;
     padding-left: 0.7rem;
 }
+
+@media screen and (max-width: 1250px) {
+
+#basisles {
+    background-color: red;
+    align-items: center;
+    margin: 2em;
+    border-radius: 25px;
+    padding: 1.5rem;
+    box-shadow: 4px 6px 23px #ADADAE; /*10px bepaald de 'blur'*/
+    height: 5em;
+    width: 30em;
+}
+
+#pijltjeterug {
+    margin-left: 2rem;
+}
+    
+#tegelsbasisles {
+   justify-content: center;
+   width: 25em; /*zorgt ervoor dat de tegels onder elkaar komen te staan*/
+} 
+
+#tegelsbasisles img {
+    width: 8em;
+    height: 8em;
+    float: left;
+}
+
+#tegelsbasisles .cell h2 {
+    float: center;
+    margin-top: 0.7em;
+    
+    
+}
+
+#tegelbasisles .cell p {
+    float: center;
+}
+
+.tegel {
+    width: 30em;
+    height: 10em;
+}
+
+#leestekstlink {
+    background-color: red;
+    align-items: center;
+    border-radius: 25px;
+    padding: 1.5rem;
+    box-shadow: 4px 6px 23px #ADADAE; /*10px bepaald de 'blur'*/
+    height: 5em;
+    width: 30em;
+}
+
+}
