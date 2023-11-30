@@ -21,33 +21,31 @@
 <body>
     <!--header-->
     <header>
+        <!--Navigatie-->
         <nav>
-            <div class="grid-x">
-                <div class="cell large-1 nav">
-                    <a href="#">
-                        <h3><b>Deze week</b></h3>
+            <div class="grid-x"> 
+                <div class="cell large-1 medium-1 small-1 nav" id="homeLink">
+                    <a href="index.html">
+                        <img src="content/home.svg">
+                        <h3 class="hide-for-small-only"><b>Homepage</b></h3>
                     </a>
                 </div>
-            <div class="cell large-1 nav">
-                <a href="#">
-                    <h3>Basislessen</h3>
-                </a>
-            </div>
-            <div class="cell large-1 nav hide-for-small-only">
-                <a href="#">
-                    <h3>Actief lezen</h3>
-                </a>
+                <div class="cell large-1 medium-2 hide-for-small-only nav">
+                    <a href="#"><h3>Basisles</h3></a>
                 </div>
-            <div class="cell large-7" id="voortgangdiv">
-                <h3>Opdracht 2 van 16</h3>
-                <div class="hide-for-small-only" id="voortgang" ></div>
+                <div class="cell large-1 medium-2 hide-for-small-only nav">
+                    <a href="#"><h3>Actief lezen</h3></a>
+                </div>
+                <div class="cell large-7 medium-3 small-7" id="voortgangdiv">
+                    <h3><b>Opdracht 2 van 16</b></h3>
+                    <div id="voortgang" class="hide-for-small-only hide-for-medium-only"></div>
+                </div>
+                <div class="cell large-1 medium-2 small-1" id="stop">
+                    <a href="#"><h3><span class="hide-for-small-only">Stoppen</span>  X</h3></a>
+                </div>
             </div>
-            <div class="cell large-1 large-offset-1" id="stoppen">
-                <h3>Stoppen <span>X</span></h3>
-            </div>
-            </div>
-            </div>
-        </nav>
+            </nav>
+        
     </header>
 
     <main>
