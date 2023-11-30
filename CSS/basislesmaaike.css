@@ -5,6 +5,7 @@ header .grid-x {
 #basisles h1 {
     text-align: center;
     font-weight: bold;
+    margin: auto;
 }
 
 #bovenkantgrid {
@@ -19,6 +20,7 @@ header .grid-x {
 }
 
 .tegel {
+    background-color: white;
     text-align: center;
     height: 18em;
     width: 18em;
@@ -65,21 +67,26 @@ header .grid-x {
     padding-left: 0.7rem;
 }
 
-@media screen and (max-width: 1250px) {
+/*TABLET VERSION*/
+@media screen and (max-width: 1024px) {
+
+.main {
+    background-color: #D7E9FB;
+    margin-top: -8em;
+}
 
 #basisles {
-    background-color: red;
-    align-items: center;
-    margin: 2em;
+    background-color: white;
+    padding: 0.7rem;
     border-radius: 25px;
-    padding: 1.5rem;
     box-shadow: 4px 6px 23px #ADADAE; /*10px bepaald de 'blur'*/
     height: 5em;
-    width: 30em;
+    width: 25em;
+    margin: auto;
 }
 
 #pijltjeterug {
-    margin-left: 2rem;
+    visibility: hidden;
 }
     
 #tegelsbasisles {
@@ -94,29 +101,58 @@ header .grid-x {
 }
 
 #tegelsbasisles .cell h2 {
-    float: center;
-    margin-top: 0.7em;
-    
-    
+    text-align: center;
+    margin-top: 0.7em; 
 }
 
 #tegelbasisles .cell p {
-    float: center;
+    text-align: center;
 }
 
 .tegel {
-    width: 30em;
+    width: 100%;
     height: 10em;
 }
 
 #leestekstlink {
-    background-color: red;
+    background-color: white;
     align-items: center;
     border-radius: 25px;
     padding: 1.5rem;
     box-shadow: 4px 6px 23px #ADADAE; /*10px bepaald de 'blur'*/
     height: 5em;
-    width: 30em;
+    width: 25em;
+    margin: auto;
 }
 
+}
+
+/*MOBILE VERSION*/
+@media screen and (max-width: 640px) {
+
+    #basisles {
+    height: 5em;
+    width: 20em;
+    margin-bottom: 2em;
+    }
+
+    #tegelsbasisles {
+        width: 23em;
+    }
+
+    .cell .tegel {
+        margin-top: 0.2em;
+    }
+
+    #tegelsbasisles img {
+        width: 5em;
+        height: 5em;
+        float: left;
+        margin-top: 1em;
+    }
+
+    #leestekstlink {
+        height: 5em;
+        width: 20em; 
+    }
 }
