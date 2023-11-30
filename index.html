@@ -18,6 +18,7 @@
         <link rel="stylesheet" href="css/main.css">
         <link rel="stylesheet" href="css/sarina.css">
         <script src="JavaScript/main.js"></script>
+        <script src="JavaScript/IndexSarina.js"></script>
 </head>
 <body>  
 <!------------------------ HEADER ------------------------------>
@@ -25,8 +26,8 @@
     <nav>
         <div class="grid-x" id="navigatie">
             <!--Hamburger-->
-            <div class="cell large-1">
-                <h3>Hamburber</h3>
+            <div class="cell large-1" id="hamburger">
+                <img src="content/Hamburger.svg" alt="Hamburger menu">
             </div>
             <!--Titel website Nieuwsbegrip-->
             <div class="cell large-2 large-offset-4" id="logo">
@@ -34,7 +35,7 @@
             </div>
             <!--Profiel-->
             <div class="cell large-1 large-offset-4" id="cirkel">
-                <a href="#"><h3 id="initialen">BK</h3></a>
+                <a href="#" onmouseover="showprofiel()"><h3 id="initialen">BK</h3></a>
             </div>
         </div>
     </nav>
@@ -42,27 +43,27 @@
 
 <!------------------------ MAIN ------------------------------>
 <main>      
-                 <!--Profiel inhoud-->
-                 <div class="grid-x" id="profiel">
-                    <div class="cell auto">
-                        <div class="balk">
-                            <a id="cirkel1"href="#"><h3 id="initialen1">BK</h3></a>
-                            <h3>Profiel</h3>
-                        </div>
-                        <div class="balk">
-                            <img src="content/Voortgang.svg" alt="Voortgang">
-                            <h3>Voortgang</h3>
-                        </div>
-                        <div class="balk">
-                            <img src="content/Instellingen.svg" alt="Instellingen">
-                            <h3>Instellingen</h3>
-                        </div>
-                        <div class="balk">
-                            <img src="content/Uitloggen.svg" alt="Uitloggen">
-                            <h3>Uitloggen</h3>
-                        </div>
-                    </div>
-                </div>         
+        <!--Profiel inhoud-->
+        <div class="grid-x" id="profiel" onmouseleave="hideprofiel()">
+        <div class="cell auto">
+            <div class="balk">
+                <a id="cirkel1" href="#"><h3 id="initialen1">BK</h3></a>
+                <h3>Profiel</h3>
+            </div>
+            <div class="balk">
+                <img src="content/Voortgang.svg" alt="Voortgang">
+                <h3>Voortgang</h3>
+            </div>
+            <div class="balk">
+                <img src="content/Instellingen.svg" alt="Instellingen">
+                <h3>Instellingen</h3>
+            </div>
+            <div class="balk">
+                <img src="content/Uitloggen.svg" alt="Uitloggen">
+                <h3>Uitloggen</h3>
+            </div>
+        </div>
+    </div>         
 
      <!----Titel---->
     <div class="grid-x">
@@ -73,7 +74,7 @@
 
 
     <!----Tegel rij 1---->
-    <div class="grid-x" id="tegels"><!--ID MOET CLASS WEZEN MAAR CSS IS VERVLOEKT!!!!!!!-->
+    <div class="grid-x" id="tegels">
         <!--Tegel Basisles-->
         <div class="cell auto">
             <a href="#">
