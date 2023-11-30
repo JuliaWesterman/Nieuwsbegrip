@@ -3,24 +3,39 @@
 /*uiterlijk aanpassen naar vernieuwing prototype*/
 /*kruisje is nu ook doorstreept*/
 function controleren(){
-    /*fout*/
-    if (document.getElementById("antwoord1").checked){
-        document.getElementById("a1").style.color = "red";
-        document.getElementById("a1").style.textDecoration = "line-through";
-        document.getElementById("hulpfunctieShow").style.visibility = "visible";        
-    };
-    /*goed*/
-    if (document.getElementById("antwoord2").checked){
-        document.getElementById("a2").style.color = "#77B72A";
-        document.getElementById("controleren").innerHTML = "Volgende";
-        document.getElementById("hulpfunctieShow").style.visibility = "hidden"; 
-        document.getElementById("gefeliciteerd").style.visibility = "visible";               
-    };
-    /*fout*/
-    if (document.getElementById("antwoord3").checked){
-        document.getElementById("a3").style.color = "red";
-        document.getElementById("a3").style.textDecoration = "line-through";
-        document.getElementById("hulpfunctieShow").style.visibility = "visible";        
+
+    if (document.getElementById("gefeliciteerd").style.visibility = "visible"){
+        window.location.href = "../basislesmaaike.html";
+    }
+    else{
+        /*fout*/
+        if (document.getElementById("antwoord1").checked){
+            document.getElementById("a1").style.color = "red";
+            document.getElementById("a1").style.textDecoration = "line-through";
+            document.getElementById("hulpfunctieShow").style.visibility = "visible";        
+            document.getElementById("hulpfunctieKleinShow").style.visibility = "visible";
+            document.getElementById("hulpfunctieTekstKleinShow").style.visibility = "visible";   
+            document.querySelector('input[name="antwoord"]:checked').style.accentColor = "#FF0000";  
+        };
+        /*goed*/
+        if (document.getElementById("antwoord2").checked){
+            document.getElementById("a2").style.color = "#77B72A";
+            document.getElementById("controleren").innerHTML = "Volgende";
+            document.getElementById("gefeliciteerd").style.visibility = "visible";               
+            document.getElementById("hulpfunctieShow").style.visibility = "hidden"; 
+            document.getElementById("hulpfunctieKleinShow").style.visibility = "hidden";  
+            document.querySelector('input[name="antwoord"]:checked').style.accentColor = "#77B72A";        
+
+        };
+        /*fout*/
+        if (document.getElementById("antwoord3").checked){
+            document.getElementById("a3").style.color = "red";
+            document.getElementById("a3").style.textDecoration = "line-through";
+            document.getElementById("hulpfunctieShow").style.visibility = "visible";        
+            document.getElementById("hulpfunctieKleinShow").style.visibility = "visible";        
+            document.getElementById("hulpfunctieTekstKleinShow").style.visibility = "visible"; 
+            document.querySelector('input[name="antwoord"]:checked').style.accentColor = "#FF0000";         
+        };
     };
 };
 
