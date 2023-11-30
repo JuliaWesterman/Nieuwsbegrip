@@ -1,3 +1,6 @@
+
+
+
 /*--- TYPOGRAFIE ---*/
 h1, h2, h3, h4{
     font-family: 'Asap';
@@ -28,17 +31,15 @@ p{
 main{
     background-color: #D7E9FB;
     padding-top: 7rem;
+    padding-bottom: 3rem; /*heeyyyyyy ik het het hier aangepast heyyyyyyyyyyyyyyyyyyyy*/
 }
 /*Wit vlak*/
 .main{
     background-color: white;
-    padding-bottom: 1rem;
+    padding-bottom: 3rem;
     position: relative;
 }
-/*schermhoogte 100%*/
-.main100{
-    height: 100vh;
-}
+
 
 .nav h3{
     color: #C7067F;

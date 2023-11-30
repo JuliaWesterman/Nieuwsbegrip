@@ -1,7 +1,5 @@
 
-/*---------- JULIAAAAAA --------*/
-
-/*----header nav hoeveelste opdracht----*/
+/*----voortgang in opdrachten navigatiebalk----*/
 #progress{
     display: flex;
     flex-direction: row;
@@ -53,7 +51,7 @@ align-self: center;
     margin-bottom: 2rem;
 }
 
-/*----opdracht navigatie + controleren----*/
+/*----knoppen vorgie + controleren----*/
 #opdrachtNavigatie a{
     background-color: #949494;
     border-radius: 8px;
@@ -70,7 +68,6 @@ align-self: center;
     height: 2.5rem;
     margin-bottom: 1rem;
 }
-
 
 #opdrachtNavigatie button, #opdrachtNavigatie a{
     font-size: 14px;
@@ -124,6 +121,7 @@ align-self: center;
     background-color: #C57301;
 }
 
+
 /*mascotte*/
 #uitleg div{
     background-color: white;
@@ -156,6 +154,7 @@ align-self: center;
     width: 100%;
 }
 
+/*animatie van hover dmv 2 afbeeldingen*/
 #hulpfunctieHover{
     position: absolute;
     right: 0;
@@ -174,7 +173,7 @@ align-self: center;
 }
 
 
-/*---popup----*/
+/*------ HULPFUNCTIE POP UP ------*/
 #hulpfunctiePopup .grid-y{
     background-color: white;
     border: solid 0.3rem #EC671B;
@@ -201,7 +200,9 @@ align-self: center;
     text-align: center;
     width: 100%;
 }
-.keuze{ /*knoppen*/
+
+/*knoppen*/
+.keuze{ 
     display: flex;
     flex-direction: row;
     gap: 2rem;
@@ -233,9 +234,8 @@ align-self: center;
 }
 
 
-
-/*---------------------  RESPONSIVE  ---------------*/
-
+/*---------------------  RESPONSIVE  --------------------*/
+/*hulpfunctie pop up + icoon*/
 @media screen and (max-width: 640px){
     #opdrachtNavigatie{
         text-align: center;
@@ -266,6 +266,8 @@ align-self: center;
     }
 }
 
+
+/*--- Responsive uitleg popup*/
 @media screen and (max-width: 1024px){
     #uitleg{
         padding: 1rem;
@@ -279,6 +281,7 @@ align-self: center;
     }
 }
 
+/*mascotte niet meer zichtbaar*/
 @media screen and (max-width: 1245px){
     #uitleg div{
         visibility: hidden;
