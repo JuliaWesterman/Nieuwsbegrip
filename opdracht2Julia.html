@@ -49,40 +49,46 @@
 <!------------------------ MAIN ------------------------------>
 <main class="main100">
     <div class="grid-x"><!--main-->
+      
+      
         <div class="cell large-8 large-offset-2 medium-8 medium-offset-2 small-12 main"> <!--wit vlak-->
             <div class="grid-y">
-                
+
 
                 <!-- ICONEN / MASCOTTES -->
-                <div class="cell large-1 small-1 align-right" id="iconen">
-                    <!---Hulpfunctie bij mobile version-->
-                    <div class="icoonMetTekst">
-                        <div class="cell show-for-small-only" id="hulpfunctieKlein">
-                            <button type="button" onclick="openHulpfunctie()" id="hulpfunctieKleinShow">
-                                <img src="content/Pen met vraagtekenen.svg">
-                            </button>
-                            <p id="hulpfunctieTekstKleinShow">Hulp</p>
+                <section>
+                    <div class="cell large-1 small-1 align-right" id="iconen">
+                        <!---Hulpfunctie bij mobile version-->
+                        <div class="icoonMetTekst">
+                            <div class="cell show-for-small-only" id="hulpfunctieKlein">
+                                <button type="button" onclick="openHulpfunctie()" id="hulpfunctieKleinShow">
+                                    <img src="content/Pen met vraagtekenen.svg">
+                                </button>
+                                <p id="hulpfunctieTekstKleinShow">Hulp</p>
+                            </div>
                         </div>
-                    </div>
 
-                    <!--icoon luisterfunctie-->
-                    <div class="icoonMetTekst">
-                        <img src="content/Pen met microfoon.svg" alt="voorlezen">
-                        <p>Voorlezen</p>
+                        <!--icoon luisterfunctie-->
+                        <div class="icoonMetTekst">
+                            <a href="voorleesfunctiemaaike.html" aria-label="Voorleesfunctie"><img src="content/Pen met microfoon.svg" alt="voorlezen"></a>
+                            <p>Voorlezen</p>
+                        </div>
+                        
+                        <!--icoon uitleg-->
+                        <div class="icoonMetTekst">
+                            <button type="button" onclick="openUitleg()"><img src="content/Boek Uitleg 2.1.svg" alt="Uitleg"></button>
+                            <p>Uitleg</p>
+                        </div>
+                        
+                        <!--icoon leestekst-->
+                        <div class="icoonMetTekst">
+                            <a href="Nieuwsbegriptekst.html" aria-label="Leestekst"><img src="content/Boek leestekst.svg" alt="leestekst"></a>
+                        <p>Leestekst</p>
+                        </div>    
                     </div>
-                    
-                    <!--icoon uitleg-->
-                    <div class="icoonMetTekst">
-                        <button type="button" onclick="openUitleg()"><img src="content/Boek Uitleg 2.1.svg" alt="Uitleg"></button>
-                        <p>Uitleg</p>
-                    </div>
-                    
-                    <!--icoon leestekst-->
-                    <div class="icoonMetTekst">
-                      <img src="content/Boek leestekst.svg" alt="leestekst">
-                      <p>Leestekst</p>
-                    </div>    
-                </div>
+                </section>
+
+
 
 
                 
@@ -90,6 +96,8 @@
                 <!--vragen rij-->
                 <section class="cell large-1">
                     <div class="grid-y" id="opdrachtGrid">
+
+                        <!--Opdracht tekst/vraag-->
                         <div class="cell large-1 large-offset-1">
                             <h3><b>Opdracht 2</b></h3>
                         </div>
@@ -103,7 +111,8 @@
                             <p>Sleutelvraag 2: Over welke reis gaat het over in de inleiding?</p>
                         </div>
 
-                        <form class="cell large-4 large-offset-1" id="antwoorden"> <!--antwoorden-->
+                        <!--Opdracht antwoordkeuzes-->
+                        <form class="cell large-4 large-offset-1" id="antwoorden">
                             <div>
                                 <input type="radio" name="antwoord" value="false1" id="antwoord1">
                                 <label for="antwoord1" id="a1">De reis van de ouders van panda Fan Xing naar Ouwehands Dierenpark.</label>
@@ -118,41 +127,52 @@
                             </div>    
                         </form>
 
-                            <div class="cell large-2 large-offset-1" id="opdrachtNavigatie"> <!--controleren-->
-                                <a href="#">&lt;&lt; Vorige</a>
-                                <button type="button" onclick="controleren()" id="controleren">Controleren</button>
-                            </div>
-                    </div><!--grid y-->
-                </section><!--vragen-->
+                        <!--Vorige en controleer knoppen-->
+                        <div class="cell large-2 large-offset-1" id="opdrachtNavigatie">
+                            <a href="opdracht1maaike.html">&lt;&lt; Vorige</a>
+                            <button type="button" onclick="controleren()" id="controleren">Controleren</button>
+                        </div>
 
-                <!--hulpfunctie knop/afbeeldingen -->
-                <div class="cell large-1">
-                    <div class="cell large-1 large-offset-7 hide-for-small-only" id="hulpfunctie">
-                        <button type="button" onclick="openHulpfunctie()" id="hulpfunctieShow">
-                            <img id="hulpfunctieNormaal" src="content/hulpfunctie.svg">
-                            <img id="hulpfunctieHover" src="content/hulpfunctieHover.svg">
-                        </button>
+
+                        </div><!--grid-->
+                    </section><!--Opdracht-->
+                
+
+                <!--hulpfunctie knop/iconen -->
+                <section>
+                    <div class="cell large-1">
+                        <div class="cell large-1 large-offset-7 hide-for-small-only" id="hulpfunctie">
+                            <button type="button" onclick="openHulpfunctie()" id="hulpfunctieShow">
+                                <img id="hulpfunctieNormaal" src="content/hulpfunctie.svg">
+                                <img id="hulpfunctieHover" src="content/hulpfunctieHover.svg">
+                            </button>
+                        </div>
                     </div>
-                </div>
+                </section>
 
-                <div class="cell large-1 hide-for-small-only">
-                    <div class="large-offset-7" id="gefeliciteerd">
-                        <img src="content/Gefeliciteerd.svg">
+                <!--Opdracht goed gedaan icoon-->
+                <section>
+                    <div class="cell large-1 hide-for-small-only">
+                        <div class="large-offset-7" id="gefeliciteerd">
+                            <img src="content/Gefeliciteerd.svg">
+                        </div>
                     </div>
-                </div>
-
+                </section>
 
 
             </div><!--grid y-->
         </div><!--wit vlak-->
 
-        <!-- UITLEG POPUP -->     
+<!---------------------------------------------POP UPS ------------------------------------------------->    
+
+        <!--------------------------- UITLEG POPUP ------------------------->     
         <section class="grid-x" id="uitlegPopup"> 
             <div class="cell large-10 large-offset-1" id="uitleg">
                 <h2>Wat moet je doen?</h2>
                 <p class="large-offset-3"><span>Sleutelvraag = </span>deze helpt je de tekst beter te begrijpen</p>
                 <p class="large-offset-3">Weet je het antwoord op de vraag echt niet?<br>
                 Klik op het icoon van “leestekst” en lees de tekst nog eens rustig na, op zoek naar het antwoord!</p>
+
                 <button type="button" onclick="closeUitleg()">Ik snap het!</button>
                 <div class="hide-for-medium-only hide-for-small-only"><img src="content/Boek Uitleg 2.1.svg" alt="Uitleg mascotte"></div>
             </div>
@@ -161,21 +181,22 @@
 
 
         <!-------------------------- HULPFUNCTIE -------------------------->
-
-        <section class="grid-x" id="hulpfunctiePopup"><!--Hulpfunctie popup-->
-            <div class="cell large-12 large-offset-1">
+        <section class="grid-x" id="hulpfunctiePopup">
 
 
-                <!---tekst gelezen?-->
+            <!-------------- VRAGEN VAN DE HULPFUNCTIE DIA'S ------------>
+
+                <!--Tekst al gelezen?--->
                 <section class="grid-y" id="tekstGelezen"> <!--achtergrond vlak-->
                     <div class="cell large-1">
                         <button type="button" onclick="closeHulpfunctie()" class="sluitHulp">X</button>
                     </div> 
-                    <div class="grid-x"> <!--content-->
+                    <!--content-->
+                    <div class="grid-x">
                         <div class="cell large-3 show-for-large"> <!--afbeelding-->
                             <img src="content/Pen met microfoon.svg" alt="mascotte">
                         </div>
-                        <div class="cell large-5 large-offset-1 bord">
+                        <div class="cell large-5 large-offset-1 bord"><!--vraag-->
                             <h2>Heb je de tekst al gelezen?</h2>
                             <div class="keuze">
                                 <button type="button" onclick="ja()">Ja</button>
@@ -185,16 +206,37 @@
                     </div> 
                 </section>  
 
-                <!---moeite met-->
+                <!----- Feedback: Tekst niet gelezen ----->
+                <section class="grid-y" id="naarTekst"> <!--achtergrond vlak-->
+                    <div class="cell large-1">
+                        <button type="button" onclick="closeHulpfunctie()" class="sluitHulp">X</button>
+                    </div> 
+                    <!--content-->
+                    <div class="grid-x">
+                        <div class="cell large-3 show-for-large"> <!--afbeelding-->
+                            <img src="content/Pen met microfoon.svg" alt="mascotte">
+                        </div>
+                        <div class="cell large-6 large-offset-1 bord"><!--vraag-->
+                            <h2>Het is handig om eerst de tekst te lezen voordat je de vragen beantwoord.</h2>
+                            <div class="keuze">
+                                <button type="button" onclick="tekstOke()">Oke</button>
+                            </div>
+                        </div>
+                    </div> 
+                </section>
+
+
+                <!----- Feedback tekst gelezen: waar moeite mee ---->
                 <section class="grid-y" id="moeiteMet"> <!--achtergrond vlak-->
                     <div class="cell large-1">
                         <button type="button" onclick="closeHulpfunctie()" class="sluitHulp">X</button>
                     </div> 
-                    <div class="grid-x"> <!--content-->
+                    <!--content-->
+                    <div class="grid-x">
                         <div class="cell large-3 show-for-large"> <!--afbeelding-->
                             <img src="content/Pen met microfoon.svg" alt="mascotte">
                         </div>
-                        <div class="cell large-5 large-offset-1 bord">
+                        <div class="cell large-5 large-offset-1 bord"><!--vraag-->
                             <h2>Waar heb je hulp bij nodig?</h2>
                             <div class="keuze">
                                 <button type="button" onclick="tekst()">De tekst</button>
@@ -202,36 +244,19 @@
                             </div>
                         </div>
                     </div> 
-                </section> 
+                </section>  
 
-                <!---Tekst niet gelezen-->
-                <section class="grid-y" id="naarTekst"> <!--achtergrond vlak-->
-                    <div class="cell large-1">
-                        <button type="button" onclick="closeHulpfunctie()" class="sluitHulp">X</button>
-                    </div> 
-                    <div class="grid-x"> <!--content-->
-                        <div class="cell large-3 show-for-large"> <!--afbeelding-->
-                            <img src="content/Pen met microfoon.svg" alt="mascotte">
-                        </div>
-                        <div class="cell large-6 large-offset-1 bord">
-                            <h2>Het is handig om eerst de tekst te lezen voordat je de vragen beantwoord.</h2>
-                            <div class="keuze">
-                                <button type="button" onclick="tekstOke()">Oke</button>
-                            </div>
-                        </div>
-                    </div> 
-                </section> 
-
-                <!---hulp bij de tekst-->
+                <!--- hulp bij de tekst --->
                 <section class="grid-y" id="hulpTekst"> <!--achtergrond vlak-->
                     <div class="cell large-1">
                         <button type="button" onclick="closeHulpfunctie()" class="sluitHulp">X</button>
-                    </div> 
-                    <div class="grid-x"> <!--content-->
+                    </div>
+                    <!--content--> 
+                    <div class="grid-x">
                         <div class="cell large-3 show-for-large"> <!--afbeelding-->
                             <img src="content/Pen met microfoon.svg" alt="mascotte">
                         </div>
-                        <div class="cell large-6 large-offset-1 bord">
+                        <div class="cell large-6 large-offset-1 bord"><!--vraag-->
                             <h2>Kijk naar de titel en lees regel 1. 
                                 Lees ook regel 4 en 5.</h2>
                             <div class="keuze">
@@ -242,15 +267,16 @@
                 </section> 
 
                 <!---hulp bij de vraag-->
-                <section class="grid-y" id="hulpVraag"> <!--achtergrond vlak-->
+                <section class="grid-y" id="hulpVraag"><!--achtergrond vlak-->
                     <div class="cell large-1">
                         <button type="button" onclick="closeHulpfunctie()" class="sluitHulp">X</button>
                     </div> 
-                    <div class="grid-x"> <!--content-->
+                    <!--content-->
+                    <div class="grid-x">
                         <div class="cell large-3 show-for-large"> <!--afbeelding-->
                             <img src="content/Pen met microfoon.svg" alt="mascotte">
                         </div>
-                        <div class="cell large-5 large-offset-1 bord"><!--hulp vraag-->
+                        <div class="cell large-5 large-offset-1 bord"><!--vraag-->
                             <h2>Over welke panda gaat het? 
                                 Wie heeft er pas een reis gemaakt?</h2>
                             <div class="keuze">
@@ -258,14 +284,12 @@
                             </div>
                         </div>                    
                     </div> 
-                </section> 
+                </section>
+        </section> <!--hulpfunctie popup-->
 
 
-            </div><!--vak eromheen-->        
-        </section> <!--vak eromheen deel 2--> 
 
-
-    </div><!--.main-->
+    </div><!--class main-->
 </main> 
 
 
