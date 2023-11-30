@@ -1,0 +1,289 @@
+
+/*----voortgang in opdrachten navigatiebalk----*/
+#progress{
+    display: flex;
+    flex-direction: row;
+    gap: 0.7rem;
+}
+#progress > h3{
+    color: #77B72A;
+    align-self: center;
+    padding-left: 1rem;
+}
+#progressBalk{
+align-self: center;
+    height: 1.2rem;
+    width: 60%;
+    background: linear-gradient(to right, #77B72A 15%, rgb(225, 225, 225) 16%);
+}
+
+
+
+/*-----iconen----*/
+#iconen{
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+    margin-left: -2rem;
+}
+#iconen img{
+    width: 5em;
+    height: 5em;
+    margin-top: 2rem;
+}
+.icoonMetTekst{
+    text-align: center;
+    font-weight: bold;
+    align-self:last baseline;
+}
+.icoonMetTekst p {
+    font-size: 14px;
+}
+
+
+/*----vragen-----*/
+#opdrachtGrid{
+    padding: 1rem;
+}
+#antwoorden{
+    display: grid;
+    grid-template-rows: auto auto auto;
+    margin-bottom: 2rem;
+}
+
+/*----knoppen vorgie + controleren----*/
+#opdrachtNavigatie a{
+    background-color: #949494;
+    border-radius: 8px;
+    color: white;
+    padding: 0.65rem 1rem;
+    font-weight: bold;
+}
+#controleren{
+    color: white;
+    font-weight: bold;
+    background-color: #EC671B;
+    border-radius: 8px;
+    width: 7rem;
+    height: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#opdrachtNavigatie button, #opdrachtNavigatie a{
+    font-size: 14px;
+}
+
+#opdrachtNavigatie button:hover{
+    background-color: #C57301;
+}
+#opdrachtNavigatie a:hover{
+    background-color: #767676;
+}
+
+/*---------popup uitleg-------------*/
+#uitlegPopup{
+    visibility: hidden;
+    position: absolute;
+    top: 9rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+#uitleg{
+    text-align: center;
+    align-items: center;
+    background-color: #9C4794;
+    color: white;
+    padding: 3rem 0 1rem 0;
+    border-radius: 20px;
+    position: relative;
+}
+#uitleg h2{
+    text-decoration: underline;
+    font-size: 3rem;
+}
+#uitleg p{
+    width: 50%;
+    margin-top: 1rem;
+}
+#uitleg button{
+    color: white;
+    font-weight: bold;
+    background-color: #EC671B;
+    border-radius: 8px;
+    padding: 0.7rem 0.8rem;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    font-size: larger;
+}
+
+#uitleg button:hover{
+    background-color: #C57301;
+}
+
+
+/*mascotte*/
+#uitleg div{
+    background-color: white;
+    border-radius: 150px;
+    width: max-content;
+    position: absolute;
+    top: 8rem;
+    right: 3rem;
+}
+#uitleg img{
+    height: 15rem;
+    width: 15rem;
+}
+
+/*---------- HULPFUNCTIE ------*/
+#hulpfunctie button, #gefeliciteerd{
+    width: 25%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+}
+
+#gefeliciteerd{
+    right: 0.5rem;
+    bottom: 0.5rem;
+}
+
+#hulpfunctie img{
+    width: 100%;
+}
+
+/*animatie van hover dmv 2 afbeeldingen*/
+#hulpfunctieHover{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+}
+
+#hulpfunctieHover{
+    visibility: hidden;
+}
+#hulpfunctieShow:hover > #hulpfunctieHover{
+    visibility: visible;
+}
+#hulpfunctieShow:hover > #hulpfunctieNormaal{
+    visibility: hidden;
+}
+
+
+/*------ HULPFUNCTIE POP UP ------*/
+#hulpfunctiePopup .grid-y{
+    background-color: white;
+    border: solid 0.3rem #EC671B;
+    border-radius: 20px;
+    width: 50.667%;
+    height: 50.667%;
+    position: absolute;
+    top: 11rem;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding: 1rem 3rem;
+    visibility: hidden;
+}
+
+#hulpfunctiePopup .grid-y .grid-x{
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+
+#hulpfunctiePopup h2{
+    text-align: center;
+    width: 100%;
+}
+
+/*knoppen*/
+.keuze{ 
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 1rem;
+}
+.keuze button{
+    background-color: #EC671B;
+    color: white;
+    width: 7rem;
+    height: 2.5rem;
+    border-radius: 10px;
+    font-size: larger;
+}
+
+.keuze button:hover{
+    background-color: #C57301;
+}
+
+.sluitHulp{
+    color: red;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+ #moeiteMet, #naarTekst, #hulpVraag, #hulpTekst{
+    visibility: hidden;
+}
+
+
+/*---------------------  RESPONSIVE  --------------------*/
+/*hulpfunctie pop up + icoon*/
+@media screen and (max-width: 640px){
+    #opdrachtNavigatie{
+        text-align: center;
+    }
+
+    #hulpfunctiePopup .grid-y{
+        width: 90%;
+        padding: 1rem;
+        height: max-content;
+    }
+
+    #hulpfunctiePopup .grid-y h2{
+        scale: 80%;
+        width: 100%;
+        margin: auto;
+    }
+
+    .bord{
+        margin-top: -2.3rem;
+    }
+
+    #hulpfunctiePopup img{
+        margin: 0;
+    }
+
+    #hulpfunctieKlein{
+        visibility: hidden;
+    }
+}
+
+
+/*--- Responsive uitleg popup*/
+@media screen and (max-width: 1024px){
+    #uitleg{
+        padding: 1rem;
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+
+    #uitleg p{
+        width: 90%;
+    }
+}
+
+/*mascotte niet meer zichtbaar*/
+@media screen and (max-width: 1245px){
+    #uitleg div{
+        visibility: hidden;
+    }
+}

@@ -1,23 +1,23 @@
 
 /*--- TYPOGRAFIE ---*/
 h1, h2, h3, h4{
-    font-family: 'Asap';
+    font-family: 'asap';
 }
 h1{
-    font-size: 25px;
+    font-size: 2.5rem;
 }
 h2{
-    font-size: 30px;
+    font-size: 1.8rem;
 }
 h3{
-    font-size: 25px;
+    font-size: 1.6rem;
 }
 h4{
-    font-size: 18px;
+    font-size: 1.3rem;
 }
-p, li, ul, a{
-    font-family: 'Open Sans';
-    font-size: 18px;
+p, li, ul, a, button, label{
+    font-family: 'open-sans';
+    font-size: 1.1rem;
 }
 
 
@@ -47,29 +47,33 @@ main{
 }
 /*schermhoogte 100%*/
 .main100{
-    height: 100vh;
+    min-height: 100vh;
 }
 
 
 
 
 
-
-/*--- NAVIGATIE moet dit bij opdrachten? ---*/
+/*NAVIGATIE*/
 header{
-    width: 100%;
+    width: 100% !important;
     left: 0;
     right: 0;
-    margin: auto;
     position: fixed;
     background-color: white;
+    z-index: 3;
+}
+/*grid-x zorgt voor gelijke margin aan header is links en rechts*/
+header .grid-x{
+    justify-content: center;
 }
 
+/*cellen in de navigatie*/
 .nav{
     text-align: center;
     padding: 1rem 0.6rem;
     color: #951B81;
-    border-right: solid #951B81 2px; /*--------FIX DIT---------*/
+    border-right: solid #951B81 2px;
 }
 .nav a{
     color: #951B81;
@@ -80,15 +84,58 @@ nav h3{
 }
 
 #stop{
-    color: #56A5EA;
     padding: 1rem 0.6rem;
+    text-align: right;
+}
+#stop h3{
+    font-weight: bold;
+    color: red;
+
 }
 #stop span{
-    color: red;
+    color: #56A5EA;
 }
 
 
+/*Het huisje in de navigatie*/
+#homeLink{
+    width: max-content;
+}
+#homeLink a{
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    padding-right: 0.6rem;
+}
+#homeLink img{
+    width: 2rem;
+    margin-top: -0.3rem;
+}
 
+
+/*Responsive voor small*/
+@media screen and (max-width: 640px){
+    header .grid-x{
+        justify-content: space-between;
+    }
+    #homeLink{
+    text-align: left;
+    }
+    .nav{
+        border: none;
+    }
+    .main100{
+        height: 100%;
+    }
+    .main100 > .grid-x{
+        width: 95%;
+        margin: auto;
+    }
+    #iconen{
+        margin: auto;
+        scale: 80%;
+    }
+}
 
 
 

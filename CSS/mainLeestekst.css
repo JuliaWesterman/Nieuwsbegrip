@@ -1,0 +1,104 @@
+/*--- TYPOGRAFIE ---*/
+h1, h2, h3, h4{
+    font-family: 'Asap';
+}
+h1{
+    font-size: 25px;
+}
+h2{
+    font-size: 30px;
+}
+h3{
+    font-size: 25px;
+}
+h4{
+    font-size: 12px;
+}
+p, li, ul, a{
+    font-family: 'Open Sans';
+    font-size: 18px;
+}
+
+/*blauwe achtergrond*/
+main{
+    background-color: #D7E9FB;
+    padding-top: 7rem;
+}
+/*Wit vlak*/
+.main{
+    background-color: white;
+    padding-bottom: 1rem;
+    position: relative;
+}
+/*schermhoogte 100%*/
+.main100{
+    height: 100vh;
+}
+
+
+h3{
+    font-size: 16px;
+}
+a{
+    color: black;
+}
+.nav h3{
+    color: blueviolet;
+    text-align: center;
+    padding: 0.5rem;
+    border-right: solid 2px blueviolet;
+    margin: 0;
+}
+nav{
+    background-color: white;
+    
+}
+#voortgangdiv{
+    display: flex;
+    flex-direction: row;
+}
+#voortgangdiv h3{
+    color:  rgb(15, 232, 15);
+    font-weight: bold;
+    padding: 0.5rem;
+}
+#voortgang{
+    height: 1rem;
+    width: 70%;
+    margin: 0.7rem;
+    background: linear-gradient(to right, rgb(15, 232, 15) 16%, rgb(209, 209, 209) 17%);
+}
+
+#stoppen h3{
+    color: rgb(0, 98, 255);
+    font-weight: bold;
+    padding: 0.5rem;
+}
+#stoppen span{
+    color: red;
+}
+
+#grid-x{
+    color: white;
+}
+
+#voorlees {
+    float: right;
+  }
+
+h4{
+    text-align: center;
+}
+
+.main span{
+    font-size: 2rem;
+}
+
+#verder{
+    color: white;
+    font-weight: bold;
+    background-color: #EC671B;
+    border-radius: 8px;
+    padding: 0.7rem 0.8rem;
+    margin-bottom: 2rem;
+}

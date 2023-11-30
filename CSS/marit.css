@@ -1,0 +1,331 @@
+/*Instellingen titel */
+#instellingenTitel{
+    color: #951B81;
+    margin:auto;
+    font-family: 'Asap', sans-serif;
+    text-align: center;
+}
+
+.lettersInstellingen{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+   justify-content: center;
+   max-width: 150px;
+}
+
+/*Het naast elkaar staan van de verschillende lettergroottes */
+.lettergrootte{
+    display: flex;
+    flex-direction: row;
+    align-items:end;
+    max-width: 150px;
+    vertical-align: middle;
+    z-index: 9;
+}
+
+/*Kleinste lettertype */
+#achtergrondVlakA{
+    cursor: pointer;
+    background-color: #951B81;
+    color: white;
+    margin-top: 5rem;
+    margin-right: 40px;
+    margin-left: 40px;
+    padding-top: 60px;
+    text-align: center;
+    height: 100px;   
+   
+}
+
+/*Middel lettertype */
+#achtergrondVlakA2{
+    cursor: pointer;
+    background-color: #C7067F;
+    color: white;
+    margin-top: 5rem;
+    margin-right:40px;
+    padding-top: 25px;
+    text-align: center;
+    height: 100px;  
+    border-width: 5px;
+    outline: thick dashed #000000;
+    border-color: #951B81;
+   outline-width: 10px;
+}
+
+/*grootste lettertype */
+#achtergrondVlakA3{
+    cursor: pointer;
+    background-color: #951B81;
+    color: white;
+    margin-top: 5rem;
+    margin-right: 40px;
+    padding-top: 10px;
+    height: 100px;
+    text-align: center;
+    
+}
+
+/*--Groottes van de letters (zodat h3 main hier niet op werkt) */
+#achtergrondVlakA h3{
+    font-size: 2rem;
+}
+#achtergrondVlakA2 h3{
+    font-size: 4rem;
+}
+#achtergrondVlakA3 h3{
+    font-size: 5rem;
+}
+
+/*--Lettertype knop--*/
+.dropdown{
+    display:inline-block;
+}
+.dropdown button{
+    background-color: #DFDFDF;
+    color: #707070;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown a{
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.dropdown .content{
+    display: none;
+    position: absolute;
+    background-color: #707070; 
+    min-width: 100px;
+    box-shadow: 2px 2px 5px #DFDFDF;
+}
+
+.dropdown:hover .content{
+    display: block;
+}
+
+.dropdown:hover .button{
+    background-color:#ec671b; 
+}
+
+.dropdown a:hover{
+    background-color: #c7067f; 
+}
+
+/*Regelafstand Titel en slider samen*/
+#regelafstand{
+    display: flex;
+    flex-direction: row;
+    margin-left: 2rem;
+    margin-top: 4rem;
+}
+
+/*Regelafstand alleen Titel*/
+#regelafstandTitel{
+    margin-right: 8rem;
+    margin-top: 1rem;
+    
+}
+
+/* Slider */
+.slidecontainer {
+    width: 49.5rem;
+
+  }
+  
+  .slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 40px;
+    border-radius: 5rem;
+    background:#951B81;
+    border-style: solid;
+    border-color: #707070;
+    outline: none;
+    -webkit-transition: .2s;
+    transition: opacity .2s;
+    
+  }
+  
+  .slider:hover {
+    opacity: 1;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    border-style:solid; 
+    border-color:#707070;
+    background: #ffff;
+    cursor: pointer;    
+  }
+  
+  .slider::-moz-range-thumb {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: #04AA6D;
+    opacity: 0.7;
+    cursor: pointer;
+  }
+
+  /*Voorbeeld tekst hokje*/
+  .voorbeeld{
+    padding-inline: 5rem;
+    margin-inline: 3rem;
+    background-color: #ffff;
+    border-style: solid;
+    border-width: 1rem;
+    border-color: #D7E8FB;
+    border-radius: 1rem;
+    margin-top: 3rem;
+  }
+
+  #voorbeeldTitel{
+    text-align: center;
+    color: #707070;
+  }
+
+   /*Alle rondjes*/
+ .themasKleuren{
+    height: 100px;
+    width: 100px;
+    background-color: #ca1212;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5rem;
+    align-content: center;
+ 
+ }
+
+ #witRondje{
+    cursor: pointer;
+    background-color: #ffffff;
+    border: solid;
+ }
+
+ #zwartRondje{
+    cursor: pointer;
+    background-color: #000000;
+    border: solid;
+ }
+
+ #grijsRondje{
+    cursor: pointer;
+    background-color: #A5A5A5;
+    border: solid;
+ }
+
+ #beigeRondje{
+    cursor: pointer;
+    background-color: #F6E6D1;
+    outline: thick dashed #C7067F;
+    outline-width: 10px;
+    
+ }
+
+ #geelRondje{
+    cursor: pointer;
+    background-color: #F1F100;
+    border: solid;
+ }
+
+.themas{
+    margin-left: 5rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    color: #707070 ;
+}
+
+.themas h2{
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+#mascottes{
+    display: flex;
+    flex-direction: row;
+    align-items: last baseline;
+    color:#707070;
+}
+
+#voorleesstemTitel{
+    color:#707070;
+    margin-top: 3rem;
+}
+
+#opmaakTitel{
+    color:#707070;
+    margin-top: 3rem;
+}
+
+#opmaakCategorien{
+    color: #951B81;
+}
+
+/*Voortgang grootte icoon*/
+#voortgangIcon img{
+    height: 3rem;
+    margin-right: 3rem;
+}
+
+/*Instellingen grootte icoon*/
+#instellingenIcon img{
+    height: 2.5rem;
+}
+
+/*Iconen grote div*/
+#iconen{
+   display: flex;
+   align-items: center;
+   justify-content:space-evenly;
+}
+
+/*Logo nieuwsbegrip*/
+#logo{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/*Profiel icoon*/
+#cirkel {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #F9F9F7;
+    border: 3px solid #951B81;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#initialen {
+        font-size: 25px;
+        color: black;
+        font-weight: bold;
+}
+
+#cirkel :hover{
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #EC671B;
+    border: 3px solid #951B81;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#initialen h3:hover{
+    font-size: 25px;
+    color: white;
+    font-weight: bold;
+}

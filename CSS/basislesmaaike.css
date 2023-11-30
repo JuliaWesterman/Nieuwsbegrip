@@ -1,0 +1,158 @@
+header .grid-x {
+    justify-content: left;
+}
+
+#basisles h1 {
+    text-align: center;
+    font-weight: bold;
+    margin: auto;
+}
+
+#bovenkantgrid {
+    padding-top: 7rem;
+}
+
+#tegelsbasisles {
+    display: flex;
+    flex-direction: row;
+    margin: auto;
+    width: max-content;
+}
+
+.tegel {
+    background-color: white;
+    text-align: center;
+    height: 18em;
+    width: 18em;
+    margin: 2rem;
+    border-radius: 25px;
+    padding: 1.5rem;
+    box-shadow: 4px 6px 23px #ADADAE; /*10px bepaald de 'blur'*/
+}
+
+#tegelsbasisles img {
+    width: 10em;
+    height: 10em;
+}
+
+#tegelsbasisles .cell h2 {
+    color: #C7067F;
+    font-style: bold;
+}
+
+#tegelsbasisles .cell p {
+    color: #808080;
+    margin-top: -0.8rem;
+}
+
+
+#leestekstlink img {
+    width: 4em;
+    height: 4em;
+}
+
+#leestekstlink {
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    padding-bottom: 3rem;
+}
+
+#leestekstlink h2 {
+    color: #C7067F;
+    font-weight: bold;
+    padding-left: 0.7rem;
+}
+
+/*TABLET VERSION*/
+@media screen and (max-width: 1024px) {
+
+.main {
+    background-color: #D7E9FB;
+    margin-top: -8em;
+}
+
+#basisles {
+    background-color: white;
+    padding: 0.7rem;
+    border-radius: 25px;
+    box-shadow: 4px 6px 23px #ADADAE; /*10px bepaald de 'blur'*/
+    height: 5em;
+    width: 25em;
+    margin: auto;
+}
+
+#pijltjeterug {
+    visibility: hidden;
+}
+    
+#tegelsbasisles {
+   justify-content: center;
+   width: 25em; /*zorgt ervoor dat de tegels onder elkaar komen te staan*/
+} 
+
+#tegelsbasisles img {
+    width: 8em;
+    height: 8em;
+    float: left;
+}
+
+#tegelsbasisles .cell h2 {
+    text-align: center;
+    margin-top: 0.7em; 
+}
+
+#tegelbasisles .cell p {
+    text-align: center;
+}
+
+.tegel {
+    width: 100%;
+    height: 10em;
+}
+
+#leestekstlink {
+    background-color: white;
+    align-items: center;
+    border-radius: 25px;
+    padding: 1.5rem;
+    box-shadow: 4px 6px 23px #ADADAE; /*10px bepaald de 'blur'*/
+    height: 5em;
+    width: 25em;
+    margin: auto;
+}
+
+}
+
+/*MOBILE VERSION*/
+@media screen and (max-width: 640px) {
+
+    #basisles {
+    height: 5em;
+    width: 20em;
+    margin-bottom: 2em;
+    }
+
+    #tegelsbasisles {
+        width: 23em;
+    }
+
+    .cell .tegel {
+        margin-top: 0.2em;
+    }
+
+    #tegelsbasisles img {
+        width: 5em;
+        height: 5em;
+        float: left;
+        margin-top: 1em;
+    }
+
+    #leestekstlink {
+        height: 5em;
+        width: 20em; 
+    }
+}

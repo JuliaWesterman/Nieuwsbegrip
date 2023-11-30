@@ -3,28 +3,40 @@
 /*uiterlijk aanpassen naar vernieuwing prototype*/
 /*kruisje is nu ook doorstreept*/
 function controleren(){
-    /*fout*/
-    if (document.getElementById("antwoord1").checked){
-        document.getElementById("a1").style.color = "red";
-        document.getElementById("a1").style.textDecoration = "line-through";
-        document.getElementById("hiddena1").style.visibility = "visible";
-        document.getElementById("hiddena1").style.textDecoration = "none";
-        document.getElementById("hulpfunctieShow").style.visibility = "visible";        
+        /*fout*/
+        if (document.getElementById("antwoord1").checked){
+            document.getElementById("a1").style.color = "red";
+            document.getElementById("a1").style.textDecoration = "line-through";
+            document.getElementById("hulpfunctieShow").style.visibility = "visible";        
+            document.getElementById("hulpfunctieKleinShow").style.visibility = "visible";
+            document.getElementById("hulpfunctieTekstKleinShow").style.visibility = "visible";   
+            document.querySelector('input[name="antwoord"]:checked').style.accentColor = "#FF0000";  
+        };
+        /*goed*/
+        if (document.getElementById("antwoord2").checked){
+            document.getElementById("a2").style.color = "#77B72A";
+            document.getElementById("controleren").innerHTML = "Volgende";
+            document.getElementById("gefeliciteerd").style.visibility = "visible";               
+            document.getElementById("hulpfunctieShow").style.visibility = "hidden"; 
+            document.getElementById("hulpfunctieKleinShow").style.visibility = "hidden";  
+            document.querySelector('input[name="antwoord"]:checked').style.accentColor = "#77B72A";      
+
+        };
+        /*fout*/
+        if (document.getElementById("antwoord3").checked){
+            document.getElementById("a3").style.color = "red";
+            document.getElementById("a3").style.textDecoration = "line-through";
+            document.getElementById("hulpfunctieShow").style.visibility = "visible";        
+            document.getElementById("hulpfunctieKleinShow").style.visibility = "visible";        
+            document.getElementById("hulpfunctieTekstKleinShow").style.visibility = "visible"; 
+            document.querySelector('input[name="antwoord"]:checked').style.accentColor = "#FF0000";         
+        };        
+
     };
-    /*goed*/
-    if (document.getElementById("antwoord2").checked){
-        document.getElementById("a2").style.color = "#77B72A";
-        document.getElementById("controleren").innerHTML = "Volgende";
-        document.getElementById("hulpfunctieShow").style.visibility = "hidden"; 
-        document.getElementById("gefeliciteerd").style.visibility = "visible";               
-    };
-    /*fout*/
-    if (document.getElementById("antwoord3").checked){
-        document.getElementById("a3").style.color = "red";
-        document.getElementById("a3").style.textDecoration = "line-through";
-        document.getElementById("hulpfunctieShow").style.visibility = "visible";        
-    };
-};
+
+
+
+
 
 /*--------Uitleg popup aan en uit-------*/
 function openUitleg(){
@@ -42,10 +54,6 @@ function closeUitleg(){
 function openHulpfunctie(){
     document.getElementById("hulpfunctiePopup").style.visibility = "visible";
     document.getElementById("tekstGelezen").style.visibility = "visible";
-};
-
-function closeHulpfunctie(){
-    document.getElementById("hulpfunctiePopup").style.visibility = "hidden";
 };
 
 
@@ -85,3 +93,14 @@ function oke(){
     document.getElementById("hulpTekst").style.visibility = "hidden";
     document.getElementById("hulpfunctiePopup").style.visibility = "hidden";
 }
+
+
+
+function closeHulpfunctie(){ /*alles moet sluiten*/
+    // document.getElementById("hulpfunctiePopup").style.visibility = "hidden";
+    document.getElementById("tekstGelezen").style.visibility = "hidden";
+    document.getElementById("moeiteMet").style.visibility = "hidden";
+    document.getElementById("naarTekst").style.visibility = "hidden";
+    document.getElementById("hulpVraag").style.visibility = "hidden";
+    document.getElementById("hulpTekst").style.visibility = "hidden";
+};
