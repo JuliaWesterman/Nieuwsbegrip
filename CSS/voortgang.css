@@ -40,18 +40,29 @@ main{
     position: relative;
 }
 
+header{
+    padding: 0.1rem;
+}
+
 /*Navigatie*/
 .nav h3{
     color: #C7067F;
     text-align: center;
-    padding: 0.5rem;
+    padding: 1rem;
     border-right: solid 2px #C7067F;
     margin: 0;
 }
 
+/*grootte logo responsive*/
 #logo{
+    align-items: center;
     max-width: 50vw;
-    align-content: center;
+    justify-content: center;
+}
+
+/*BK rechts zetten*/
+#bk h3{
+    text-align: right;
 }
 
 /*Het huisje in de navigatie*/
@@ -246,8 +257,9 @@ main{
         margin: auto;
         scale: 80%;
     }
-    .opdrachtentegels{
-    padding-bottom: 5rem;
+
+    .tegel{
+        margin-bottom: 2rem;
     }
 
 }
