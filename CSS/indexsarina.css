@@ -1,4 +1,4 @@
-
+/*--------------------------------------------------------- Index --------------------------------------------------------------*/
 
 main {
     background-color: none;
@@ -11,12 +11,13 @@ main {
     align-items: center;
 }
 
+/*---- Hamburger menu----*/
 #hamburger img {
     width: 50px;
     height: 50px;
 }
 
-/*----Profiel ----*/
+/*---- Profiel ----*/
 #cirkel {
     width: 50px;
     height: 50px;
@@ -34,9 +35,7 @@ main {
     font-weight: bold;
 }
 
-#cirkel:hover {
-    background-color: #EC671B;
-}
+#cirkel:hover {background-color: #EC671B;}
 
 #initialen:hover {
     font-size: 25px;
@@ -47,7 +46,7 @@ main {
 /*------------------------------ PROFIEL INHOUD ------------------------------------*/
 #profiel {
     display: none;
-    position: absolute; /*-Negeer de rest van de content-*/
+    position: absolute; /*-Negeert de rest van de content-*/
     margin: -0.5rem 3.5rem 9rem 64rem; /*-Afstanden van de randen-*/
     background-color: #D7E8FB;
     border-radius: 4%;
@@ -55,7 +54,6 @@ main {
     color: #DD4A9A;
     z-index: 3;
 }
-
 
 #profiel img {
     width: 70px;
@@ -73,6 +71,7 @@ main {
     border-radius: 20px;
     align-items: center;
 }
+
 .balk h3{font-weight: bold;}
 
 .balk:hover{ background-color: #F1F1F1;}
@@ -93,10 +92,7 @@ main {
     font-weight: bold;
 }
 
-#cirkel1:hover { /*profiel icoon hover*/
-border: 4px solid #EC671B;
-}
-
+#cirkel1:hover {border: 4px solid #EC671B;} /*profiel icoon hover*/
 
 
 /*--------------------------------- TITEL ---------------------------------------*/
@@ -104,9 +100,8 @@ border: 4px solid #EC671B;
     background-image: url("../content/Pandaimg.svg");
     background-repeat: no-repeat;
     padding-top: 12em;
- 
-
 }
+
 #titel h1 {
     color: white;
     font-size: 3.5rem;
@@ -124,6 +119,7 @@ border: 4px solid #EC671B;
     width: 10em;
     height: 10em;
 }
+
 #tegels .cell {
     background-color: white;
     padding: 1.5rem;
@@ -166,23 +162,17 @@ border: 4px solid #EC671B;
 }
 
 /*------ Boekentip text ------*/
-#boekentiptext {
-    margin: 3rem 12rem 1rem 11rem;
-}
+#boekentiptext {margin: 3rem 12rem 1rem 11rem;}
 
 #boekentiptext h2 {
     color: #951B80;
     font-weight: bold;
 }
-#boekentiptext h1 {
-    font-weight: bold;
-}
-#boekentiprtext p {
-    color: #707070;
-}
-#italic {
-    font-style: italic;
-}
+#boekentiptext h1 {font-weight: bold;}
+
+#boekentiprtext p {color: #707070;}
+
+#italic {font-style: italic;}
 
 #boekentiptext a {
     color: white;
@@ -193,9 +183,7 @@ border: 4px solid #EC671B;
     margin-bottom: 4rem;
 }
 
-#boekentiptext a:hover { /*---- Muis over de link ----*/
-    background-color: #C57301;
-}
+#boekentiptext a:hover {background-color: #C57301;}/*---- Muis over de link ----*/
 
 
 /*--------------------------------------------------------- RESPONSIVE --------------------------------------------------------------*/
