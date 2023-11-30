@@ -68,12 +68,12 @@ header .grid-x{
     justify-content: center;
 }
 
-/*blokjes apart*/
+/*cellen in de navigatie*/
 .nav{
     text-align: center;
     padding: 1rem 0.6rem;
     color: #951B81;
-    border-right: solid #951B81 2px; /*--------FIX DIT---------*/
+    border-right: solid #951B81 2px;
 }
 .nav a{
     color: #951B81;
@@ -97,7 +97,7 @@ nav h3{
 }
 
 
-/*Het huisje moet er ook mooi in passen*/
+/*Het huisje in de navigatie*/
 #homeLink{
     width: max-content;
 }
@@ -113,6 +113,29 @@ nav h3{
 }
 
 
+/*Responsive voor small*/
+@media screen and (max-width: 640px){
+    header .grid-x{
+        justify-content: space-between;
+    }
+    #homeLink{
+    text-align: left;
+    }
+    .nav{
+        border: none;
+    }
+    .main100{
+        height: 100%;
+    }
+    .main100 > .grid-x{
+        width: 95%;
+        margin: auto;
+    }
+    #iconen{
+        margin: auto;
+        scale: 80%;
+    }
+}
 
 
 
