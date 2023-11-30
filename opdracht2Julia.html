@@ -22,7 +22,7 @@
 <!------------------------ HEADER ------------------------------>
 <header>
     <nav>
-    <div class="grid-x">
+    <div class="grid-x"> <!--Navigatie-->
         <div class="cell large-1 medium-1 small-1 nav" id="homeLink">
             <a href="index.html">
                 <img src="content/home.svg">
@@ -48,15 +48,14 @@
 
 <!------------------------ MAIN ------------------------------>
 <main class="main100">
-    <div class="grid-x"> <!--main-->
-
-        <div class="cell large-8 large-offset-2 medium-8 medium-offset-2 small-12 main"> <!--witte vlak-->
+    <div class="grid-x"><!--main-->
+        <div class="cell large-8 large-offset-2 medium-8 medium-offset-2 small-12 main"> <!--wit vlak-->
             <div class="grid-y">
+                
 
                 <!-- ICONEN / MASCOTTES -->
-                <div class="cell large-1 small-1 align-right" id="iconen"><!--iconen rij-->
-
-                    <!---Hulpfunctie bij Telefoon-->
+                <div class="cell large-1 small-1 align-right" id="iconen">
+                    <!---Hulpfunctie bij mobile version-->
                     <div class="icoonMetTekst">
                         <div class="cell show-for-small-only" id="hulpfunctieKlein">
                             <button type="button" onclick="openHulpfunctie()" id="hulpfunctieKleinShow">
@@ -66,25 +65,30 @@
                         </div>
                     </div>
 
+                    <!--icoon luisterfunctie-->
                     <div class="icoonMetTekst">
                         <img src="content/Pen met microfoon.svg" alt="voorlezen">
                         <p>Voorlezen</p>
                     </div>
                     
+                    <!--icoon uitleg-->
                     <div class="icoonMetTekst">
                         <button type="button" onclick="openUitleg()"><img src="content/Boek Uitleg 2.1.svg" alt="Uitleg"></button>
                         <p>Uitleg</p>
                     </div>
                     
+                    <!--icoon leestekst-->
                     <div class="icoonMetTekst">
                       <img src="content/Boek leestekst.svg" alt="leestekst">
                       <p>Leestekst</p>
-                    </div>   
-                    
+                    </div>    
                 </div>
+
+
                 
-                <!-- OPDRACHT -->
-                <section class="cell large-1"><!--vragen rij-->
+            <!-- OPDRACHT -->
+                <!--vragen rij-->
+                <section class="cell large-1">
                     <div class="grid-y" id="opdrachtGrid">
                         <div class="cell large-1 large-offset-1">
                             <h3><b>Opdracht 2</b></h3>
