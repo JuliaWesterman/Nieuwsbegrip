@@ -1,22 +1,22 @@
 /*--- TYPOGRAFIE ---*/
 h1, h2, h3, h4{
-    font-family: 'Asap';
+    font-family: 'asap';
 }
 h1{
-    font-size: 25px;
+    font-size: 2.5rem;
 }
 h2{
-    font-size: 30px;
+    font-size: 1.8rem;
 }
 h3{
-    font-size: 25px;
+    font-size: 1.3rem;
 }
 h4{
-    font-size: 12px;
+    font-size: 1.3rem;
 }
-p, li, ul, a{
-    font-family: 'Open Sans';
-    font-size: 18px;
+p, li, ul, a, button, label{
+    font-family: 'open-sans';
+    font-size: 1.1rem;
 }
 
 /*blauwe achtergrond*/
@@ -89,10 +89,9 @@ align-self: center;
     color: white;
 }
 
-#voorlees {
-    float: right;
-  }
-
+#bovensterij{
+    padding-top: 2rem;
+}
 
 h4{
     text-align: center;
@@ -117,6 +116,16 @@ h4{
     width: 2rem;
     margin-top: -0.3rem;
 }
+
+#afbeelding h4{
+    font-size: 1rem;
+}
+
+#pijltje{
+    padding-top: 1rem;
+}
+
+
 
 /*verderknop onderaan*/
 #verder{
