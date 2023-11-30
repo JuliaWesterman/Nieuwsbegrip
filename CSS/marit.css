@@ -1,3 +1,5 @@
+
+
 /*Instellingen titel */
 #instellingenTitel{
     color: #951B81;
@@ -10,8 +12,8 @@
     display: flex;
     flex-direction: row;
     align-items: baseline;
-   justify-content: center;
-   max-width: 150px;
+   justify-content: left;
+   max-width: auto;
 }
 
 /*Het naast elkaar staan van de verschillende lettergroottes */
@@ -35,6 +37,7 @@
     padding-top: 60px;
     text-align: center;
     height: 100px;   
+    max-width: auto;
    
 }
 
@@ -210,6 +213,8 @@
     cursor: pointer;
     background-color: #ffffff;
     border: solid;
+    outline: thick dashed #C7067F;
+    outline-width: 10px;
  }
 
  #zwartRondje{
@@ -227,8 +232,7 @@
  #beigeRondje{
     cursor: pointer;
     background-color: #F6E6D1;
-    outline: thick dashed #C7067F;
-    outline-width: 10px;
+    border: solid;
     
  }
 
@@ -255,6 +259,18 @@
     flex-direction: row;
     align-items: last baseline;
     color:#707070;
+}
+
+#barry{
+    cursor: pointer;
+    outline-style: dashed;
+    outline-color: #c7067f;
+    outline-width: 1rem;
+    outline-offset: 2rem;
+}
+
+#penny{
+    cursor: pointer;
 }
 
 #voorleesstemTitel{
@@ -289,7 +305,7 @@
    justify-content:space-evenly;
 }
 
-/*Logo nieuwsbegrip*/
+/*Logo nieuwsegrip*/
 #logo{
     margin-top: 1rem;
     margin-bottom: 0.5rem;
