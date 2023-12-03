@@ -19,7 +19,7 @@ a:hover{
 
 /*------------------------------- Navigatie -------------------------------------*/
 #navigatie {
-    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    margin: 0.5rem;
     align-items: center;
 }
 
@@ -75,7 +75,7 @@ a:hover{
 .balk {
     display: flex;
     flex-direction: row;
-    margin: 2rem 2rem 2rem 2rem; /*-De blauwe vlak-*/
+    margin: 2rem; /*-De blauwe vlak-*/
     padding: 1.5rem 3rem 1.5rem 3rem; /*-De witte vlak-*/
     gap: 2rem;
     background-color: white;
@@ -288,7 +288,7 @@ main {
 }
 
 .balk {
-    margin: 2rem 2rem 2rem 2rem; /*---- De blauwe vlak ----*/
+    margin: 2rem; /*---- De blauwe vlak ----*/
     padding: 1.5rem 3rem 1.5rem 1rem; /*---- De witte vlak ----*/
     gap: 1rem;
     border-radius: 20px;

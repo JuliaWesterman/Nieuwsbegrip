@@ -17,7 +17,7 @@
 
 #voortgangIcon img {
     height: 3rem;
-    margin-right: 3rem;
+    margin-right: 2rem;
 }
 
 /*---- Instellingen icoon ----*/
@@ -70,7 +70,7 @@
 
 /*---- Afbeelding van welkom bobby ----*/
 #welkombobby {
-    margin: 4rem 4rem;
+    margin: 4rem;
     width: 30rem;
 }
 
@@ -132,7 +132,7 @@ header .grid-x {justify-content: space-between;}
 
 /*---- Afbeelding van welkom bobby ----*/
 #welkombobby {
-    margin: 4rem 4rem;
+    margin: 4rem;
     width: 20rem;
 }
 
