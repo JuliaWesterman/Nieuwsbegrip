@@ -2,9 +2,6 @@
 
 
 /*------------------------------- Navigatie -------------------------------------*/
-/*---- Voortgang grootte icoon*/
-
-
 /*---- Logo Nieuwsbegrip ----*/
 #logo {
     margin-top: 1rem;
@@ -41,9 +38,9 @@
 }
 
 #initialen {
-        font-size: 25px;
-        color: black;
-        font-weight: bold;
+    font-size: 1.563rem;
+    color: black;
+    font-weight: bold;
 }
 
 #cirkel:hover {
@@ -58,7 +55,7 @@
 }
 
 #initialen h3:hover {
-    font-size: 25px;
+    font-size: 1.563rem;
     color: white;
     font-weight: bold;
 }
@@ -91,11 +88,12 @@
     display: flex;
     flex-direction: column;
     margin-right: 8rem;
+    text-align: center;
 }
 
 #informatie h3 {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .koppen {
@@ -106,20 +104,46 @@
 
 /*--------------------------------------------------------- RESPONSIVE --------------------------------------------------------------*/
 @media screen and (max-width: 640px){
-    header .grid-x {justify-content: space-between;}
+/*--------------------- Navigatie ---------------------------*/
+header .grid-x {justify-content: space-between;}
 
-    #homeLink {text-align: left;}
+#homeLink {text-align: left;}
 
-    .nav {border: none;}
+.nav {border: none;}
 
-    .main100 {height: 100%;}
+.main100 {height: 100%;}
 
-    .main100 > .grid-x{
-        width: 95%;
-        margin: auto;
-    }
-    #iconen {
-        margin: auto;
-        scale: 80%;
-    }
+.main100 > .grid-x{
+    width: 95%;
+    margin: auto;
+}
+
+#iconen {
+    margin: auto;
+    scale: 80%;
+}
+
+
+/*--------------------- Profiel inhoud ---------------------*/
+#inhoud {
+    grid-template-columns: auto;
+    text-align: center;
+}
+
+/*---- Afbeelding van welkom bobby ----*/
+#welkombobby {
+    margin: 4rem 4rem;
+    width: 20rem;
+}
+
+
+/*----------------------- Informatie ------------------------*/
+/*---- De titel van informatie ----*/
+#titel h1{margin-top: 5rem;}
+
+/*---- De informatie ----*/
+#informatie {margin-right: 8rem;}
+
+.koppen {grid-template-columns: auto;}
+
 }

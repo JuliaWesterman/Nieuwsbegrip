@@ -1,9 +1,13 @@
 /*--------------------------------------------------------- Index --------------------------------------------------------------*/
+html {
+    font-size: 100%;
+}
 
 main {
     background-color: none;
     background-image: linear-gradient(#D7E8FB 45%, white 75%);
 }
+
 a{
     text-decoration: none;
     margin: 0;
@@ -38,7 +42,7 @@ a:hover{
 }
 
 #initialen {
-    font-size: 25px;
+    font-size: 1.563rem;
     color: black;
     font-weight: bold;
 }
@@ -46,7 +50,7 @@ a:hover{
 #cirkel:hover {background-color: #EC671B;}
 
 #initialen:hover {
-    font-size: 25px;
+    font-size: 1.563rem;
     color: white;
     font-weight: bold;
 }
@@ -55,7 +59,7 @@ a:hover{
 #profiel {
     display: none;
     position: absolute; /*-Negeert de rest van de content-*/
-    margin: -0.5rem 3.5rem 9rem 90rem; /*-Afstanden van de randen-*/
+    margin: -0.5rem 3.5rem 9rem 67rem; /*-Afstanden van de randen-*/
     background-color: #D7E8FB;
     border-radius: 4%;
     box-shadow: 3px 6px 23px #3B8035;
@@ -95,7 +99,7 @@ a:hover{
 }   
 
 #initialen1 { /*profiel initialen BK*/
-    font-size: 28px;
+    font-size: 1.75rem;
     color: black;
     font-weight: bold;
 }
@@ -142,7 +146,7 @@ a:hover{
 }
 #tegels .cell h2 {
     color: #C7067F;
-    font-size: 22px;
+    font-size: 1.375rem;
     font-weight: bold;
 }
 
@@ -158,7 +162,7 @@ a:hover{
     display: flex;
     flex-direction: inherit;
     align-self: center;
-    margin-left: 20rem;
+    margin-left: 10rem;
     margin-top: 3rem;
     width: 70em;
     height: 20em;
@@ -265,7 +269,7 @@ main {
 }
 
 #initialen {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: black;
     font-weight: bold;
 }
@@ -298,7 +302,7 @@ main {
     height: 50px;
 }   
 
-#initialen1 { font-size: 20px;}/*---- profiel initialen BK ----*/
+#initialen1 { font-size: 1.25rem;}/*---- profiel initialen BK ----*/
 
 /*--------------------------------- TITEL ---------------------------------------*/
 #titel {
@@ -325,7 +329,7 @@ main {
 }
 #tegels .cell h2 {
     color: #C7067F;
-    font-size: 22px;
+    font-size: 1.375rem;
     font-weight: bold;
 }
 
@@ -360,10 +364,10 @@ main {
 }
 #boekentiptext {margin: 0;}
 
-#boekentiptext h2 {font-size: 22px;}
+#boekentiptext h2 {font-size: 1.375rem;}
 
 #boekentiptext h1 {
-    font-size: 18px; 
+    font-size: 1.125rem; 
     margin: 0;
 }
 
