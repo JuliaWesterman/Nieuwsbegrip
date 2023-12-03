@@ -295,7 +295,7 @@ main {
     align-items: center;
 }
 
-.balk h3{font-size: 20px;}
+.balk h3{font-size: 1.25rem;}
 
 #cirkel1{ /*---- profiel icoon ----*/
     width: 50px;
