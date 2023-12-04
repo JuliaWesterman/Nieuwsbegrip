@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nieuwsbegrip | profiel</title>
+    <title>Nieuwsbegrip | Profiel</title>
         <!--lettertype-->
         <link rel="stylesheet" href="https://use.typekit.net/ezq3eak.css">
         <link rel="stylesheet" href="https://use.typekit.net/ezq3eak.css">  
@@ -15,99 +15,94 @@
         <script src="JavaScript/app.js"></script>
   
         <link rel="stylesheet" href="css/main.css"> 
-        <link rel="stylesheet" href="css/marit.css">
+        <link rel="stylesheet" href="css/profielsarina.css">
         <script src="JavaScript/main.js"></script>
 </head>
-
-<!------------------------------HEADER---------------------------->
+<body>
+<!------------------------ HEADER ------------------------------>
 <header>
-    <nav>
-        <div class="grid-x">
-            <!--Hamburger-->
-            <div class="cell large-1">
-                <h3>Hamburber</h3>
+    <!--Linksbovenin pagina-->
+    <div class="grid-x">
+        <div class="cell large-1 medium-1 small-1 nav" id="homeLink"> 
+            <!--Homepage link-->
+            <a href="index.html">
+                <img src="content/home.svg" alt="Homepage">
+                <h3 class="hide-for-small-only"><b>Homepage</b></h3>
+            </a>
+        </div>
+
+         <!--Profiel link-->
+        <div class="cell large-1 medium-2 hide-for-small-only nav">
+            <a href="profiel.html"><h3>Profiel</h3></a>
+        </div>
+
+         <!---- Titel website Nieuwsbegrip-->
+         <div class="cell medium-3 hide-for-medium-only large-2 large-offset-3 hide-for-small-only" id="logo">
+            <a href="index.html">
+            <img src="content/Nieuwsbegrip logo.svg" alt="Logo van Nieuwsbegrip">
+            </a>
+        </div>
+
+        <!--Rechtsboven iconen-->
+        <div class="cell small-10 medium-4 large-2 large-offset-2" id="iconen">
+            <div id="voortgangIcon">
+                <!--Voortgang-->
+                <a href="voortgang.html"><img src="content/Voortgang.svg" alt="Voortgang"></a> 
+                <!--Instellingen-->
+                <a href="instellingen.html"><img src="content/Instellingen.svg" id="instellingenIcon" alt="Instellingen"></a>
             </div>
-            <!--Titel website Nieuwsbegrip-->
-            <div class="cell small-4 medium-4 large-2 large-offset-4" id="logo">
-                <img src="content/Nieuwsbegrip logo.svg" alt="Logo van Nieuwsbegrip">
-            </div>
+                 
             <!--Profiel-->
-            <div class="cell large-1 large-offset-4">
-                    <h3>BK</h3>
+            <div class="cell small-1 medium-1 large-2 " id="cirkel">
+                <a href="#"><h3 id="initialen" alt="Profiel">BK</h3></a>
             </div>
         </div>
-    </nav>
+    </div>
 </header>
-<!----------------------------------------------------------------->
 
-
-<!-----------------------------Main instellingen--------------------------->
+<!------------------------ MAIN ------------------------------>
  <main>
-    <div class="grid-x"> <!--main-->
-        <div class="cell large-8 large-offset-2 medium-12 small-12 main"> <!--witte vlak-->
-        <div class="grid-y">
-                
-            <!--Instellingen Titel-->
-            <div class="cell small-9 medium-9 large-8" id="instellingenTitel">
-                <h1><b>Instellingen</b></h1>
-            </div> 
+    <article>
+        <div class="grid-x">
+            <div class="cell large-8 large-offset-2 medium-12 small-12 main" id="inhoud"> <!--witte vlak-->
+    
+                <!--Welkom Bobby-->
+                <div id="welkombobby">
+                    <img src="content/Welkom Bobby.svg" alt="Welkom Bobby met boek mascotte">
+                </div>
 
-        <!--Lettergrootte-->
-            <div class="lettergrootte">
-                <div class="cell large-1 large-offset-2 ">
-                    <h3>Lettergrootte</h3>
+                <!--Informatie-->
+                <div class="grid-y" class="cell large-1" id="titel">
+                    <h1>Informatie</h1><!--Titel Informatie-->
+
+                    <!--De Informatie-->
+                    <div class="grid-y" id="informatie">  
+                        <div class="koppen">
+                            <h3>Naam</h3>
+                            <p>Bobby Koet</p>
+                        </div>
+
+                        <div class="koppen">
+                            <h3>Groep</h3>
+                            <p>Groep 6</p>
+                        </div>
+
+                        <div class="koppen">
+                            <h3>Leesniveau</h3>
+                            <p>C</p>
+                        </div>
+
+                        <div class="koppen">
+                            <h3>Gebruikersnaam</h3>
+                            <p>Bobby.Koet</p>
+                        </div>
+                    </div> 
                 </div>
-        
-                <!--Klein lettergrootte-->
-                <div class="cell large-1" id="achtergrondVlakA" >
-                    <h3>A</h3>
-                </div>
-        
-                <!--Midden lettergrootte-->
-                <div class="cell large-1" id="achtergrondVlakA2">
-                    <h3>A</h3>
-                </div>
-        
-                <!--Groot lettergrootte-->
-                <div class="cell large-1" id="achtergrondVlakA3">
-                    <h3>A</h3>
-                </div>
-                
-                <!--lettertype Titel-->
-                <div class="cell large-1" id="lettertype">
-                    <h3>Lettertype</h3>
-                </div>
-                
-                <!--Dropdown lettertype-->
-                <div class="dropdown">
-                    <button>Lettertype</button>
-                    <div class="content">
-                        <a href="">Arial</a>
-                        <a href="">Asap</a>
-                        <a href="">Comic Sans</a>
-                    </div>
-                </div>
-                
+
             </div>
         </div>
-        </div>
-     </div>
-</main>
-    
-<!--------------------------------------------------------------------------->
-
-
-  
-  
-  
-  
-  
-  
+    </article>
+</main>  
 </body>
 </html>
 
-
-<div class="grid-x"> <!--De hele pagina-->
-    <div class="grid-y"> <!--Verticale navigatie-->
-    </div>
-</div>
