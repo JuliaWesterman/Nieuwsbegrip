@@ -57,9 +57,25 @@ align-self: center;
     font-weight: bold;
 }
 
-/*GEHELE OPDRACHT (+ TEKSTVLAK) */
+/*GEHELE OPDRACHT (+ TEKSTVLAK)*/
 #opdracht1 {
     padding-left: 3rem;
+}
+
+/*Titel 'opdracht 1'*/
+#opdracht1 legend {
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+/*Sleutelvraag titel*/
+#opdrachttekst h3 {
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+#opdrachttekst p {
+    margin-top: -0.4em;
 }
 
 /*Tekstvlak om antwoord in te typen*/
