@@ -25,7 +25,7 @@
     <div class="grid-x"> <!--Navigatie-->
         <div class="cell large-1 medium-1 small-1 nav" id="homeLink">
             <a href="index.html">
-                <img src="content/home.svg">
+                <img src="content/home.svg" alt="huis">
                 <h3 class="hide-for-small-only">Homepage</h3>
             </a>
         </div>
@@ -63,7 +63,7 @@
                         <div class="icoonMetTekst">
                             <div class="cell show-for-small-only" id="hulpfunctieKlein">
                                 <button type="button" onclick="openHulpfunctie()" id="hulpfunctieKleinShow">
-                                    <img src="content/Pen met vraagtekenen.svg">
+                                    <img src="content/Pen met vraagtekenen.svg" alt="hulpfunctie">
                                 </button>
                                 <p id="hulpfunctieTekstKleinShow">Hulp</p>
                             </div>
@@ -95,7 +95,8 @@
                 
             <!-- OPDRACHT -->
                 <!--vragen rij-->
-                <section class="cell large-1">
+                <section>
+                    <div class="cell large-1">
                     <div class="grid-y" id="opdrachtGrid">
 
                         <!--Opdracht tekst/vraag-->
@@ -136,7 +137,8 @@
 
 
                         </div><!--grid-->
-                    </section><!--Opdracht-->
+                        </div><!--Opdracht-->
+                    </section>
                 
 
                 <!--hulpfunctie knop/iconen -->
@@ -144,8 +146,8 @@
                     <div class="cell large-1">
                         <div class="cell large-1 large-offset-7 hide-for-small-only" id="hulpfunctie">
                             <button type="button" onclick="openHulpfunctie()" id="hulpfunctieShow">
-                                <img id="hulpfunctieNormaal" src="content/hulpfunctie.svg">
-                                <img id="hulpfunctieHover" src="content/hulpfunctieHover.svg">
+                                <img id="hulpfunctieNormaal" src="content/hulpfunctie.svg" alt="hulpfunctie">
+                                <img id="hulpfunctieHover" src="content/hulpfunctieHover.svg" alt="je zweeft over de hulpfunctie">
                             </button>
                         </div>
                     </div>
@@ -155,7 +157,7 @@
                 <section>
                     <div class="cell large-1 hide-for-small-only">
                         <div class="large-offset-7" id="gefeliciteerd">
-                            <img src="content/Gefeliciteerd.svg">
+                            <img src="content/Gefeliciteerd.svg" alt="Mascottes geven een high five, gefeliciteerd">
                         </div>
                     </div>
                 </section>
@@ -190,15 +192,16 @@
                 <!--Tekst al gelezen?--->
                 <section class="grid-y" id="tekstGelezen"> <!--achtergrond vlak-->
                     <div class="cell large-1">
-                        <button type="button" onclick="closeHulpfunctie()" class="sluitHulp">X</button>
+                        <button type="button" onclick="closeHulpfunctie()" aria-label="sluit popup" class="sluitHulp">X</button>
                     </div> 
                     <!--content-->
                     <div class="grid-x">
                         <div class="cell large-3 show-for-large"> <!--afbeelding-->
                             <img src="content/Pen met microfoon.svg" alt="mascotte">
                         </div>
-                        <div class="cell large-5 large-offset-1 bord"><!--vraag-->
-                            <h2>Heb je de tekst al gelezen?</h2>
+                        <!--vraag-->
+                        <div class="cell large-5 large-offset-1 bord">
+                            <h2 tabindex="0">Heb je de tekst al gelezen?</h2>
                             <div class="keuze">
                                 <button type="button" onclick="ja()">Ja</button>
                                 <button type="button" onclick="nee()">Nee</button>
@@ -210,15 +213,16 @@
                 <!----- Feedback: Tekst niet gelezen ----->
                 <section class="grid-y" id="naarTekst"> <!--achtergrond vlak-->
                     <div class="cell large-1">
-                        <button type="button" onclick="closeHulpfunctie()" class="sluitHulp">X</button>
+                        <button type="button" onclick="closeHulpfunctie()" aria-label="sluit popup" class="sluitHulp">X</button>
                     </div> 
                     <!--content-->
                     <div class="grid-x">
                         <div class="cell large-3 show-for-large"> <!--afbeelding-->
                             <img src="content/Pen met microfoon.svg" alt="mascotte">
                         </div>
-                        <div class="cell large-6 large-offset-1 bord"><!--vraag-->
-                            <h2>Het is handig om eerst de tekst te lezen voordat je de vragen beantwoord.</h2>
+                        <!--vraag-->
+                        <div class="cell large-6 large-offset-1 bord">
+                            <h2 tabindex="0">Het is handig om eerst de tekst te lezen voordat je de vragen beantwoord.</h2>
                             <div class="keuze">
                                 <button type="button" onclick="tekstOke()">Oke</button>
                             </div>
@@ -230,15 +234,16 @@
                 <!----- Feedback tekst gelezen: waar moeite mee ---->
                 <section class="grid-y" id="moeiteMet"> <!--achtergrond vlak-->
                     <div class="cell large-1">
-                        <button type="button" onclick="closeHulpfunctie()" class="sluitHulp">X</button>
+                        <button type="button" onclick="closeHulpfunctie()" aria-label="sluit popup" class="sluitHulp">X</button>
                     </div> 
                     <!--content-->
                     <div class="grid-x">
                         <div class="cell large-3 show-for-large"> <!--afbeelding-->
                             <img src="content/Pen met microfoon.svg" alt="mascotte">
                         </div>
-                        <div class="cell large-5 large-offset-1 bord"><!--vraag-->
-                            <h2>Waar heb je hulp bij nodig?</h2>
+                        <!--vraag-->
+                        <div class="cell large-5 large-offset-1 bord">
+                            <h2 tabindex="0">Waar heb je hulp bij nodig?</h2>
                             <div class="keuze">
                                 <button type="button" onclick="tekst()">De tekst</button>
                                 <button type="button" onclick="vraag()">De vraag</button>
@@ -250,15 +255,16 @@
                 <!--- hulp bij de tekst --->
                 <section class="grid-y" id="hulpTekst"> <!--achtergrond vlak-->
                     <div class="cell large-1">
-                        <button type="button" onclick="closeHulpfunctie()" class="sluitHulp">X</button>
+                        <button type="button" onclick="closeHulpfunctie()" aria-label="sluit popup" class="sluitHulp">X</button>
                     </div>
                     <!--content--> 
                     <div class="grid-x">
                         <div class="cell large-3 show-for-large"> <!--afbeelding-->
                             <img src="content/Pen met microfoon.svg" alt="mascotte">
                         </div>
-                        <div class="cell large-6 large-offset-1 bord"><!--vraag-->
-                            <h2>Kijk naar de titel en lees regel 1. 
+                        <!--vraag-->
+                        <div class="cell large-6 large-offset-1 bord">
+                            <h2 tabindex="0">Kijk naar de titel en lees regel 1. 
                                 Lees ook regel 4 en 5.</h2>
                             <div class="keuze">
                                 <button type="button" onclick="oke()">Oke</button>
@@ -270,15 +276,16 @@
                 <!---hulp bij de vraag-->
                 <section class="grid-y" id="hulpVraag"><!--achtergrond vlak-->
                     <div class="cell large-1">
-                        <button type="button" onclick="closeHulpfunctie()" class="sluitHulp">X</button>
+                        <button type="button" onclick="closeHulpfunctie()" aria-label="sluit popup" class="sluitHulp">X</button>
                     </div> 
                     <!--content-->
                     <div class="grid-x">
                         <div class="cell large-3 show-for-large"> <!--afbeelding-->
                             <img src="content/Pen met microfoon.svg" alt="mascotte">
                         </div>
-                        <div class="cell large-6 large-offset-1 bord"><!--vraag-->
-                            <h2>Over welke panda gaat het? 
+                        <!--vraag-->
+                        <div class="cell large-6 large-offset-1 bord">
+                            <h2 tabindex="0">Over welke panda gaat het? 
                                 Wie heeft er pas een reis gemaakt?</h2>
                             <div class="keuze">
                                 <button type="button" onclick="oke()">Oke</button>

@@ -29,7 +29,7 @@ header .grid-x {
     text-align: center;
     height: 18em;
     width: 18em;
-    margin: 2rem;
+    margin: 1rem;
     border-radius: 25px;
     padding: 1.5rem;
     box-shadow: 4px 6px 23px #ADADAE; /*23px bepaald de 'blur'*/
