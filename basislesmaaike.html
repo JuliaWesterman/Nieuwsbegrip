@@ -50,49 +50,57 @@
              <div class="grid-x" id="bovenkantgrid">
 
                 <!--pijltje terug-->
-                <div class="cell large-1 large-offset-1" id="pijltjeterug"> 
-                    <img src="content/Pijltje terug.svg" alt="Pijltje terug">
+                <div class="cell large-1 large-offset-1" id="pijltjeterug" tabindex="0"> 
+                    <img src="content/Pijltje terug.svg" alt="Terug naar de vorige pagina">
                 </div>
 
                 <!--Basisles titel bovenaan witte vlak-->
-                 <div class="cell large-4 large-offset-2 small-offset-0" id="basisles"> 
+                 <div class="cell large-4 large-offset-2 small-offset-0" id="basisles" tabindex="0"> 
                     <h1>Basisles</h1>
                  </div>
             </div>
 
             <!--RIJ TEGELS-->
+            <section>
             <div class="grid-x" id="tegelsbasisles">
 
                 <!--Tegel Actief Lezen-->
                 <div class="cell tegel"> 
-                    <img src="content/Pen met laptop.svg" alt="Pen met een laptop">
-                    <h2>Actief lezen</h2>
-                    <p>Je bent bezig</p>
+                    <a href="#">
+                        <img src="content/Pen met laptop.svg" alt="Een pen met een laptop">
+                        <h2>Actief lezen</h2>
+                        <p>Je bent bezig</p>
+                    </a>
                 </div>
 
                 <!--Tegel Tussenopdracht-->
                 <div class="cell tegel"> 
-                    <img src="content/Pen met schilderij.svg" alt="Pen met een schilderij">
-                     <h2>Tussenopdracht</h2>
-                     <p>Je bent nog niet begonnen</p>
+                    <a href="#">
+                        <img src="content/Pen met schilderij.svg" alt="Een pen met een schilderij">
+                        <h2>Tussenopdracht</h2>
+                        <p>Je bent nog niet begonnen</p>
+                    </a>
                 </div>
 
                 <!--Tegel Opdrachten-->
-                <div class="cell tegel"> 
+                <div class="cell tegel" > 
                     <a href="opdracht1maaike.html">
-                     <img src="content/Boek aan het schrijven.svg" alt="Boek aan het schrijven">
-                    <h2>Opdrachten</h2>
-                    <p>Je bent klaar</p>
-                     </a>
+                        <img src="content/Boek aan het schrijven.svg" alt="Een boek die schrijft">
+                        <h2>Opdrachten</h2>
+                        <p>Je bent klaar</p>
+                    </a>
                 </div>
 
             </div>
 
             <!--Link naar de leestekst (onderaan de pagina)-->
             <div id="leestekstlink">
-                <img src="content/Boek leestekst.svg" alt="Leestekst met vergrootglas icoon">
-                <h2>Leestekst</h2>
+                <a href="#">
+                    <img src="content/Boek leestekst.svg" alt="Leestekst met vergrootglas icoon">
+                    <h3>Leestekst</h3>
+                </a>
             </div>
+            </section>
 
         </div>
 

@@ -58,39 +58,42 @@
                 
                 <!--Paarse pijltje terug (links bovenin)-->
                 <div class="cell large-1" id="pijltjeterug">
-                    <img src="content/Pijltje terug.svg" alt="Pijltje terug">
+                    <a href="basislesmaaike.html" aria-label="Pijltjeterug"><img src="content/Pijltje terug.svg" alt="Pijltje terug"></a>
                 </div>
 
                 <!--ICONEN (rechts bovenin)-->
                 <div class="cell large-4 large-offset-7 small-offset-1" id="iconennavigatie">
                     <!--Icoon voorlezen-->
-                    <div class="icoonmetonderschrift">
-                        <img src="content/Pen met microfoon.svg" alt="Een icoon voor het voorlezen">
+                    <div class="icoonmetonderschrift"> 
+                        <a href="voorleesfunctiemaaike.html" aria-label="Voorleesfunctie"><img src="content/Pen met microfoon.svg" alt="Pen met een microfoon"></a>
                         <p>Voorlezen</p>
                     </div>
+
                     <!--Icoon uitleg-->
                     <div class="icoonmetonderschrift">
-                        <img src="content/Boek Uitleg 2.1.svg" alt="Een icoon voor uitleg">
+                        <button type="button" onclick="openUitleg()"><img src="content/Boek Uitleg 2.1.svg" alt="Boek met een uitleg bord"></button>
                         <p>Uitleg</p>
                     </div>
+
                     <!--Icoon leestekst-->
                     <div class="icoonmetonderschrift">
-                        <img src="content/Boek leestekst.svg" alt="Een icoon voor de leestekst">
+                        <a href="Nieuwsbegriptekst.html" aria-label="Leestekst"><img src="content/Boek leestekst.svg" alt="Blad papier met een vergrootglas"></a>
                         <p>Leestekst</p>
                     </div>
                 </div>
+
             </div>
 
             <!--GEHELE OPDRACHT-->
-            <article id="opdracht1">
+            <form id="opdracht1">
                 <!--Uitleg en vraag opdracht 1-->
-                <div id="opdrachttekst">
-                    <h3><b>Opdracht 1</b></h3>
-                    <p>Deze sleutelvraag hoort bij de hele leestekst.</p>
+                <fieldset id="opdrachttekst">
+                    <legend tabindex="0">Opdracht 1</legend>
+                    <p tabindex="0">Deze sleutelvraag hoort bij de hele leestekst.</p>
 
-                    <h4><b>Sleutelvraag</b></h4>
-                    <p>Sleutelvraag 1: Welke afspraken met China kom je in de tekst tegen?</p>
-                </div>
+                    <h3 tabindex="0">Sleutelvraag</h3>
+                    <p tabindex="0">Sleutelvraag 1: Welke afspraken met China kom je in de tekst tegen?</p>
+                </fieldset>
 
                 <!--Tekstvlak voor het antwoord-->
                 <textarea class="tekstvlak" placeholder="Typ hier je antwoord..."></textarea>
@@ -99,7 +102,7 @@
                 <div id="volgendeknop"> 
                     <a href="opdracht2Julia.html">Volgende</a>
                 </div>
-            </article>
+            </form>
 
 
         </div>
