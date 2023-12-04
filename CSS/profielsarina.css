@@ -1,0 +1,149 @@
+/*--------------------------------------------------------- Profiel --------------------------------------------------------------*/
+
+
+/*------------------------------- Navigatie -------------------------------------*/
+/*---- Logo Nieuwsbegrip ----*/
+#logo {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/*---- Iconen ----*/
+#iconen {
+   display: flex;
+   align-items: center;
+   justify-content:space-evenly;
+}
+
+#voortgangIcon img {
+    height: 3rem;
+    margin-right: 2rem;
+}
+
+/*---- Instellingen icoon ----*/
+#instellingenIcon img {
+    height: 2.5rem;
+}
+
+/*---- Profiel icoon ----*/
+#cirkel {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #F9F9F7;
+    border: 3px solid #951B81;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#initialen {
+    font-size: 1.563rem;
+    color: black;
+    font-weight: bold;
+}
+
+#cirkel:hover {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #EC671B;
+    border: 3px solid #951B81;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#initialen h3:hover {
+    font-size: 1.563rem;
+    color: white;
+    font-weight: bold;
+}
+
+/*------------------------------- Profiel inhoud -------------------------------------*/
+
+#inhoud {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+
+/*---- Afbeelding van welkom bobby ----*/
+#welkombobby {
+    margin: 4rem;
+    width: 30rem;
+}
+
+
+/*------------------------------- Informatie -------------------------------------*/
+/*---- De titel van informatie ----*/
+#titel h1{
+    font-weight: bold;
+    color: #951B81;
+    margin-top: 5rem;
+}
+
+/*---- De informatie ----*/
+#informatie {
+    display: flex;
+    flex-direction: column;
+    margin-right: 8rem;
+    text-align: center;
+}
+
+#informatie h3 {
+    font-weight: bold;
+    font-size: 1.25rem;
+}
+
+.koppen {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+
+/*--------------------------------------------------------- RESPONSIVE --------------------------------------------------------------*/
+@media screen and (max-width: 640px){
+/*--------------------- Navigatie ---------------------------*/
+header .grid-x {justify-content: space-between;}
+
+#homeLink {text-align: left;}
+
+.nav {border: none;}
+
+.main100 {height: 100%;}
+
+.main100 > .grid-x{
+    width: 95%;
+    margin: auto;
+}
+
+#iconen {
+    margin: auto;
+    scale: 80%;
+}
+
+
+/*--------------------- Profiel inhoud ---------------------*/
+#inhoud {
+    grid-template-columns: auto;
+    text-align: center;
+}
+
+/*---- Afbeelding van welkom bobby ----*/
+#welkombobby {
+    margin: 4rem;
+    width: 20rem;
+}
+
+
+/*----------------------- Informatie ------------------------*/
+/*---- De titel van informatie ----*/
+#titel h1{margin-top: 5rem;}
+
+/*---- De informatie ----*/
+#informatie {margin-right: 8rem;}
+
+.koppen {grid-template-columns: auto;}
+
+}

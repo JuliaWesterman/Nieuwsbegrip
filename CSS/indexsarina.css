@@ -1,13 +1,25 @@
 /*--------------------------------------------------------- Index --------------------------------------------------------------*/
+html {
+    font-size: 100%;
+}
 
 main {
     background-color: none;
     background-image: linear-gradient(#D7E8FB 45%, white 75%);
 }
 
+a{
+    text-decoration: none;
+    margin: 0;
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+
 /*------------------------------- Navigatie -------------------------------------*/
 #navigatie {
-    margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+    margin: 0.5rem;
     align-items: center;
 }
 
@@ -30,7 +42,7 @@ main {
 }
 
 #initialen {
-    font-size: 25px;
+    font-size: 1.563rem;
     color: black;
     font-weight: bold;
 }
@@ -38,7 +50,7 @@ main {
 #cirkel:hover {background-color: #EC671B;}
 
 #initialen:hover {
-    font-size: 25px;
+    font-size: 1.563rem;
     color: white;
     font-weight: bold;
 }
@@ -47,7 +59,7 @@ main {
 #profiel {
     display: none;
     position: absolute; /*-Negeert de rest van de content-*/
-    margin: -0.5rem 3.5rem 9rem 64rem; /*-Afstanden van de randen-*/
+    margin: -0.5rem 3.5rem 9rem 67rem; /*-Afstanden van de randen-*/
     background-color: #D7E8FB;
     border-radius: 4%;
     box-shadow: 3px 6px 23px #3B8035;
@@ -63,7 +75,7 @@ main {
 .balk {
     display: flex;
     flex-direction: row;
-    margin: 2rem 2rem 2rem 2rem; /*-De blauwe vlak-*/
+    margin: 2rem; /*-De blauwe vlak-*/
     padding: 1.5rem 3rem 1.5rem 3rem; /*-De witte vlak-*/
     gap: 2rem;
     background-color: white;
@@ -72,7 +84,7 @@ main {
     align-items: center;
 }
 
-.balk h3{font-weight: bold;}
+.balk h3{font-weight: bold; color: #951B81;}
 
 .balk:hover{ background-color: #F1F1F1;}
 
@@ -87,7 +99,7 @@ main {
 }   
 
 #initialen1 { /*profiel initialen BK*/
-    font-size: 28px;
+    font-size: 1.75rem;
     color: black;
     font-weight: bold;
 }
@@ -111,8 +123,10 @@ main {
 
 /*------------------------ TEGEL RIJEN, KEUZE MENU ------------------------------*/
 #tegels {
-	grid-gap: 1rem;
-    margin: 1rem 9.5rem;
+    margin: 0;
+    gap: 1.5rem;
+    margin: 1rem 8rem;
+    justify-content: center;
 }
 
 #tegels img {
@@ -123,8 +137,8 @@ main {
 #tegels .cell {
     background-color: white;
     padding: 1.5rem;
-    width: 16em;
-    height: 16em;
+    width: 17em;
+    height: 17em;
     box-shadow: 3px 6px 23px #ADADAE;
     text-align: center;
     border-radius: 25px;
@@ -132,7 +146,7 @@ main {
 }
 #tegels .cell h2 {
     color: #C7067F;
-    font-size: 22px;
+    font-size: 1.375rem;
     font-weight: bold;
 }
 
@@ -148,7 +162,7 @@ main {
     display: flex;
     flex-direction: inherit;
     align-self: center;
-    margin-left: 12rem;
+    margin-left: 10rem;
     margin-top: 3rem;
     width: 70em;
     height: 20em;
@@ -156,13 +170,13 @@ main {
 
 /*------------ IMG ------------*/
 #boekpanda img {
-    margin: 3rem 1rem 1rem 10rem;
+    margin: 3rem 1rem 1rem 15rem;
     width: 55em;
     height: 18em;
 }
 
 /*------ Boekentip text ------*/
-#boekentiptext {margin: 3rem 12rem 1rem 11rem;}
+#boekentiptext {margin: 3rem 12rem 1rem 17rem;}
 
 #boekentiptext h2 {
     color: #951B80;
@@ -187,27 +201,75 @@ main {
 
 
 /*--------------------------------------------------------- RESPONSIVE --------------------------------------------------------------*/
-@media screen and (max-width: 640px){
 
+/*--------------  A version --------------*/
+@media screen and (max-width: 1025px){ 
+
+#navigatie {
+    max-width: 100%;
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+/*----  Nieuwsbegrip logo ----*/
+#logo {
+    width: 15rem;
+    height: auto;
+}
+
+
+/*------------------------------ BOEKENTIP ------------------------------------*/
+/*---- IMG boven de boekentip----*/
+#liggendepanda {
+    margin: 0;
+}
+#liggendepanda img{
+    margin-top: 3rem;
+    width: 50em;
+    height: 10em;
+}
+
+/*------------ IMG ------------*/
+#boekpanda{padding-right: 0.3rem;}
+#boekpanda img {
+    width: 10em;
+    height: 12em;
+}
+}
+
+
+/*------------  Mobile Version ------------*/
+@media screen and (max-width: 640px){ 
+
+main {
+    background-image: linear-gradient(#D7E8FB 99%, white 105%);
+    padding-bottom: 2rem;
+}
 
  /*------------------------------- Navigatie -------------------------------------*/
 #navigatie {
-    margin: 0.8rem;
-    background-color: lightgreen;
+    max-width: 100%;
+    overflow: hidden;
+    margin-bottom: 1rem;
 }
 
-/* Hamburger menu */
+/*----  Hamburger menu ----*/
 #hamburger {display: none;}
 
-/* Nieuwsbegrip logo */
+/*----  Nieuwsbegrip logo ----*/
 #logo {
-    width: 300px;
+    width: 15rem;
     height: auto;
 }
 
 /*---- Profiel ----*/
+#cirkel{
+    width: 50px;
+    height: 50px;
+}
+
 #initialen {
-    font-size: 20px;
+    font-size: 1.25rem;
     color: black;
     font-weight: bold;
 }
@@ -215,8 +277,8 @@ main {
 /*------------------------------ PROFIEL INHOUD ------------------------------------*/
 #profiel {
     display: none;
-    position: absolute; /*-Negeert de rest van de content-*/
-    margin: -0.5rem 3.5rem 9rem 10rem; /*-Afstanden van de randen-*/
+    position: absolute; /*---- Negeert de rest van de content ----*/
+    margin: -0.5rem 3.5rem 9rem 10rem; /*---- Afstanden van de randen ----*/
     z-index: 3;
 }
 
@@ -226,21 +288,21 @@ main {
 }
 
 .balk {
-    margin: 2rem 2rem 2rem 2rem; /*-De blauwe vlak-*/
-    padding: 1.5rem 3rem 1.5rem 1rem; /*-De witte vlak-*/
+    margin: 2rem; /*---- De blauwe vlak ----*/
+    padding: 1.5rem 3rem 1.5rem 1rem; /*---- De witte vlak ----*/
     gap: 1rem;
     border-radius: 20px;
     align-items: center;
 }
 
-.balk h3{font-size: 20px;}
+.balk h3{font-size: 1.25rem;}
 
-#cirkel1{ /*profiel icoon*/
+#cirkel1{ /*---- profiel icoon ----*/
     width: 50px;
     height: 50px;
 }   
 
-#initialen1 { font-size: 20px;}/*profiel initialen BK*/
+#initialen1 { font-size: 1.25rem;}/*---- profiel initialen BK ----*/
 
 /*--------------------------------- TITEL ---------------------------------------*/
 #titel {
@@ -251,63 +313,71 @@ main {
 
 #titel h1 {
     color: white;
-    font-size: 3.5rem;
+    font-size: 2rem;
     font-weight: bold;
     text-shadow:  0px 3px 6px black ;
 }
 
+#tegels img {
+    width: 8em;
+    height: 8em;
+}
 
+#tegels .cell {
+    width: 18rem;
+    height: 16rem;
+}
+#tegels .cell h2 {
+    color: #C7067F;
+    font-size: 1.375rem;
+    font-weight: bold;
+}
 
-
-
+#tegels .cell p {
+    color: #808080;
+    margin-top: -0.8rem;
+}
 
 /*------------------------------ BOEKENTIP ------------------------------------*/
 
 #liggendepanda {display: none;} /*---- IMG die niet in mobile version plaatst vindt ----*/
 
 /*------------ IMG ------------*/
+#boekpanda{padding-right: 0.3rem;}
+
 #boekpanda img {
-    margin: 3rem 1rem 1rem 1rem;
+    margin: 0;
     width: 6em;
     height: 8em;
 }
 
 /*------ Boekentip text ------*/
-#boekentiptext {margin: 3rem 2rem 1rem 2rem;}
-
-#boekentiptext h2 {
-    color: #951B80;
-    font-weight: bold;
+#boekentip {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 1rem;
+    width: 20rem;
+    background-color: white;
+    box-shadow: 3px 6px 23px #ADADAE;
+    border-radius: 25px;
+    margin: auto;
 }
-#boekentiptext h1 {font-weight: bold;}
+#boekentiptext {margin: 0;}
+
+#boekentiptext h2 {font-size: 1.375rem;}
+
+#boekentiptext h1 {
+    font-size: 1.125rem; 
+    margin: 0;
+}
 
 #boekentiptext p {display: none;}
 
-#italic {font-style: italic;}
+#boekentiptext a {display: none;}
 
-#boekentiptext a {
-    color: white;
-    font-weight: bold;
-    background-color: #EC671B;
-    border-radius: 8px;
-    padding: 0.5rem;
-    margin-bottom: 4rem;
-}
-
-#boekentiptext a:hover {background-color: #C57301;}/*---- Muis over de link ----*/
-
+body{max-width: 100%;}
 
 }
-
-
-
-
-
-
-
-
-
-
 
 
 

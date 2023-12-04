@@ -83,8 +83,12 @@ nav h3{
     margin: 0;
 }
 
+#homeLink h3, #progress h3{
+    font-weight: bold;
+}
+
 #stop{
-    padding: 1rem 0.6rem;
+    padding: 1rem 0.8rem;
     text-align: right;
 }
 #stop h3{

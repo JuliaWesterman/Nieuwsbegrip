@@ -11,12 +11,11 @@
     padding-left: 1rem;
 }
 #progressBalk{
-align-self: center;
+    align-self: center;
     height: 1.2rem;
     width: 60%;
     background: linear-gradient(to right, #77B72A 15%, rgb(225, 225, 225) 16%);
 }
-
 
 
 /*-----iconen----*/
@@ -40,10 +39,13 @@ align-self: center;
     font-size: 14px;
 }
 
-
+/*#region------------------------ OPDRACHT ---------------------*/
 /*----vragen-----*/
 #opdrachtGrid{
     padding: 1rem;
+}
+#opdrachtGrid h4, #opdrachtGrid h3{
+    font-weight: bold;
 }
 #antwoorden{
     display: grid;
@@ -79,8 +81,11 @@ align-self: center;
 #opdrachtNavigatie a:hover{
     background-color: #767676;
 }
+/*#endregion*/
 
-/*---------popup uitleg-------------*/
+
+
+/*#region -------------------- POP UP UITLEG -------------------*/
 #uitlegPopup{
     visibility: hidden;
     position: absolute;
@@ -121,7 +126,6 @@ align-self: center;
     background-color: #C57301;
 }
 
-
 /*mascotte*/
 #uitleg div{
     background-color: white;
@@ -135,10 +139,12 @@ align-self: center;
     height: 15rem;
     width: 15rem;
 }
+/*#endregion*/
 
-/*---------- HULPFUNCTIE ------*/
+
+/*#region --------------------- HULPFUNCTIE --------------------*/
 #hulpfunctie button, #gefeliciteerd{
-    width: 25%;
+    width: 22%;
     position: absolute;
     right: 0;
     bottom: 0;
@@ -195,7 +201,6 @@ align-self: center;
     margin-top: 2rem;
 }
 
-
 #hulpfunctiePopup h2{
     text-align: center;
     width: 100%;
@@ -233,8 +238,10 @@ align-self: center;
     visibility: hidden;
 }
 
+/*#endregion*/
 
-/*---------------------  RESPONSIVE  --------------------*/
+
+/*#region---------------------  RESPONSIVE  --------------------*/
 /*hulpfunctie pop up + icoon*/
 @media screen and (max-width: 640px){
     #opdrachtNavigatie{
@@ -282,8 +289,11 @@ align-self: center;
 }
 
 /*mascotte niet meer zichtbaar*/
-@media screen and (max-width: 1245px){
+@media screen and (max-width: 1250px){
     #uitleg div{
         visibility: hidden;
     }
+
 }
+
+/*#endregion*/
