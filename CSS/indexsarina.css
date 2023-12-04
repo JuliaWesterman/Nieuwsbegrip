@@ -59,7 +59,7 @@ a:hover{
 #profiel {
     display: none;
     position: absolute; /*-Negeert de rest van de content-*/
-    margin: -0.5rem 3.5rem 9rem 67rem; /*-Afstanden van de randen-*/
+    margin: -0.5rem 3.5rem 9rem 66rem; /*-Afstanden van de randen-*/
     background-color: #D7E8FB;
     border-radius: 4%;
     box-shadow: 3px 6px 23px #3B8035;
