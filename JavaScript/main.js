@@ -28,6 +28,7 @@ function controleren(){
             document.getElementById("gefeliciteerd").style.visibility = "visible";               
             document.getElementById("hulpfunctieShow").style.visibility = "hidden"; 
             document.getElementById("hulpfunctieKleinShow").style.visibility = "hidden";  
+            document.getElementById("hulpfunctieTekstKleinShow").style.visibility = "hidden";  
             document.querySelector('input[name="antwoord"]:checked').style.accentColor = "#77B72A";      
 
         };
@@ -100,4 +101,5 @@ function closeHulpfunctie(){ /*alles moet sluiten*/
     document.getElementById("naarTekst").style.visibility = "hidden";
     document.getElementById("hulpVraag").style.visibility = "hidden";
     document.getElementById("hulpTekst").style.visibility = "hidden";
+    document.getElementById("hulpfunctiePopup").style.visibility = "hidden";
 };

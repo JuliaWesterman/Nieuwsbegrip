@@ -43,7 +43,7 @@ a{
 
 
 /*Navigatie*/
-nav{
+/*region ------- oude nav{
     background-color: white;
 }
 
@@ -84,6 +84,91 @@ align-self: center;
 #stop span{
     color: #56A5EA;
 }
+ */
+/*#endregion*/
+
+
+/*#region ------ nieuwe NAVIGATIE*/
+header{
+    width: 100% !important;
+    left: 0;
+    right: 0;
+    position: fixed;
+    background-color: white;
+    z-index: 3;
+}
+/*grid-x zorgt voor gelijke margin aan header is links en rechts*/
+header .grid-x{
+    justify-content: center;
+}
+
+/*cellen in de navigatie*/
+.nav{
+    text-align: center;
+    padding: 1rem 0.6rem;
+    color: #951B81;
+    border-right: solid #951B81 2px;
+}
+.nav a{
+    color: #951B81;
+}
+nav h3{
+    font-size: 16px;
+    margin: 0;
+}
+
+#homeLink h3, #progress h3{
+    font-weight: bold;
+}
+
+#stop{
+    padding: 1rem 0.8rem;
+    text-align: right;
+}
+#stop h3{
+    font-weight: bold;
+    color: red;
+
+}
+#stop span{
+    color: #56A5EA;
+}
+
+/*----voortgang in opdrachten navigatiebalk----*/
+#progress{
+    display: flex;
+    flex-direction: row;
+    gap: 0.7rem;
+}
+#progress > h3{
+    color: #77B72A;
+    align-self: center;
+    padding-left: 1rem;
+}
+#progressBalk{
+    align-self: center;
+    height: 1.2rem;
+    width: 60%;
+    background: linear-gradient(to right, #77B72A 15%, rgb(225, 225, 225) 16%);
+}
+
+
+
+/*Het huisje in de navigatie*/
+#homeLink{
+    width: max-content;
+}
+#homeLink a{
+    display: flex;
+    flex-direction: row;
+    gap: 0.3rem;
+    padding-right: 0.6rem;
+}
+#homeLink img{
+    width: 2rem;
+    margin-top: -0.3rem;
+}
+
 
 #grid-x{
     color: white;

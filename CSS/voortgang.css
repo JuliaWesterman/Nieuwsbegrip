@@ -45,25 +45,87 @@ header{
 }
 
 /*Navigatie*/
+
 .nav h3{
-    color: #C7067F;
+    color: #951B81;
     text-align: center;
     padding: 1rem;
-    border-right: solid 2px #C7067F;
+    border-right: solid 2px #951B81;
     margin: 0;
 }
 
+/*------------------------------- Navigatie -------------------------------------*/
+/*---- Logo Nieuwsbegrip ----*/
+#logo {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/*---- Iconen ----*/
+#iconen {
+   display: flex;
+   align-items: center;
+   justify-content:space-evenly;
+}
+
+#voortgangIcon img {
+    height: 3rem;
+    margin-right: 2rem;
+}
+
+/*---- Instellingen icoon ----*/
+#instellingenIcon img {
+    height: 2.5rem;
+}
+
+/*---- Profiel icoon ----*/
+#cirkel {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #F9F9F7;
+    border: 3px solid #951B81;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#initialen {
+    font-size: 1.563rem;
+    color: black;
+    font-weight: bold;
+}
+
+#cirkel:hover {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: #EC671B;
+    border: 3px solid #951B81;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#initialen h3:hover {
+    font-size: 1.563rem;
+    color: white;
+    font-weight: bold;
+}
+
+
+
 /*grootte logo responsive*/
-#logo{
+/* #logo{
     align-items: center;
     max-width: 50vw;
     justify-content: center;
-}
+} */
 
 /*BK rechts zetten*/
-#bk h3{
+/* #bk h3{
     text-align: right;
-}
+} */
 
 /*Het huisje in de navigatie*/
 #homeLink{

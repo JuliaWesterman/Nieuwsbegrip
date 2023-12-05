@@ -59,6 +59,7 @@ align-self: center;
 
 /*GEHELE OPDRACHT (+ TEKSTVLAK)*/
 #opdracht1 {
+    margin-top: -2rem;
     padding-left: 3rem;
 }
 
@@ -84,7 +85,7 @@ align-self: center;
     padding-left: 1rem;
     border: 1px solid gray;
     outline: none;
-    height: 12rem;
+    height: 9rem;
     width: 50rem;
 }
 

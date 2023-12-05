@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nieuwsbegrip | Opdracht 1</title>
+    <link rel="icon" href="content/Barry boek.svg">
+
         <!--Lettertypes-->
         <link rel="stylesheet" href="https://use.typekit.net/ezq3eak.css">
         <link rel="stylesheet" href="https://use.typekit.net/ezq3eak.css">  
@@ -16,6 +18,7 @@
     
         <!--CSS + javascript-->
         <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/opdracht2Julia.css">
         <link rel="stylesheet" href="css/opdracht1maaike.css">
         <script src="JavaScript/main.js"></script>
 </head>
@@ -24,30 +27,30 @@
 <body>
 <header>
     <!--NAVIGATIEBALK (gelinkt naar main.css voor eenheid)-->
-    <nav>
-        <div class="grid-x">
+        <nav>
+        <div class="grid-x"> <!--Navigatie-->
             <div class="cell large-1 medium-1 small-1 nav" id="homeLink">
                 <a href="index.html">
-                    <img src="content/home.svg">
-                    <h3 class="hide-for-small-only"><b>Homepage</b></h3>
+                    <img src="content/home.svg" alt="huis">
+                    <h3 class="hide-for-small-only">Homepage</h3>
                 </a>
             </div>
             <div class="cell large-1 medium-2 hide-for-small-only nav">
-                <a href="basisles.html"><h3>Basisles</h3></a>
+                <a href="basislesmaaike.html"><h3>Basisles</h3></a>
             </div>
             <div class="cell large-1 medium-2 hide-for-small-only nav">
-                <a href="basisles.html"><h3>Opdrachten</h3></a>
+                <a href="basislesmaaike.html"><h3>Opdrachten</h3></a>
             </div>
-            <div class="cell large-7 medium-3 small-7" id="progress">
-                <h3><b>Opdracht 1 van 16</b></h3>
-                <div id="progressBalk" class="hide-for-small-only hide-for-medium-only"></div>
+            <div class="cell large-7 medium-3 small-7" id="progress" tabindex="0">
+                <h3>Opdracht 1 van 16</h3>
+                <div id="progressBalk" class="hide-for-small-only hide-for-medium-only" aria-hidden="true"></div>
             </div>
-            <div class="cell large-1 medium-2 small-1" id="stop">
-                <a href="basisles.html"><h3><span class="hide-for-small-only">Stoppen</span>  X</h3></a>
+            <div class="cell large-1 medium-2 small-2" id="stop">
+                <a href="basislesmaaike.html"><h3><span class="hide-for-small-only">Stoppen</span>  X</h3></a>
             </div>
         </div>
         </nav>
-</header>
+    </header>
 
 <main class="main100"> <!--main100 zorgt voor lichtblauwe achtergrond over gehele pagina-->
     <div class="grid-x">
@@ -108,7 +111,25 @@
         </div>
 
     </div> 
-</main>
 
+
+<!------------------------ UITLEG POPUP ----------------------->     
+<section> 
+    <div class="grid-x" id="uitlegPopup">
+        <div class="cell large-9 large-offset-1" id="uitleg">
+            <h2>Wat moet je doen?</h2>
+            <p class="large-offset-3"><span>Sleutelvraag = </span>deze helpt je de tekst beter te begrijpen</p>
+            <p class="large-offset-3">Weet je het antwoord op de vraag echt niet?<br>
+            Klik op het icoon van “leestekst” en lees de tekst nog eens rustig na, op zoek naar het antwoord!</p>
+            <button type="button" onclick="closeUitleg()">Ik snap het!</button>
+            <div class="hide-for-medium-only hide-for-small-only"><img src="content/Boek Uitleg 2.1.svg" alt="Uitleg mascotte"></div>
+        </div>
+    </div>
+</section>
+
+
+
+
+</main>
 </body>
 </html>
